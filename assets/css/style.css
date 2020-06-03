@@ -1295,6 +1295,7 @@ section {
     transition: ease .25s;
     margin-right: auto;
     cursor: pointer;
+    border: 1px solid #ddd;
 }
 .blog .entry .entry-img {
     max-height: 400px;
@@ -1390,7 +1391,7 @@ section {
 .promo-ctas {
     display: flex;
     flex: 0 1 auto;
-    color: #1264a3;
+    color: #0000d6;
     word-break: break-word;
     list-style-type: none;
 }
@@ -1411,7 +1412,7 @@ section {
     height: 3rem;
     position: relative;
     white-space: normal;
-    color: #1264a3;
+    color: #0000d6;
     cursor: pointer;
 }
 
