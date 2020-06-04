@@ -173,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     background: #fff;
 }
+
 #header .logo {
     font-size: 22px;
     line-height: 1.158;
@@ -1364,7 +1365,8 @@ section {
     height: 21px;
     }
 }
-/* .blog .entry .entry-content p {
+
+.blog .entry .entry-content p {
     font-size: 15px;
     padding-right: 30px;
     font-size: 18px;
@@ -1396,7 +1398,7 @@ section {
     float: left;
     height: 0;
     padding-top: 100%;
-} */
+} 
 
 .promo-ctas {
     display: flex;
