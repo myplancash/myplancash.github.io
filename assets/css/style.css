@@ -1278,9 +1278,19 @@ section {
 100% {
     transform: rotate(360deg);
 }
-}.blog {
+}
+.blog {
     padding: 40px 0;
 }
+
+@media (max-width: 767px) {
+    .blog {
+        width: auto;
+        max-width: 600px;
+        margin: 0 auto 20px;
+    }
+}
+
 .blog .entry {
     padding: 20px;
     margin-bottom: 60px;
@@ -2207,18 +2217,18 @@ section {
   .testimonials .testimonial-item {
     padding: 30px 30px 30px 60px;
     margin: 30px 15px;
-    border: 1px solid #eef0ef;
+    border: 1px solid #f4c21c;
     position: relative;
-    background: #fff;
+    background: #ffd700;
     font-family: hk_groteskbold, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
   .testimonials .testimonial-item .testimonial-img {
-    width: 90px;
+    width: 100px;
     border-radius: 10px;
-    border: 6px solid #fff;
+    /* border: 6px solid #fff; */
     position: absolute;
     left: -45px;
   }
