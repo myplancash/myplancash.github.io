@@ -2214,14 +2214,14 @@ section {
 }
 
 @media (min-width: 1024px) {
-    .offset-lg-2 {
+    .section-slice .slide-container .offset-lg-2 {
         margin-left: 16.66667%;
     }
 }
 
 
 @media (min-width: 1024px) {
-    .col-lg-8 {
+    .section-slice .slide-container .col-lg-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
@@ -2235,24 +2235,24 @@ section {
 }
 
 @media (min-width: 768px) {
-    .offset-md-0 {
+    .section-slice .slide-container .offset-md-0 {
         margin-left: 0;
     }
 }
 
 @media (min-width: 768px) {
-    .order-md-0 {
+    .section-slice .slide-container .order-md-0 {
         order: 0;
     }
 }
 @media (min-width: 768px) {
-    .col-md-4 {
+    .section-slice .slide-container .col-md-4 {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
 }
 
-.lazy-component .lazy-image {
+.section-slice .slide-container .lazy-component .lazy-image {
     width: 100%;
     height: auto;
     max-height: 100%;
@@ -2260,7 +2260,7 @@ section {
 }
 
 @media (min-width: 768px) {
-    .col-md-8 {
+    .section-slice .slide-container .col-md-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
@@ -2288,6 +2288,10 @@ section {
     letter-spacing: -.01em;
 }
 
+
+/*--------------------------------------------------------------
+# Courses
+--------------------------------------------------------------*/
 
 .courses .course-item {
     border-radius: 4px;
