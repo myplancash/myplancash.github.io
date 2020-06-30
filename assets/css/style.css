@@ -602,7 +602,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: hk_groteskregular, Arial, sans-serif;   
     font-weight: 400;   
     font-style: normal;   
-    font-size: 2rem;   
+    font-size: 1.6rem;   
     line-height: 1.625;   
     letter-spacing: -.01em;   
 } 
@@ -655,7 +655,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 8px;   
 }   
 #hero .btn-watch-video:hover i {   
-    color: #0000d6;   
+    color: #fff;   
 }   
 #hero .animated {   
     animation: up-down 2s ease-in-out infinite alternate-reverse both;   
