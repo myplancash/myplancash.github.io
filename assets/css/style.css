@@ -183,7 +183,7 @@
         line-height: 1px;
         transition: 0.3s;
       }
-      
+
       #topbar .social-links a:hover {
         color: #fff;
       }
@@ -2205,7 +2205,7 @@
         color: #0000d6
     }
     #footer .footer-top .social-links a {
-        font-size: 16px;
+        font-size: 26px;
         display: inline-block;
         background: rgba(255, 255, 255, .1);
         color: #0000d6;
@@ -2371,11 +2371,11 @@
         background: #3498db;
         display: inline-block;
     }
-      
+
     .products .products-tile .section-title h2::before {
     margin: 0 15px 10px 0;
     }
-    
+
     .products .products-tile .section-title h2::after {
     margin: 0 0 10px 15px;
     }
@@ -3182,11 +3182,11 @@ h6 {
     line-height: 1px;
     transition: 0.3s;
   }
-  
+
   #topbar .social-links a:hover {
     color: #0000b6;
   }
-  
+
 
 #topbar .cta {
     background: 0 0
