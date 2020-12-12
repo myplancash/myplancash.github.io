@@ -54,6 +54,17 @@ html {
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+}
+
 body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -63,7 +74,6 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  -webkit-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
   line-height: 1.47059;
@@ -2005,6 +2015,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -7775,6 +7786,29 @@ h1, h2, h3, h4, h5,
     opacity: 1; }
 
 .btn {
+  cursor: pointer;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 1;
+  color: rgb(255 255 255);
+  background-color: rgb(4 91 193);
+  border-color: rgb(4 91 193);
+  border-radius: .1875rem !important;
+  margin-top: .5rem !important;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  display: inline-block;
+  font-weight: 700;
+  user-select: none;
+  border: 1px solid rgb(0 0 0 / 0%);
+  padding: .8rem 2.5rem;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out,
+  border-color .15s ease-in-out,
+  box-shadow .15s ease-in-out,
+  -webkit-box-shadow .15s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
   cursor: pointer;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
