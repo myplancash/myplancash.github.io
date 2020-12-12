@@ -350,9 +350,19 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
+p.lead {
+  line-height: 1.2;
+}
+
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300; }
+  font-size: 1.333rem;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
 .display-1 {
   font-size: 6rem;
@@ -7662,9 +7672,11 @@ h1, h2, h3, h4, h5,
 
 .ftco-intro h1 {
   font-size: 9.3vw;
+  margin-left: .5rem;
   font-weight: 700;
   line-height: 1;
-  display: block; }
+  display: block;
+}
 
 @media (max-width: 767.98px) {
   .ftco-intro {
@@ -8627,3 +8639,43 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+.page-footer {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  color: rgb(255 255 255);
+  text-align: center;
+  padding: 1.8rem 1rem;
+  overflow: hidden;
+  font-family: Raleway,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol";
+}
+
+.bg-holder {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  will-change: transform, opacity, filter;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-position: 0 27%;
+  transform: scale(1.1);
+}
