@@ -66,11 +66,38 @@ html {
 }
 
 body {
+  min-width: 992px !important;
+}
+
+body.offcanvas {
+  overflow-x: hidden;
+}
+
+body.offcanvas #colorlib-aside {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  width: 270px;
+  background: #fff;
+  z-index: 999;
+  position: fixed;
+}
+
+body.offcanvas #colorlib-main,
+body.offcanvas .colorlib-nav-toggle {
+  top: 0;
+  -moz-transform: translateX(270px);
+  -webkit-transform: translateX(270px);
+  -ms-transform: translateX(270px);
+  -o-transform: translateX(270px);
+  transform: translateX(270px);
+}
+
+body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
- /*  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5; */
   background: rgb(255, 255, 255);
   color: #212529;
   text-align: left;
@@ -97,11 +124,21 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0;
   margin-bottom: 1rem;
   font-size: 19px;
   line-height: 1.21053;
   font-weight: 600;
   letter-spacing: .012em;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  white-space: pre-line !important;
 }
 
 abbr[title],
@@ -6213,7 +6250,8 @@ button.bg-dark:focus {
 
 .mt-3,
 .my-3 {
-  margin-top: 1rem !important; }
+  margin-top: 1rem !important;
+}
 
 .mr-3,
 .mx-3 {
@@ -7319,8 +7357,8 @@ a.text-dark:hover, a.text-dark:focus {
     page-break-after: avoid; }
   @page {
     size: a3; }
-  body {
-    min-width: 992px !important; }
+
+
   .container {
     min-width: 992px !important; }
   .navbar {
@@ -7335,33 +7373,6 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
-
-body {
-  font-family: 'Inter', Arial, sans-serif;
-  background: rgb(255, 255, 255);
-  font-size: 16px;
-  line-height: 1.8;
-  font-weight: 400;
-  color: #4d4d4d; }
-  body.offcanvas {
-    overflow-x: hidden; }
-    body.offcanvas #colorlib-aside {
-      -moz-transform: translateX(0);
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-      transform: translateX(0);
-      width: 270px;
-      background: #fff;
-      z-index: 999;
-      position: fixed; }
-    body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
-      top: 0;
-      -moz-transform: translateX(270px);
-      -webkit-transform: translateX(270px);
-      -ms-transform: translateX(270px);
-      -o-transform: translateX(270px);
-      transform: translateX(270px); }
 
 a {
   -webkit-transition: .3s all ease;
@@ -8756,4 +8767,26 @@ textarea.form-control {
 
 .text-700 {
   color: rgb(255 255 255) !important;
+}
+
+
+
+/* header */
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../images/hero-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
 }
