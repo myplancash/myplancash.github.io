@@ -23,7 +23,7 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
   font-style: normal;
   font-weight: normal;
@@ -39,3 +39,83 @@
 .flaticon-layers:before { content: "\f100"; }
 .flaticon-compass-symbol:before { content: "\f101"; }
 .flaticon-idea:before { content: "\f102"; }
+.flaticon-sink:before { content: "\f14f"; }
+.flaticon-socket:before {
+  content: "\f150";
+}
+
+.flaticon-spray:before {
+  content: "\f151";
+}
+
+.flaticon-steamtroller:before {
+  content: "\f152";
+}
+
+.flaticon-stop:before {
+  content: "\f153";
+}
+
+.flaticon-super-glue:before {
+  content: "\f154";
+}
+
+.flaticon-swiss-knife:before {
+  content: "\f155";
+}
+
+.flaticon-toolbox:before {
+  content: "\f156";
+}
+
+.flaticon-toolbox-1:before {
+  content: "\f157";
+}
+
+.flaticon-torch:before {
+  content: "\f158";
+}
+
+.flaticon-torch-helmet:before {
+  content: "\f159";
+}
+
+.flaticon-trowel:before {
+  content: "\f15a";
+}
+
+.flaticon-truck:before {
+  content: "\f15b";
+}
+
+.flaticon-tubes-hook:before {
+  content: "\f15c";
+}
+
+.flaticon-window:before {
+  content: "\f15d";
+}
+
+.flaticon-wire-roll:before {
+  content: "\f15e";
+}
+
+.flaticon-wood:before {
+  content: "\f15f";
+}
+
+.flaticon-worker:before {
+  content: "\f160";
+}
+
+.flaticon-worker-1:before {
+  content: "\f161";
+}
+
+.flaticon-wrecking-ball:before {
+  content: "\f162";
+}
+
+.flaticon-wrench:before {
+  content: "\f163";
+}
