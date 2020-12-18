@@ -37,6 +37,8 @@ font-style: normal;
 .flaticon-interior-design:before { content: "\f103"; }
 .flaticon-sit-down:before { content: "\f104"; }
 .flaticon-turned-off:before { content: "\f105"; }
+.flaticon-lawn-mower:before { content: "\f105"; }
+
 .flaticon-socket:before {
   content: "\f150";
 }
@@ -116,3 +118,4 @@ font-style: normal;
 .flaticon-wrench:before {
   content: "\f163";
 }
+

@@ -120,8 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-section {
   padding: 4.5em 0; }
   @media (min-width: 768px) {
-    .site-section {
-      padding: 7em 0; } }
+  }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -964,14 +963,14 @@ h1, h2, h3, h4, h5, h6 {
   .services .icon span {
     font-size: 60px;
     color: #fff;
-    background: #2e9e5b;
-    background: -moz-linear-gradient(45deg, #2e9e5b 0%, #fdb72c 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #2e9e5b), color-stop(100%, #fdb72c));
-    background: -webkit-linear-gradient(45deg, #2e9e5b 0%, #fdb72c 100%);
-    background: -o-linear-gradient(45deg, #2e9e5b 0%, #fdb72c 100%);
-    background: -ms-linear-gradient(45deg, #2e9e5b 0%, #fdb72c 100%);
-    background: linear-gradient(45deg, #2e9e5b 0%, #fdb72c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e9e5b', endColorstr='#fdb72c', GradientType=1);
+    background: #cc2b5e;
+    background: -moz-linear-gradient(45deg, #cc2b5e 0%, #753a88 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #cc2b5e), color-stop(100%, #753a88));
+    background: -webkit-linear-gradient(45deg, #cc2b5e 0%, #753a88 100%);
+    background: -o-linear-gradient(45deg, #cc2b5e 0%, #753a88 100%);
+    background: -ms-linear-gradient(45deg, #cc2b5e 0%, #753a88 100%);
+    background: linear-gradient(45deg, #cc2b5e 0%, #753a88 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc2b5e', endColorstr='#753a88', GradientType=1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

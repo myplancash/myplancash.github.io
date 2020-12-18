@@ -43,10 +43,37 @@
 .flaticon-interior-design:before { content: "\f103"; }
 .flaticon-sit-down:before { content: "\f104"; }
 .flaticon-turned-off:before { content: "\f105"; }
-    
+
+.flaticon-apple:before {
+  content: "\f100";
+}
+
+.flaticon-biscuit:before {
+  content: "\f101";
+}
+
+.flaticon-coffee-cup:before {
+  content: "\f102";
+}
+
+.flaticon-film:before {
+  content: "\f103";
+}
+
+.flaticon-gamepad:before {
+  content: "\f104";
+}
+
+.flaticon-lawn-mower:before {
+  content: "\f105";
+}
+
     $font-Flaticon-window: "\f100";
     $font-Flaticon-measuring: "\f101";
     $font-Flaticon-step-ladder: "\f102";
     $font-Flaticon-interior-design: "\f103";
     $font-Flaticon-sit-down: "\f104";
     $font-Flaticon-turned-off: "\f105";
+    $font-Flaticon-film: "\f100";
+    $font-Flaticon-biscuit: "\f101";
+    $font-Flaticon-lawn-mower: "\f105";
