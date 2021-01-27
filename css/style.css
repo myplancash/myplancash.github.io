@@ -5,7 +5,7 @@ body {
   scroll-behavior: smooth;
   position: relative;
   line-height: 1.7;
-  color: gray;
+  color: #0a2038;
   font-weight: 300;
   font-size: 1rem;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -935,7 +935,7 @@ h6 {
   color: #000;
 }
 .service p {
-  color: #999999;
+  color: #0a2038;
   font-size: 0.85rem;
 }
 
@@ -989,14 +989,32 @@ h6 {
   margin-bottom: 15px;
   line-height: 1.5;
 }
-.ul-check li:before {
+/* .ul-check li:before {
   left: 0;
   font-size: 20px;
   top: -0.3rem;
   font-family: "icomoon";
-  content: "\e5ca";
+  content: "&#xe825";
   position: absolute;
+} */
+
+.lnr-film-play,
+.lnr-magic-wand,
+.lnr-graduation-hat,
+.lnr-picture {
+  color: #0f52ba;
+  font-size: 28px;
+  left: 0;
+  /* font-size: 20px;  */
+  /* top: -0.3rem; */
+  /* font-family: "icomoon";
+  content: "&#xe825"; */
+  position: absolute;
+  /* To get crisp results, use sizes that are
+  a multiple of 20; because Linearicons was
+  designed on a 20 by 20 grid. */
 }
+
 .ul-check.white li:before {
   color: #fff;
 }
