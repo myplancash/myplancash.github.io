@@ -130,9 +130,9 @@ h6 {
 .btn.btn-outline-primary:hover,
 .btn.btn-outline-primary:focus,
 .btn.btn-outline-primary:active {
-  border-color: #1400c6 !important;
-  color: #1400c6 !important;
-  background-color: transparent !important;
+  border-color: #770b14 !important;
+  color: #fff !important;
+  background-color: rgb(119, 11, 20) !important;
 }
 .btn.btn-md {
   padding: 14px 30px;
@@ -1355,7 +1355,7 @@ h6 {
   z-index: 0;
   opacity: 0;
   position: relative;
-  background: #fdb827;
+  background: #f64c72;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -1388,11 +1388,11 @@ h6 {
 }
 
 .ftco-footer .ftco-footer-widget ul li a {
-  color: #fdb827;
+  color: #f64c72;
 }
 
 .ftco-footer .ftco-footer-widget ul li a span {
-  color: #fdb827;
+  color: #f64c72;
 }
 
 .ftco-footer .ftco-footer-widget .btn-primary {
@@ -1475,7 +1475,7 @@ h6 {
 
 .footer-small-nav > li a:hover,
 .footer-small-nav > li a:focus {
-  color: #fdb827;
+  color: #f64c72;
 }
 
 .media .ftco-icon {
@@ -1483,7 +1483,7 @@ h6 {
 }
 
 .media .ftco-icon span {
-  color: #fdb827;
+  color: #f64c72;
 }
 
 .ftco-media {
@@ -1517,7 +1517,7 @@ h6 {
 .ftco-media .icon {
   font-size: 50px;
   display: block;
-  color: #fdb827;
+  color: #f64c72;
 }
 
 .ftco-media.text-center .ftco-icon {
@@ -1582,7 +1582,7 @@ h6 {
   display: block;
   margin-bottom: 5px;
   font-weight: 700;
-  color: #fdb827;
+  color: #f64c72;
 }
 
 .heading-section h2 {
@@ -1665,7 +1665,7 @@ h6 {
 }
 .subscribe-form .form-group .submit {
   color: #fff !important;
-  background: #553d67 !important;
+  background: #f64c72 !important;
   border-radius: 0px 5px 5px 0px;
   font-size: 16px;
 }
@@ -1750,7 +1750,7 @@ h6 {
 
 .subscribe-form .form-group .submit {
   color: #fff !important;
-  background: #553d67 !important;
+  background: #f64c72 !important;
   border-radius: 0px 5px 5px 0px;
   font-size: 16px;
 }
@@ -1877,4 +1877,21 @@ div#btncallme {
   right: 2%;
   max-width: 100px;
   z-index: 99;
+}
+
+#about-section {
+  background: #2f2fa2;
+}
+
+#about-section .section-title .title,
+#about-section .text-primary,
+.lnr-book,
+.lnr-camera-video,
+.lnr-hourglass,
+.lnr-unlink {
+  color: #fff !important;
+}
+#about-section p,
+#about-section .ul-check li {
+  color: #e2e3e3 !important;
 }
