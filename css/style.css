@@ -1376,6 +1376,7 @@ h6 {
   font-size: 16px;
   background: #222831;
   padding: 7em 0 4em 0;
+  clear: both;
 }
 
 .ftco-footer .ftco-footer-widget h2 {
@@ -1868,4 +1869,12 @@ h6 {
   .form-inline .custom-control-label {
     margin-bottom: 0;
   }
+}
+
+div#btncallme {
+  position: fixed;
+  bottom: 4%;
+  right: 2%;
+  max-width: 100px;
+  z-index: 99;
 }
