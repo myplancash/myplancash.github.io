@@ -27,6 +27,9 @@ a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   text-decoration: none;
@@ -39,6 +42,11 @@ h4,
 h5,
 h6 {
   color: #000;
+}
+
+img {
+  vertical-align: middle;
+  display: block;
 }
 
 .position-relative {
@@ -1871,14 +1879,6 @@ h6 {
   }
 }
 
-div#btncallme {
-  position: fixed;
-  bottom: 4%;
-  right: 2%;
-  max-width: 100px;
-  z-index: 99;
-}
-
 #about-section {
   background: #2f2fa2;
 }
@@ -1894,4 +1894,35 @@ div#btncallme {
 #about-section p,
 #about-section .ul-check li {
   color: #e2e3e3 !important;
+}
+
+.footer-ac {
+  clear: both;
+}
+
+.footer-ac {
+  background: rgb(24 30 42);
+}
+
+@media (min-width: 768px) {
+  .navbar-static-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+}
+
+#btncallme {
+  position: fixed;
+  bottom: 4%;
+  right: 2%;
+  max-width: 100px;
+  z-index: 99;
+}
+
+div#btncallme img {
+  width: 75px;
 }
