@@ -1965,3 +1965,21 @@ img {
 div#btncallme img {
   width: 75px;
 }
+
+.site-navbar-wrap .logo {
+  line-height: 0;
+}
+
+.site-navbar-wrap .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.site-navbar-wrap .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+  margin-top: 3px;
+}
