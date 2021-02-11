@@ -8,6 +8,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <!-- Favicons -->
+  <link href="images/favicon.png" rel="icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
       rel="stylesheet"
@@ -294,6 +298,9 @@
                   <span>Ver el vídeo</span></a
                 >
               </p>
+              <div class="" id="paypal-button-container"></div>
+              <a href="https://biz.payulatam.com/B0c7763D8561629"><img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_grande.png"></a>
+
             </div>
           </div>
         </div>
@@ -825,6 +832,56 @@
         </div>
       </div>
     </footer>
+
+    <script
+    src="https://www.paypal.com/sdk/js?client-id=AWhHyMwIARBFNg4mrhbZ_120lGupEcObnWVywvQa_zGN4b88IX2LDTvE5pLFDdLO2cdOVBxNsJgMRo_4"></script>
+  </script>
+  <script>
+    paypal.Buttons({
+      createOrder: function (data, actions) {
+        // Set up the transaction
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '19.99'
+            }
+          }]
+        });
+      },
+      onApprove: function (data, actions) {
+        // Capture the funds from the transaction
+        return actions.order.capture().then(function (details) {
+          // Show a success message to the buyer
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          // Call your server to save the transaction
+          return fetch('/paypal-transaction-complete', {
+            method: 'post',
+            headers: {
+              'content-type': 'application/json'
+            },
+            body: JSON.stringify({
+              orderID: data.orderID
+            })
+          });
+        });
+      },
+      style: {
+        // layout: 'vertical',
+        color: 'gold',
+        shape: 'rect',
+        label: 'buynow',
+        // height: 50,
+        tagline: false
+      }
+      // layout: 'horizontal',
+      // color: 'gold',
+      // shape: 'rect',
+      // label: 'buynow, pay',
+      // tagline: false
+    }).render('#paypal-button-container');
+  </script>
+  <!-- Paypal End -->
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
