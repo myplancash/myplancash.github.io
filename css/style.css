@@ -177,9 +177,9 @@ img {
 .btn.btn-outline-primary:hover,
 .btn.btn-outline-primary:focus,
 .btn.btn-outline-primary:active {
-  border-color: #770b14 !important;
-  color: #fff !important;
-  background-color: rgb(119, 11, 20) !important;
+  border-color: #f64c72 !important;
+  color: #f64c72 !important;
+  background-color: transparent !important;
 }
 .btn.btn-md {
   padding: 14px 30px;
@@ -1982,4 +1982,8 @@ div#btncallme img {
   color: #012970;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
+}
+
+.ps-lg-5 {
+  padding-left: 3rem !important;
 }
