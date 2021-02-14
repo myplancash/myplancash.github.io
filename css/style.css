@@ -2080,3 +2080,17 @@ video {
   display: block;
   vertical-align: middle;
 }
+
+.text-about .logo {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.text-about .logo a {
+  color: #000000;
+}
+.text-about .logo a span {
+  display: block;
+  font-size: 80px;
+}
