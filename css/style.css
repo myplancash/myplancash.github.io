@@ -36,12 +36,19 @@
   font-style: normal;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   position: relative;
+  color: rgb(31 31 31);
   line-height: 1.7;
+  /* line-height: 1.45; */
   color: #0a2038;
   font-weight: 300;
   font-size: 1rem;
@@ -2720,7 +2727,7 @@ video {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #1a5e90;
+  color: #2f2fa2;
   content: "/";
 }
 @media (max-width: 768px) {
@@ -2733,4 +2740,73 @@ video {
   .breadcrumbs ol li {
     display: inline-block;
   }
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.background-primary {
+  background-color: rgb(47 47 162) !important;
+}
+
+@media (min-width: 576px) {
+  .d-sm-block {
+    display: block !important;
+  }
+}
+section {
+  position: relative;
+  /* padding: 7.5rem 0; */
+}
+
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.color-white {
+  color: rgb(255 255 255) !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fs--1 {
+  font-size: 0.75019rem !important;
+}
+
+[class*=" icon-"],
+[class^="icon-"] {
+  display: inline-block;
+}
+
+.color-warning {
+  color: #f64c72 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-map-marker:before {
+  content: "\f041";
 }
