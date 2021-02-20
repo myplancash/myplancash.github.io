@@ -188,7 +188,7 @@
     <section id="blog" class="blog">
       <div class="ontainer-fluid px-3 px-md-0">
         <div class="row justify-content-end">
-          <div class="col-md-10">
+          <div class="col-md-9">
             <div class="row d-flex">
               <div class="col-lg-8 entries">
                 <div class="row">
@@ -330,7 +330,7 @@
 
   </main><!-- End #main -->
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
+    <!-- <section class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
       <div class="container py-4">
         <div class="row d-flex justify-content-center">
           <div class="col-md-7 ftco-animate d-flex align-items-center">
@@ -359,7 +359,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <section class="background-1 py-6" id="cta-11"><div class="container"><div class="row align-items-center"><div class="col-lg-6 text-left mb-4 mb-lg-0"><h3 class="fs-2 fs-lg-3 fw-300 font-2 lh-3 color-9">Crea un plan y <span class="fw-700">Redefine lo que tu dinero</span> puede hacer.</h3></div><div class="col col-md-4 col-lg-3 mt-2 mt-lg-0"><a class="btn btn-block btn-white" href="https://mailchi.mp/8176b2dc36a3/landpages" target="_blank">Toma Acción</a></div><div class="col col-md-4 col-lg-3 mt-2 mt-lg-0"><a class="btn btn-block btn-outline-white hvr-sweep-left" href="https://mailchi.mp/8176b2dc36a3/landpages" target="_blank">Aprende más</a></div></div><!--/.row--></div><!--/.container--></section>
 
     <footer
       id="ftco-footer"
@@ -524,56 +526,6 @@
         </div>
       </div>
     </footer>
-
-    <script
-    src="https://www.paypal.com/sdk/js?client-id=AWhHyMwIARBFNg4mrhbZ_120lGupEcObnWVywvQa_zGN4b88IX2LDTvE5pLFDdLO2cdOVBxNsJgMRo_4"></script>
-  </script>
-  <script>
-    paypal.Buttons({
-      createOrder: function (data, actions) {
-        // Set up the transaction
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: '19.99'
-            }
-          }]
-        });
-      },
-      onApprove: function (data, actions) {
-        // Capture the funds from the transaction
-        return actions.order.capture().then(function (details) {
-          // Show a success message to the buyer
-          alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          // Call your server to save the transaction
-          return fetch('/paypal-transaction-complete', {
-            method: 'post',
-            headers: {
-              'content-type': 'application/json'
-            },
-            body: JSON.stringify({
-              orderID: data.orderID
-            })
-          });
-        });
-      },
-      style: {
-        // layout: 'vertical',
-        color: 'gold',
-        shape: 'rect',
-        label: 'buynow',
-        // height: 50,
-        tagline: false
-      }
-      // layout: 'horizontal',
-      // color: 'gold',
-      // shape: 'rect',
-      // label: 'buynow, pay',
-      // tagline: false
-    }).render('#paypal-button-container');
-  </script>
-  <!-- Paypal End -->
-
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

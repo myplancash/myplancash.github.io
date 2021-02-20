@@ -2821,7 +2821,7 @@ section {
 }
 section {
   position: relative;
-  padding: 7.5rem 0 !important;
+  /* padding: 7.5rem 0 !important; */
 }
 
 @media (min-width: 992px) {
