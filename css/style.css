@@ -849,7 +849,7 @@ img {
 }
 @media (max-width: 991.98px) {
   .site-blocks-cover h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .site-blocks-cover .sub-text {
@@ -1989,7 +1989,9 @@ div#btncallme img {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "space_groteskbold", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-top: 3px;
 }
 
@@ -2193,11 +2195,13 @@ video {
   font-size: 18px;
   line-height: 1.66;
   margin-top: 30px;
-  font-family: hk_groteskregular, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 1.6666666667em;
   line-height: 1.7;
+  font-family: "space_groteskregular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #212b35;
 }
 .blog .entry .entry-content .card-btn {
@@ -2226,8 +2230,9 @@ video {
   list-style-type: none;
 }
 .promo__cta {
-  font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
-    Tahoma, Arial, sans-serif;
+  font-family: "space_groteskmedium", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.125;
   letter-spacing: 0.8px;
@@ -2291,8 +2296,9 @@ video {
   font-size: 26px;
   margin-top: 30px;
   font-weight: 700;
-  font-family: hk_groteskbold, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "space_groteskregular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
 }
 .blog .entry .entry-content img {
@@ -2312,8 +2318,10 @@ video {
   align-items: flex-start;
   align-content: space-around;
   color: #212b35;
-  font-family: hk_groteskbold, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "space_groteskregular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
   font-style: normal;
 }
 @media (min-width: 1020px) {
@@ -2905,7 +2913,9 @@ section {
   line-height: 1.3 !important;
 }
 .font-2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "space_groteskregular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .fs-2 {
   font-size: 1.5625rem !important;
@@ -2922,7 +2932,7 @@ section {
 .btn {
   display: inline-block !important;
   font-weight: 400 !important;
-  color: rgb(33 37 41) !important;
+  color: #fff !important;
   text-align: center !important;
   vertical-align: middle !important;
   cursor: pointer !important;
@@ -2953,7 +2963,6 @@ section {
 }
 .btn {
   padding: 0.8rem 2.5rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 0.01em;
@@ -2989,9 +2998,8 @@ section {
 
 .btn {
   padding: 0.8rem 2.5rem !important;
-  font-family: "Source Sans Pro", sans-serif !important;
   font-size: 0.8rem !important;
-  border-radius: 3px !important;
+  border-radius: 30px !important;
   -webkit-transition: all 0.2s ease-in-out !important;
   -o-transition: all 0.2s ease-in-out !important;
   transition: all 0.2s ease-in-out !important;
