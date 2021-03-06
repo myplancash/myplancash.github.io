@@ -1930,25 +1930,6 @@ img {
   }
 }
 
-#about-section {
-  background: #2f2fa2;
-}
-
-#about-section:before {
-  background: #2f2fa2;
-  background: -moz-linear-gradient(45deg, #2f2fa2 0%, #242582 100%);
-  background: -webkit-linear-gradient(45deg, #2f2fa2 0%, #242582 100%);
-  background: -o-linear-gradient(45deg, #2f2fa2 0%, #242582 100%);
-  background: linear-gradient(45deg, #2f2fa2 0%, #242582 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2F2FA2', endColorstr='#242582',GradientType=1 );
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 #about-section .section-title .title,
 #about-section .text-primary,
 .lnr-book,
