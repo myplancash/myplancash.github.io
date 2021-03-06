@@ -2938,7 +2938,7 @@ section {
   -moz-user-select: none !important;
   -ms-user-select: none !important;
   user-select: none !important;
-  background-color: rgb(0 0 0 / 0%) !important;
+  /* background-color: rgb(0 0 0 / 0%) !important; */
   border: 1px solid rgb(0 0 0 / 0%) !important;
   padding: 0.375rem 0.75rem !important;
   font-size: 1rem !important;
@@ -2961,6 +2961,7 @@ section {
 }
 .btn {
   padding: 0.8rem 2.5rem;
+  width: 100%;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 0.01em;
@@ -3914,7 +3915,7 @@ textarea {
   .pb_cover_v3 > .container > .row,
   .pb_cover_v4 > .container > .row {
     height: inherit;
-    padding: 6em 0;
+    /* padding: 6em 0; */
   }
 }
 
