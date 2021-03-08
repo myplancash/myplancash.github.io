@@ -3873,12 +3873,12 @@ textarea {
 }
 
 .pb_gradient_v1:before {
-  background: #007cd6;
-  background: -moz-linear-gradient(45deg, #242582 0%, #4c4bfe 100%);
-  background: -webkit-linear-gradient(45deg, #242582 0%, #4c4bfe 100%);
-  background: -o-linear-gradient(45deg, #242582 0%, #4c4bfe 100%);
-  background: linear-gradient(45deg, #242582 0%, #4c4bfe 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242582', endColorstr='#4C4BFE',GradientType=1 );
+  background: #4c5afd;
+  background: -moz-linear-gradient(45deg, #ea63cf 0%, #4c4bfe 100%);
+  background: -webkit-linear-gradient(45deg, #ea63cf 0%, #4c4bfe 100%);
+  background: -o-linear-gradient(45deg, #ea63cf 0%, #4c4bfe 100%);
+  background: linear-gradient(45deg, #ea63cf 0%, #4c4bfe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA63CF', endColorstr='#4C4BFE',GradientType=1 );
   content: "";
   position: absolute;
   top: 0;
