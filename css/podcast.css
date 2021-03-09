@@ -2097,3 +2097,12 @@ div#btncallme img {
   color: #ccc;
   font-style: italic;
 }
+
+.btn,
+.input-group-text,
+.btn:not(:first-child),
+.input-group-text:not(:first-child),
+.input-group-text {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
