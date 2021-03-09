@@ -1250,7 +1250,7 @@ a:hover {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: #f23a2e;
+  background: #ea63cf;
   border-radius: 50%;
   color: #fff;
 }
@@ -1893,7 +1893,7 @@ div#btncallme img {
   display: flex !important;
 }
 
-audio {
+/* audio {
   width: 600px;
   height: 108px;
-}
+} */
