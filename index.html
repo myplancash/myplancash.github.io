@@ -1,711 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WMMGK2C');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WMMGK2C');</script>
   <!-- End Google Tag Manager -->
-    <title>Myplancash | La libertad de hacer más con tu dinero, sin gastar mucho.</title>
-    <meta content="Organiza tu dia y crea un plan efectivo para aumentar tu dinero 📈, sin gastar mucho." name="description">
-    <meta content="hábitos, dinero, organizar, principios, control, objetivos, decisiones, inversión, diario, felicidad" name="keywords">
-    <meta charset="utf-8" />
-    <meta property="og:image" content="images/picture-web.webp"/>
-    <meta property="og:image:width" content="180" />
-    <meta property="og:image:height" content="110"/>
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Favicons -->
+  <title>Myplancash &mdash; La libertad de hacer más con tu dinero, sin gastar mucho.</title>
+  <meta content="Organiza tu dia y crea un plan efectivo para aumentar tu dinero 📈, sin gastar mucho."
+    name="description">
+  <meta content="hábitos, dinero, organizar, principios, control, objetivos, decisiones, inversión, diario, felicidad"
+    name="keywords">
+  <meta charset="utf-8" />
   <link href="images/favicon.png" rel="icon">
   <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta property="og:image" content="images/picture-web.webp" />
+  <meta property="og:image:width" content="180" />
+  <meta property="og:image:height" content="110" />
+  <meta name="description" content="Free Bootstrap 4 Template by uicookies.com" />
+  <meta name="keywords"
+    content="Free website templates, Free bootstrap themes, Free template, Free bootstrap, Free website template" />
 
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />`
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css" />
+  <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css" />
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
-    <!-- <link rel="stylesheet" href="css/flaticon.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
-    />
-    <!-- <link rel="stylesheet" href="css/flaticon.css"> -->
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "1110905886046126");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=1110905886046126&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/slick-theme.css" />
 
-    <!-- MailerLite Universal -->
-    <script>
-    (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-    var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-    f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-    var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-    _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+  <link rel="stylesheet" href="assets/css/helpers.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/landing-2.css" />
 
-    var ml_account = ml('accounts', '2049380', 'u5m3s6r0b8', 'load');
-    </script>
-    <!-- End MailerLite Universal -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "1110905886046126");
+    fbq("track", "PageView");
+  </script>
+  <noscript><img height="1" width="1" style="display: none"
+      src="https://www.facebook.com/tr?id=1110905886046126&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMMGK2C"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="site-wrap">
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+  <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Myplancash</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar"
+        aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="ion-navicon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="probootstrap-navbar">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item">
+            <a class="[nav-link" href="#section-home">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#section-features">Escúchanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-reviews">Léenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-pricing">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-faq">FAQ</a>
+          </li>
+          <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0">
+            <a class="nav-link" href="https://uicookies.com/" target="_blank"><span class="pb_rounded-4 px-4">Toma Acción</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
 
-      <section class="background-primary py-3 d-none d-sm-block"><div class="container"><div class="row align-items-center"><div class="col-auto d-none d-lg-block"><span class="fa fa-map-marker color-warning fw-800 icon-position-fix"></span><p class="ml-2 mb-0 fs--1 d-inline color-white fw-700">147 Street, Floridablanca, SAN 680004 COP. </p></div><div class="col-auto ml-md-auto order-md-2 d-none d-sm-block"><span class="fa fa-clock-o color-warning fw-800 icon-position-fix"></span><p class="ml-2 mb-0 fs--1 d-inline color-white fw-700">Lunes-Sabado, 8.00AM - 18.00PM. Domingos CERRADO</p></div><div class="col-auto"><span class="fa fa-phone color-warning fw-800 icon-position-fix"></span><a class="ml-2 mb-0 fs--1 d-inline color-white fw-700" href="tel:+573195205204">+57 3195205204</a></div></div><!--/.row--></div><!--/.container--></section>
-
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
+  <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light"
+    id="section-home">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6">
+          <h2 class="heading mb-3">Objetivos de dinero alcanzables</h2>
+          <div class="sub-heading">
+            <p class="mb-4">
+              Asegure su futuro financiero con<br />
+              <!-- <a href="http://uicookies.com" target="_blank">uicookies.com</a
+                >. For more templates visit the
+                <a href="http://uicookies.com" target="_blank">site</a>. Lorem -->
+              un plan simple y efectivo.
+            </p>
+            <p class="mb-5">
+              <a class="btn btn-success btn-lg pb_btn-pill smoothscroll" href="#section-pricing"><span
+                  class="pb_font-14 text-uppercase pb_letter-spacing-1">Ver Precios</span></a>
+            </p>
           </div>
         </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-      <!-- .site-mobile-menu -->
-
-      <div class="site-navbar-wrap">
-        <div class="site-navbar site-navbar-target js-sticky-header">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-6 col-md-4">
-                <!-- <h1 class="my-0 site-logo">
-                  <a href="index.html"
-                    >Myplancash<span class="text-primary">.</span>
-                  </a>
-                </h1> -->
-                <a href="index.html" class="logo d-flex align-items-center">
-                  <img src="images/logo.png" alt="myplancash logo"/>
-                  <span></span>
-                </a>
-
-
-              </div>
-              <div class="col-6 col-md-8">
-                <nav class="site-navigation text-right" role="navigation">
-                  <div class="container">
-                    <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3">
-                      <a
-                        href="#"
-                        class="site-menu-toggle js-menu-toggle text-black"
-                      >
-                        <span class="icon-menu h3"></span>
-                        <span class="menu-text">Menu</span>
-                      </a>
-                    </div>
-
-                    <ul
-                      class="site-menu main-menu js-clone-nav d-none d-lg-none"
-                    >
-                      <!-- <li><a href="#home-section" class="nav-link">Home</a></li> -->
-                      <li>
-                        <a href="podcast.html" class="nav-link"
-                          >Escúchanos</a
-                        >
-                      </li>
-                      <li>
-                        <a href="4-cosas-que-debe-saber-que-le-ayudarán-a-convertirse-en-millonario-durante-su-vida.html" class="nav-link"
-                          >Léenos </a
-                        >
-                      </li>
-                      <li>
-                        <a href="#ftco-footer" class="nav-link"
-                          >Contáctanos</a
-                        >
-                      </li>
-                      <!-- <li><a href="#studio-section" class="nav-link">Galería</a></li> -->
-                      <!-- <li>
-                        <a href="#ftco-footer" class="nav-link"
-                          >Habla con Nosotros</a>
-                      </li>
-                      <li>
-                        <a href="4-cosas-que-debe-saber-que-le-ayudarán-a-convertirse-en-millonario-durante-su-vida.html" class="nav-link"
-                          >Blog</a
-                        >
-                      </li> -->
-                      <!-- <div class="social-media flex flex-row justify-center align center my-8">
-                        <a class="facebook mr-6" title="Facebook" target="_blank" rel="noopener noreferrer" data-gtag-event_category="social" data-gtag-event_label="Facebook (Mobile Header)" href="https://www.facebook.com/mysimpleplan"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current w-6 h-6 text-gray-700 md:mr-2"><path fill-rule="evenodd" d="M9.048 24V11.998H6.5V7.863h2.548V5.38c0-3.373 1.438-5.38 5.526-5.38h3.403v4.137H15.85c-1.591 0-1.697.578-1.697 1.656l-.007 2.07H18l-.451 4.135h-3.403V24H9.048z"></path></svg>
-                        </a><a class="instagram mr-6" title="Instagram" target="_blank" rel="noopener noreferrer" data-gtag-event_category="social" data-gtag-event_label="Instagram (Mobile Header)" href="https://www.instagram.com/sergio_estebitan/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current w-6 h-6 text-gray-700 md:mr-2"><path fill-rule="evenodd" d="M12 2.162c3.204 0 3.583.012 4.849.07 1.17.053 1.805.249 2.228.413.56.218.96.478 1.38.898.42.42.68.82.898 1.38.164.422.36 1.058.413 2.228.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.054 1.17-.25 1.805-.413 2.228-.218.56-.478.96-.898 1.38-.42.42-.82.68-1.38.898-.423.164-1.058.36-2.228.413-1.265.058-1.645.07-4.85.07-3.204 0-3.583-.012-4.848-.07-1.17-.054-1.806-.249-2.229-.413a3.718 3.718 0 01-1.38-.898 3.71 3.71 0 01-.897-1.38c-.164-.423-.36-1.058-.413-2.228-.058-1.265-.07-1.645-.07-4.85 0-3.203.012-3.583.07-4.848.053-1.17.249-1.806.413-2.229.218-.56.478-.96.898-1.38.42-.42.82-.68 1.38-.897.422-.164 1.058-.36 2.228-.413 1.265-.058 1.645-.07 4.849-.07M12.615 0c2.702.002 3.138.017 4.332.072 1.278.058 2.15.26 2.913.558.79.306 1.459.717 2.126 1.384a5.882 5.882 0 011.384 2.125c.297.764.5 1.636.558 2.913C23.986 8.332 24 8.741 24 12v.316c-.001 2.971-.016 3.394-.072 4.631-.059 1.278-.261 2.15-.558 2.913a5.882 5.882 0 01-1.384 2.126 5.882 5.882 0 01-2.126 1.384c-.763.297-1.635.5-2.913.558-1.28.058-1.688.072-4.947.072h-.317c-2.97-.001-3.394-.016-4.63-.072-1.278-.058-2.15-.261-2.914-.558a5.882 5.882 0 01-2.125-1.384A5.883 5.883 0 01.63 19.86c-.297-.763-.5-1.635-.558-2.913-.055-1.194-.07-1.63-.072-4.332v-1.23c.002-2.703.017-3.138.072-4.333.058-1.277.26-2.15.558-2.913a5.882 5.882 0 011.384-2.125A5.882 5.882 0 014.139.63C4.902.333 5.775.13 7.052.072 8.247.017 8.682.002 11.385 0zm-.591 5.857a6.167 6.167 0 100 12.333 6.167 6.167 0 000-12.333zm0 2.164a4.003 4.003 0 110 8.006 4.003 4.003 0 010-8.006zm6.357-3.879a1.429 1.429 0 100 2.858 1.429 1.429 0 000-2.858z"></path></svg>
-                        </a><a class="youtube mr-6" title="Youtube" target="_blank" rel="noopener noreferrer" data-gtag-event_category="social" data-gtag-event_label="Youtube (Mobile Header)" href="https://www.youtube.com/channel/UCrV2XHcgQLWEUhxEUKryDvg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current w-6 h-6 text-gray-700 md:mr-2"><path fill-rule="evenodd" d="M6.43 17.11l.018-3.88.776-.008.776-.01-.009-.597-.01-.598-2.241-.009L3.5 12v1.213l.758.009.758.007.009 3.848c.004 2.116.015 3.867.024 3.889.012.03.17.039.69.032l.674-.009.017-3.88zm12.082-.156c-.035-.072.013-.909.06-1.03.107-.285.336-.424.696-.424.3 0 .49.092.618.3.081.13.09.187.102.672L20 17h-.734c-.63 0-.735-.006-.754-.046zm1.238 4.477a1.646 1.646 0 001.166-1.211 4.49 4.49 0 00.066-.654l.018-.465h-1.15l-.014.417c-.017.473-.063.636-.227.787-.175.161-.495.173-.704.025-.248-.176-.31-.474-.297-1.441l.01-.686 1.19-.007 1.19-.01-.016-1.02c-.019-1.138-.041-1.31-.223-1.715-.346-.765-1.306-1.152-2.103-.846-.602.23-.957.647-1.1 1.29-.05.227-.056.431-.056 2.096 0 2.042.007 2.125.205 2.544.354.744 1.24 1.132 2.045.896zm-4.954-1.503a.42.42 0 00.157-.227c.047-.142.051-.323.045-1.998-.007-1.746-.01-1.85-.066-1.964-.141-.292-.498-.32-.825-.064l-.107.083v3.983l.107.084c.242.188.507.228.69.103zm.995 1.014c.187-.053.412-.272.513-.496.195-.429.196-.44.196-2.848 0-1.978-.006-2.222-.056-2.436-.16-.684-.51-.983-1.1-.94-.329.026-.588.156-.9.453a2.142 2.142 0 01-.27.235c-.012 0-.023-.655-.023-1.455V12H13v8.919h1.151v-.3c0-.2.012-.301.035-.301.02 0 .149.105.288.235.448.416.835.53 1.317.39zm-6.472.468c.233-.088.507-.282.738-.521.106-.11.212-.2.235-.2.03 0 .041.09.041.364v.364H11.5V14.5h-1.167v5.336l-.251.254c-.2.203-.283.264-.406.3-.208.058-.341.017-.427-.133-.065-.112-.066-.164-.075-2.936L9.165 14.5H8v2.995c0 3.264.003 3.335.182 3.649.196.344.654.452 1.137.266zm5.713-11.387c2.3.05 4.785.155 5.446.228.854.096 1.454.529 1.87 1.35.313.62.413 1.103.54 2.592.1 1.178.125 1.912.106 3.273-.02 1.628-.126 3.062-.285 3.867-.167.85-.561 1.576-1.072 1.97-.394.303-.814.438-1.475.475a39.02 39.02 0 00-.552.034c-.38.03-2.42.11-3.539.14-1.662.046-4.57.062-6.153.035-.76-.013-1.658-.034-1.997-.046-2.279-.08-3.843-.166-4.155-.228a2.315 2.315 0 01-1.233-.73c-.462-.557-.71-1.232-.83-2.272-.277-2.417-.27-5.235.018-7.568.127-1.022.441-1.76.97-2.275.301-.294.59-.458.977-.555.836-.21 7.382-.376 11.364-.29zM10.312.001L11 .005l-.015.102c-.012.084-.482 1.552-.973 3.044l-.304.945c-.114.354-.25.775-.305.935l-.099.292-.001 2.697c-.003.878-.014.952-.058.963-.124.031-1.426.016-1.448-.017-.029-.044-.024-2.633.005-2.999.038-.47-.048-.84-.41-1.785-.117-.307-.33-.902-.47-1.321C5.896-.173 5.951.005 6.048.004a39.038 39.038 0 011.517.008c.007.006.225.746.487 1.646l.485 1.664c.005.015.159-.51.341-1.165C9.26.782 9.475.023 9.483.016c.017-.015.207-.018.828-.015zm5.966 9.49c-.313-.044-.496-.17-.621-.427-.157-.323-.157-.322-.157-3.542V2.517h1.261l.014 2.77c.014 3.009.01 2.939.184 2.984.159.041.335-.047.554-.28l.21-.222.009-2.626.007-2.626.63-.01L19 2.5v6.879l-.086.018c-.103.022-1.058.02-1.135-.002-.047-.013-.055-.058-.055-.327v-.313l-.179.182c-.412.416-.856.61-1.267.553zm-3.001-1.587c.207-.165.208-.18.22-2.044.008-1.45.003-1.697-.039-1.894-.056-.267-.156-.393-.35-.449-.252-.07-.482.08-.563.367-.06.222-.06 3.51.002 3.731.047.166.196.348.307.373a.544.544 0 00.423-.084zm-.718 1.09c-.55-.07-1.056-.411-1.3-.876-.247-.474-.27-.722-.256-2.808.012-1.616.016-1.717.077-1.949.145-.551.426-.927.862-1.154.598-.31 1.243-.27 1.807.114.36.244.578.598.695 1.125.05.233.056.412.056 2.043 0 1.985-.009 2.1-.202 2.53a1.75 1.75 0 01-1.045.907c-.193.055-.53.089-.694.068z"></path></svg>
-                        </a><a class="linkedin mr-6" title="Linkedin" target="_blank" rel="noopener noreferrer" data-gtag-event_category="social" data-gtag-event_label="Linkedin (Mobile Header)" href="https://www.linkedin.com/in/sergio-smiling/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current w-6 h-6 text-gray-700 md:mr-2"><path d="M.605 7.696h4.678v16.302H.605V7.696zm2.22-2.04h-.034C1.098 5.657 0 4.41 0 2.833 0 1.222 1.13 0 2.857 0c1.726 0 2.787 1.219 2.821 2.828 0 1.578-1.095 2.829-2.853 2.829zM24 24h-5.304v-8.438c0-2.208-.83-3.714-2.655-3.714-1.395 0-2.171 1.016-2.533 1.998-.135.35-.114.84-.114 1.332V24H8.14s.068-14.946 0-16.304h5.255v2.558c.31-1.118 1.99-2.715 4.67-2.715 3.324 0 5.936 2.347 5.936 7.395V24z"></path></svg>
-                        </a>
-                      </div> -->
-                      </li>
-                      <!-- <li>
-                        <form class="ps-lg-5 nav-link">
-                          <a href="https://mailchi.mp/8176b2dc36a3/landpages" class="btn btn-lg btn-primary rounded-pill order-0" type="submit">Pruébalo gratis<a/>
-                        </form>
-                      </li> -->
-                      <li class="nav-item cta mt-4"><a href="https://mailchi.mp/8176b2dc36a3/landpages" class="nav-link">Pruébalo Gratis</a></li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END .site-navbar-wrap -->
-
-      <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="section-home">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-6">
-            <h2 class="heading mb-3">La libertad de hacer más con tu dinero</h2>
-            <div class="sub-heading">
-              <p class="mb-4">Redefine tu dinero y tiempo para crear el estilo de vida que deseas sin gastar casi nada.</p>
-              <!-- <p class="mb-5"><a class="btn btn-outline-primary btn-success btn-lg pb_btn-pill smoothscroll" href="#section-pricing"><span class="pb_font-14 text-uppercase pb_letter-spacing-1">See Pricing</span></a></p> -->
-            </div>
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-5 relative align-self-center">
-
-
+        <div class="col-md-1"></div>
+        <div class="col-md-5 relative align-self-center" id="mc_embed_signup">
+          <form class="bg-white rounded pb_form_v1"
+            action="https://github.us10.list-manage.com/subscribe/post?u=629a8fa04edad8f1a62b6ff27&amp;id=c33295d724"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate>
             <!-- Begin Mailchimp Signup Form -->
 
             <!-- <div id="mc_embed_signup">
-              <form class="bg-white rounded pb_form_v1" action="https://github.us10.list-manage.com/subscribe/post?u=629a8fa04edad8f1a62b6ff27&amp;id=c33295d724" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <h2 class="mb-4 mt-0 text-center">Regístrate y obtén guía para aumentar tu dinero</h2>
-                <div class="form-group">
-                  <div id="mc_embed_signup_scroll">
-                    <label class="c-billboard__kicker" for="mce-EMAIL"><span class="c-billboard__kicker__text">Correo:</span></label>
-                    <input class="form-control pb_height-50 reverse" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
-                    <label class="c-billboard__kicker" for="mc-PHONE"><span class="c-billboard__kicker__text">Celular:</span></label>
-                    <input class="form-control pb_height-50 reverse" type="text" name="PHONE" value="" id="mc-PHONE" placeholder="Celular" required>
-                    <div class="form-group">
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_629a8fa04edad8f1a62b6ff27_c33295d724" tabindex="-1" value=""></div>
-                      <div class="clear"><input type="submit" class="btn btn-primary btn-lg rounded-capsule btn-shadow-blue mt-4" value="Enviar a Correo" name="subscribe" id="mc-embedded-subscribe"></div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div> -->
-<!--End mc_embed_signup-->
-            <div class="ml-form-embed"
-              data-account="2049380:u5m3s6r0b8"
-              data-form="3772297:z0h9p8">
+                                  <form class="bg-white rounded pb_form_v1" action="https://github.us10.list-manage.com/subscribe/post?u=629a8fa04edad8f1a62b6ff27&amp;id=c33295d724" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <h2 class="mb-4 mt-0 text-center">Regístrate Gratis</h2>
+                                    <div class="form-group">
+                                      <div id="mc_embed_signup_scroll">
+                                        <label class="c-billboard__kicker" for="mce-EMAIL"><span class="c-billboard__kicker__text">Correo:</span></label>
+                                        <input class="form-control pb_height-50 reverse" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+                                        <label class="c-billboard__kicker" for="mc-PHONE"><span class="c-billboard__kicker__text">Celular:</span></label>
+                                        <input class="form-control pb_height-50 reverse" type="text" name="PHONE" value="" id="mc-PHONE" placeholder="Celular" required>
+                                        <div class="form-group">
+                                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_629a8fa04edad8f1a62b6ff27_c33295d724" tabindex="-1" value=""></div>
+                                          <div class="clear"><input type="submit" class="btn btn-primary btn-lg rounded-capsule btn-shadow-blue mt-4" value="Enviar a Correo" name="subscribe" id="mc-embedded-subscribe"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div> -->
+            <!--End mc_embed_signup-->
+            <h2 class="mb-4 mt-0 text-center">Regístrate Gratis</h2>
+            <div class="form-group">
+              <div id="mc_embed_signup_scroll">
+                <!-- <input type="text" class="form-control py-3 reverse" placeholder="Full name" /> -->
+                <label class="c-billboard__kicker" for="mce-EMAIL"><span class="c-billboard__kicker__text">Email:</span></label>
+                <input class="form-control py-3 pb_height-50 reverse" type="email" value="" name="EMAIL" class="email"
+                  id="mce-EMAIL" placeholder="Email address" required>
+              </div>
             </div>
+            <div class="form-group">
+              <div id="mc_embed_signup_scroll">
+                <label class="c-billboard__kicker" for="mc-PHONE"><span
+                    class="c-billboard__kicker__text">Celular:</span></label>
+                <input class="form-control py-3 pb_height-50 reverse" type="text" name="PHONE" value="" id="mc-PHONE"
+                  placeholder="Phone Number" required>
+              </div>
+            </div>
+            <!-- <div class="form-group">
+                      <div class="pb_select-wrap">
+                        <select class="form-control pb_height-50 reverse">
+                          <option value="" selected>Type</option>
+                          <option value="">Basic</option>
+                          <option value="">Business</option>
+                          <option value="">Free</option>
+                        </select>
+                      </div>
+                    </div> -->
+            <div class="form-group">
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_629a8fa04edad8f1a62b6ff27_c33295d724" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input type="submit" class="btn btn-primary btn-lg btn-shadow-blue btn-block pb_btn-pill"
+                  value="Toma Acción" name="subscribe" id="mc-embedded-subscribe">
+              </div>
+              <!--  <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill btn-shadow-blue"
+                        value="Register" /> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
 
+  <section class="pb_section bg-light pb_slant-white" id="section-features">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-6 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+            <strong>Características</strong>
+          </h5>
+          <h2>Nunca es demasiado tarde para diseñar la vida que amas.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon">
+              <i class="ion-ios-bookmarks-outline pb_icon-gradient"></i>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-3 heading">Motivación única</h5>
+              <p class="text-sans-serif">
+                Crea un plan personalizado y trabaja para lograr tus objetivos
+                sin gastar dinero.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon">
+              <i class="ion-ios-speedometer-outline pb_icon-gradient"></i>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-3 heading">Redefine tu dinero/vida</h5>
+              <p class="text-sans-serif">
+                Diseña el estilo de vida que deseas con el enfoque: compromiso
+                y energía.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon">
+              <i class="ion-ios-paperplane-outline pb_icon-gradient"></i>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-3 heading">El contexto importa</h5>
+              <p class="text-sans-serif">
+                Establezca hábitos efectivos y aprende a organizar tu tiempo.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- END section -->
 
-      <div class="site-section" id="what-we-do-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-lg-6 section-title">
-              <span class="sub-title mb-2 d-block">Lo que hacemos</span>
-              <h2 class="title text-primary">
-                Una mejor manera de organizar tu dia y aumentar tu dinero.
-              </h2>
+  <!-- <section class="pb_section bg-light pb_slant-white " id="section-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon">
+              <img src="assets/images/partner/logo1.png" alt="" data-zanim="{}"
+              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon">
+              <img src="assets/images/partner/logo2.png" alt="" data-zanim="{}"
+                style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon">
+              <img src="assets/images/partner/logo3.png" alt="" data-zanim="{}"
+                style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section class="pb_section pb_slant-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5">
+          <img src="assets/images/phone_4.png" alt="Image placeholder" class="img-fluid" />
+        </div>
+        <div class="col-lg-8 pl-md-5 pl-sm-0">
+          <div class="row">
+            <div class="col">
+              <h2>Una mejor manera de organizar tu dia y aumentar tu dinero.</h2>
+              <p class="pb_font-20">
+                Crea un plan personalizado y trabaja para lograr tus objetivos sin gastar dinero.
+              </p>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-10 ml-auto">
-              <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                  <div class="media block-6 services text-center d-block">
-                    <div class="icon">
-                      <span class="flaticon-sit-down"></span>
-                    </div>
-                    <div class="media-body service h-100">
-                      <h3 class="heading mb-3">Mejores prácticas</h3>
-                      <p>
-                        Crea un plan personalizado y trabaja para lograr tus objetivos sin gastar dinero.
-                      </p>
-                      <p><a href="https://mailchi.mp/8176b2dc36a3/landpages" class="readmore">Aprende más</a></p>
-                    </div>
-                  </div>
+            <div class="col-lg">
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-android-favorite pb_icon-gradient"></i>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                  <div class="media block-6 services text-center d-block">
-                    <div class="icon">
-                      <span class="flaticon-measuring"></span>
-                    </div>
-                    <div class="media-body service h-100">
-                      <h3 class="heading mb-3">Toma Acción</h3>
-                      <p>
-                        Toma mejores decisiones, y conviértete en una máquina de hacer dinero.
-                      </p>
-                      <p><a href="https://mailchi.mp/8176b2dc36a3/landpages" class="readmore">Aprende más</a></p>
-                    </div>
-                  </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Define las Metas Correctas</h3>
+                  <p class="text-sans-serif pb_font-16">
+                    Priorice dónde colocar tus ahorros e inversiones sin tener que pensar en ello.
+                  </p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                  <div class="media block-6 services text-center d-block">
-                    <div class="icon">
-                      <span class="flaticon-turned-off"></span>
-                    </div>
-                    <div class="media-body service h-100">
-                      <h3 class="heading mb-3">Mejores hábitos</h3>
-                      <p>
-                        Establezca hábitos efectivos y aprende a organizar tu día.
-                      </p>
-                      <p><a href="https://mailchi.mp/8176b2dc36a3/landpages" class="readmore">Aprende más</a></p>
-                    </div>
-                  </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-android-document pb_icon-gradient"></i>
                 </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Plan de Acción</h3>
+                  <p class="text-sans-serif pb_font-16">
+                    Crea una Estrategia que vaya alineada con tus objetivos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-android-create pb_icon-gradient"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Registro Diario</h3>
+                  <p class="text-sans-serif pb_font-16">
+                    Proporcione evidencia visual para ver el progreso que estás teniendo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-loop pb_icon-gradient"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Hábitos Diarios de Dinero</h3>
+                  <p class="text-sans-serif pb_font-16">
+                    Analizamos tus hábitos actuales de gasto, ahorro e inversión.
+                  </p>
+                </div>
+              </div>
+              <div class="pb_feature-v2">
+                <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=x-bere0nPoY"
+                  class="d-flex align-items-center">
+                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                    <i class="ion-videocamera pb_icon-gradient"></i>
+                  </div></span>
+                  <span>Ver el vídeo</span></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- END .site-section -->
-      <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="section-about">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-8 mb-5">
-              <img
-                src="images/glint_about_1.webp"
-                alt="Image"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-lg-4 ml-auto section-title">
-              <span class="sub-title mb-2 d-block">Conózcanos</span>
-              <h2 class="title text-primary mb-3">Sobre Nosotros</h2>
-              <p class="mb-4">
-                Siempre hemos creído que nuestro dinero debería trabajar tan
-                duro para nosotros como nosotros trabajamos para ganarlo.
-              </p>
+    </div>
+  </section>
+  <!-- END section -->
 
-              <div class="d-flex">
-                <ul class="list-unstyled ul-check success mr-5">
-                  <li>
-                    <span class="lnr lnr-camera-video mr-4"></span>
-                    Entrenamiento en vivo uno a uno.
-                  </li>
-                  <li>
-                    <span class="lnr lnr-book mr-4"></span>
+  <section class="pb_section bg-light pb_slant-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 order-2">
+          <img src="assets/images/phone_3.png" alt="Image placeholder" class="img-fluid" />
+        </div>
+        <div class="col-lg-8 pr-md-5 pr-sm-0 order-1 mb-5">
+          <div class="row">
+            <div class="col">
+              <h2>Sobre Nosotros</h2>
+              <p class="pb_font-20">
+                Siempre hemos creído que nuestro dinero debería trabajar tan duro para nosotros como nosotros trabajamos para ganarlo.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-ios-bookmarks-outline pb_icon-gradient"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Vista Clara</h3>
+                  <p class="text-sans-serif pb_font-16">
                     Plan de acción personalizado.
-                  </li>
-                </ul>
-                <ul class="list-unstyled ul-check success">
-                  <li>
-                    <span class="lnr lnr-hourglass mr-4"></span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-ios-infinite-outline pb_icon-gradient"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Intimidad en la relación</h3>
+                  <p class="text-sans-serif pb_font-16">
+                    Cercanía, conexión y apoyo emocional de mentores financieros.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-ios-speedometer-outline pb_icon-gradient"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Registro Diario</h3>
+                  <p class="text-sans-serif pb_font-16">
+                    Proporcione evidencia visual para que pueda
+                    ver el progreso que está haciendo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                  <i class="ion-ios-color-filter-outline pb_icon-gradient"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Diseño Minimalista</h3>
+                  <p class="text-sans-serif pb_font-16">
                     Sin complicaciones, sin siglas difíciles.
-                  </li>
-                  <li>
-                    <span class="lnr lnr-unlink mr-4"></span>Pequeños hábitos,
-                    Grandes cambios.
-                  </li>
-                </ul>
-              </div>
-              <p>
-                <a
-                  data-fancybox
-                  data-ratio="2"
-                  href="https://www.youtube.com/watch?v=G6xasaxs5yg"
-                  class="d-flex align-items-center"
-                  ><span class="icon-play_circle_outline h4 m-0 mr-2"></span>
-                  <span>Ver el vídeo</span></a
-                >
-              </p>
-
-
-            </div>
-          </div>
-          <div class="row align-items-center text-center mt-4">
-            <a href="http://bit.ly/theReframe"><div class="col-xl col-3 text-xl-left pl-0"><img class="img-fluid" src="images/wompi1.png" alt="" width="300"></div></a>
-            <div class="col-xl col-3"><img class="img-fluid" src="images/paypal1.png" alt="" width="300">
-              <div class="" id="paypal-button-container"></div>
-            </div>
-            <a href="https://biz.payulatam.com/B0c7763D8561629"><div class="col-xl col-3"><img class="img-fluid" src="images/payu11.png" alt="" width="300"></div></a>
-          </div>
-        </div>
-      </section>
-
-
-      <section>
-        <div class="bg-holder d-none d-lg-block" style="background-image:url(images/Group65.png);background-position:-50%;background-size:67%;"></div>
-        <!--/.bg-holder-->
-        <div class="container">
-          <div class="row justify-content-lg-between justify-content-center">
-            <div class="col-xl-5 col-lg-5 col-md-9 col-11 order-lg-1">
-              <div class="badge badge-pill badge-soft-primary mb-3 py-2 font-weight-normal fs-0">Everyday decision making</div>
-              <div class="col-auto px-0">
-                <h2 class="font-weight-light text-capitalize mb-0 fs-xl-4 fs-sm-3">Diseña tu vida, <strong class="text-primary"><br>Toma el control </strong>de tu dinero.</h2>
-              </div>
-              <p class="mt-5 pb-5">Crea un plan, aumenta tu dinero y trabaja para lograr tus objetivos. Acciones <strong>diarias</strong> que definen tu vida.</p>
-
-              <div class="vh-50"><svg class="w-100" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471 387">
-                  <defs>
-                    <style>
-                      .cls-1,
-                      .cls-5,
-                      .cls-7 {
-                        fill: none;
-                      }
-
-                      .cls-2 {
-                        fill: #fafafa;
-                      }
-
-                      .cls-3 {
-                        clip-path: url(#clip-path);
-                      }
-
-                      .cls-4 {
-                        fill: #3d70f2;
-                      }
-
-                      .cls-5 {
-                        stroke: #ffc104;
-                        stroke-width: 2px;
-                      }
-
-                      .cls-6 {
-                        fill: #f0f1f3;
-                      }
-
-                      .cls-7 {
-                        stroke: #00c9a7;
-                        stroke-linecap: round;
-                        stroke-width: 3px;
-                      }
-                    </style>
-                    <clipPath id="clip-path">
-                      <path class="cls-1" d="M432.66236,128.57337c-1.01948,103.125-194.59286,259.65079-286.16966,258.68575C49.128,386.23256,24.73835,304.82446,13.22192,195.52505.63982,76.11088,27.76143-.84291,138.40232.32338,253.46978,1.53631,433.68187,25.44789,432.66236,128.57337Z"></path>
-                    </clipPath>
-                  </defs>
-                  <title>services-01</title>
-                  <path class="cls-2" d="M226.019,315.115c-11.508-56.243,75.517-165.548,125.462-176.44,53.101-11.579,75.894,29.678,94.945,87.718,20.814,63.411,15.057,108.667-45.285,121.825C338.386,361.903,237.526,371.358,226.019,315.115Z"></path>
-                  <g class="cls-3">
-                    <image width="471" height="387" transform="translate(-140 -100) scale(1.5)" xlink:href="images/plan.webp"></image>
-                  </g>
-                  <ellipse class="cls-4" cx="305.026" cy="268.853" rx="9.35117" ry="9.65402"></ellipse>
-                  <path class="cls-5" d="M352.563,274.37a9.24727,9.24727,0,1,1-9.242-9.574A9.4116,9.4116,0,0,1,352.563,274.37Z"></path>
-                  <ellipse class="cls-6" cx="331.74399" cy="321.26099" rx="14.6947" ry="15.17059"></ellipse>
-                  <path class="cls-7" d="M71.3435,382.629c-34.6751-55.691-49.9972-122.61-51.3671-187.255C18.7982,139.769,40.0129,68.9459,63.278,43.1326"></path>
-                </svg></div>
-            </div>
-            <div class="col-xl-5 col-lg-6 col-md-9 col-11 mt-6 mt-lg-0">
-              <!--img(src=`${CWD}assets/img/shapes/Group65.png` alt='').d-none.d-md-block.d-lg-none.d-xl-block.w-100.img-fluid-->
-              <div class="card shadow border-top-6x border-success">
-                <div class="card-body p-md-5">
-                  <div class="row justify-content-center mb-4">
-                    <div class="col"><a class="text-decoration-none media-hover" href="#!">
-                        <div class="media">
-                          <p class="text-center mr-3 media-list-circle">1</p>
-                          <div class="media-body">
-                            <h5 class="text-primary mt-1">Establece las metas correctas</h5>
-                            <p class="text-600">Priorice dónde colocar tus ahorros e inversiones sin tener que pensar en ello.</p>
-                          </div>
-                        </div>
-                      </a></div>
-                  </div>
-                  <div class="row justify-content-center mb-4">
-                    <div class="col"><a class="text-decoration-none media-hover" href="#!">
-                        <div class="media">
-                          <p class="text-center mr-3 media-list-circle">2</p>
-                          <div class="media-body">
-                            <h5 class="text-primary mt-1">Ahorra y Gasta sabiamente</h5>
-                            <p class="text-600">Organiza tu tiempo y dinero. Lleve un registro diario, proporciona evidencia visual para medir tu progreso.</p>
-                          </div>
-                        </div>
-                      </a></div>
-                  </div>
-                  <div class="row justify-content-center mb-4">
-                    <div class="col"><a class="text-decoration-none media-hover" href="#!">
-                        <div class="media">
-                          <p class="text-center mr-3 media-list-circle">3</p>
-                          <div class="media-body">
-                            <h5 class="text-primary mt-1">Crea un plan de acción efectivo</h5>
-                            <p class="text-600">Crea una estrategia que vaya alineada con tus objetivos.</p>
-                          </div>
-                        </div>
-                      </a></div>
-                  </div>
-                  <!-- <button class="btn btn-raven-solid-success btn-block" type="button">Pruébalo Gratis</button> -->
-                  <div class="clear"><input type="submit" class="btn btn-primary btn-lg rounded-capsule btn-shadow-blue mt-4" value="Pruébalo Gratis" name="subscribe" id="mc-embedded-subscribe"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section>
-      <!-- .END site-section -->
-
-      <!-- <div class="site-section" id="what-we-do-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-6 section-title">
-            <span class="sub-title mb-2 d-block">Meet The Team</span>
-            <h2 class="title text-primary">We are talented people.</h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 mb-5 person">
-            <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-5">
-
-            <div class="row">
-              <div class="col-lg-10 ml-auto">
-                <div class="pr-lg-5">
-                  <h3>Jacob Spencer</h3>
-                  <span class="mb-4 d-block">CEO, Co-Founder</span>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                  <p class="d-flex align-items-center">
-                    <span class="mr-3 text-black">Follow me:</span>
-                    <a href="#" class="twitter pr-2 pt-2 pb-2 pl-0"><span class="icon-twitter"></span></a>
-                    <a href="#" class="facebook p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="dribbble p-2"><span class="icon-dribbble"></span></a>
-                    <a href="#" class="instagram p-2"><span class="icon-instagram"></span></a>
-                    <a href="#" class="linkedin p-2"><span class="icon-linkedin"></span></a>
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 person">
-            <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-5">
-            <div class="row">
-              <div class="col-lg-10 ml-auto">
-                <div class="pr-lg-5">
-                  <h3>Chris Peters</h3>
-                  <span class="mb-4 d-block">CTO, Co-Founder</span>
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                  <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-                  <p class="d-flex align-items-center">
-                    <span class="mr-3 text-black">Follow me:</span>
-                    <a href="#" class="twitter pr-2 pt-2 pb-2 pl-0"><span class="icon-twitter"></span></a>
-                    <a href="#" class="github p-2"><span class="icon-github"></span></a>
-                    <a href="#" class="dribbble p-2"><span class="icon-dribbble"></span></a>
-                    <a href="#" class="instagram p-2"><span class="icon-instagram"></span></a>
-                    <a href="#" class="linkedin p-2"><span class="icon-linkedin"></span></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-      <!-- <div class="site-section" id="portfolio-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-7 section-title text-center mx-auto">
-              <span class="sub-title mb-2 d-block">Trabajo Reciente</span>
-              <h2 class="title text-primary mb-3">
-                Sin complicaciones, sin siglas difíciles.
-              </h2>
-            </div>
-          </div>
-          <div class="row mb-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <img src="images/sq_img_2.png" alt="Image" class="img-fluid" />
-            </div>
-            <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
-              <h3>Diseña tu vida, Toma el control de tu dinero</h3>
-              <p class="mb-4">
-                Crea un plan, aumenta tu dinero y trabajar
-                para lograr tus objetivos.
-              </p>
-              <p class="mb-4">
-                <a
-                  href="https://mailchi.mp/8176b2dc36a3/landpages"
-                  class="readmore"
-                  >Pruébalo Gratis</a
-                >
-              </p>
-              <div class="testimonial bg-white h-100">
-                <blockquote class="mb-3">
-                  <p>
-                    &ldquo;Realmente me ahorró <strong>tiempo</strong> y
-                    esfuerzo, un plan de acción detallado y simple, con
-                    principios que te cambiaran la vida.&rdquo;
-                  </p>
-                </blockquote>
-                <div class="d-flex align-items-center vcard">
-                  <figure class="mb-0 mr-3">
-                    <img
-                      src="images/person_3.jpg"
-                      alt="Image"
-                      class="img-fluid ounded-circle"
-                    />
-                  </figure>
-                  <div class="vcard-text">
-                    <span class="d-block">Luis Torres</span>
-                    <span class="position">Military retired</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="row mb-5">
-            <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-              <img src="images/sq_img_4.png" alt="Image" class="img-fluid" />
-            </div>
-            <div
-              class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1"
-            >
-              <h3>Tomar mejores decisiones de inversión.</h3>
-              <p class="mb-4">
-                Aprende a organizar tu día y construir riqueza.
-              </p>
-              <p class="mb-4">
-                <a
-                  href="https://mailchi.mp/8176b2dc36a3/landpages"
-                  class="readmore"
-                  >Pruébalo Gratis</a
-                >
-              </p>
-              <div class="testimonial bg-white h-100">
-                <blockquote class="mb-3">
-                  <p>
-                    &ldquo;I'm quite impressed with how they really take your
-                    life on multiple levels and change it for the better. I am
-                    completely blown away. It's all good.c&rdquo;
-                  </p>
-                </blockquote>
-                <div class="d-flex align-items-center vcard">
-                  <figure class="mb-0 mr-3">
-                    <img
-                      src="images/person_4.jpg"
-                      alt="Image"
-                      class="img-fluid ounded-circle"
-                    />
-                  </figure>
-                  <div class="vcard-text">
-                    <span class="d-block">Maricel Xin</span>
-                    <span class="position">Financial Manager</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="row mb-5">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="images/sq_img_6.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
-            <h3>Project title three</h3>
-            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p class="mb-4><a href="#" class="readmore">Visit website</a></p>
-            <div class="testimonial bg-white h-100">
-              <blockquote class="mb-3">
-                <p>&ldquo;Far far away, behind the word mountains, <strong>far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img src="images/person_3.jpg" alt="Image" class="img-fluid ounded-circle">
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Jacob Spencer</span>
-                  <span class="position">Web Designer</span>
-                </div>
-              </div>
-            </div>
-          </div> -->
-<!--         </div>
-      </div>
-    </div>
- -->
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-7 section-title text-center mx-auto">
-            <span class="sub-title mb-2 d-block">Testimonios</span>
-            <h2 class="title text-primary mb-3">Nuestros Clientes</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <div class="testimonial bg-white h-100">
-              <blockquote class="mb-3">
-                <p>
-                  “Realmente me ahorró tiempo y esfuerzo, un plan de acción detallado y simple, con principios que te cambiaran la vida.”
-                </p>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img
-                    src="images/person_3.webp"
-                    alt="Image"
-                    class="img-fluid ounded-circle"
-                  />
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Luis Torres</span>
-                  <span class="position">Military Retired</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 mb-4">
-            <div class="testimonial bg-white h-100">
-              <blockquote class="mb-3">
-                <p>
-                  &ldquo;Me guiaron en todo el proceso, me sentí tranquila
-                  sabiendo que tenía un <strong>socio activo a mi lado</strong>,
-                  haciendo mi vida un poco más fácil.&rdquo;
-                </p>
-              </blockquote>
-              <div class="d-flex align-items-center vcard">
-                <figure class="mb-0 mr-3">
-                  <img
-                    src="images/person_4.webp"
-                    alt="Image"
-                    class="img-fluid ounded-circle"
-                  />
-                </figure>
-                <div class="vcard-text">
-                  <span class="d-block">Maricel Xin</span>
-                  <span class="position">Financial Mananger</span>
                 </div>
               </div>
             </div>
@@ -713,378 +446,429 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="site-section" id="studio-section">
-      <div class="container">
-
-        <div class="row mb-5 ">
-          <div class="col-md-7 section-title text-center mx-auto">
-            <span class="sub-title mb-2 d-block">Photos</span>
-            <h2 class="title text-primary mb-3">Studio Gallery</h2>
-          </div>
-        </div>
-
-        <div id="posts" class="row no-gutter">
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_1.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_1.jpg">
-            </a>
-          </div>
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_2.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_2.jpg">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_3.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_3.jpg">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_4.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_4.jpg">
-            </a>
-          </div>
-
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_5.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_5.jpg">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_6.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_6.jpg">
-            </a>
-          </div>
-
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_7.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_7.jpg">
-            </a>
-          </div>
-
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_9.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_9.jpg">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_10.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_10.jpg">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_11.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_11.jpg">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_12.jpg" class="item-wrap" data-fancybox="gal">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_12.jpg">
-            </a>
-          </div>
+  </section>
+  <!-- END section -->
 
 
+
+  <section class="pb_section pb_slant-light " id="section-reviews">
+    <div class="container">
+      <div class="row justify-content-center mb-1">
+        <div class="col-md-6 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+            <strong>Testimonios</strong>
+          </h5>
+          <h2>Buena reseñas, de gente buena</h2>
         </div>
       </div>
-		</div>  -->
-    <!-- END .site-section -->
-    <section class="background-1 py-6" id="cta-11"><div class="container"><div class="row align-items-center"><div class="col-lg-6 text-left mb-4 mb-lg-0"><h3 class="fs-2 fs-lg-3 fw-300 font-2 lh-3 color-9">Crea un plan y <span class="fw-700">Redefine lo que tu dinero</span> puede llegar a hacer.</h3></div><div class="col col-md-4 col-lg-3 mt-2 mt-lg-0"><a class="btn btn-block btn-white" href="https://mailchi.mp/8176b2dc36a3/landpages" target="_blank">Toma Acción</a></div><div class="col col-md-4 col-lg-3 mt-2 mt-lg-0"><a class="btn btn-block btn-outline-white hvr-sweep-left" href="https://mailchi.mp/8176b2dc36a3/landpages" target="_blank">Aprende más</a></div></div><!--/.row--></div><!--/.container--></section>
-
-    <!-- <section class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
-      <div class="container py-4">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-7 ftco-animate d-flex align-items-center">
-            <h2 class="mb-2" style="color: white; font-size: 28px">
-              "El éxito suele ser el resultado de comprometerse una y otra vez"
-            </h2>
-          </div>
-          <div class="col-md-5 d-flex align-items-center">
-            <form
-              action="https://mailchi.mp/8176b2dc36a3/landpages"
-              class="subscribe-form"
-            >
-              <div class="form-group d-flex">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter email address"
-                />
-                <input
-                  type="submit"
-                  value="Suscríbete Ahora"
-                  class="submit px-3"
-                />
+      <div class="row">
+        <div class="col-md">
+          <div class="pb_slide_testimonial_sync_v1">
+            <div class="pb_slider_content js-pb_slider_content2">
+              <div>
+                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                  <div class="media-body">
+                    <div class="quote">&ldquo;</div>
+                    <blockquote class="mb-5">
+                      Escuché sobre esto en internet, y decidí intentarlo.
+                    </blockquote>
+                    <p>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star-half text-warning"></i>
+                      <i class="ion-ios-star-outline text-warning"></i>
+                    </p>
+                    <h3 class="heading">Luis Torres</h3>
+                    <span class="subheading">@Gutierritos</span>
+                  </div>
+                </div>
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section> -->
+              <div>
+                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                  <div class="media-body">
+                    <div class="quote">&ldquo;</div>
+                    <blockquote class="mb-5">
+                      Esto funciona muy bien. Realmente mejoro mucho mi vida.
+                    </blockquote>
+                    <p>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star-half text-warning"></i>
+                      <i class="ion-ios-star-outline text-warning"></i>
+                    </p>
+                    <h3 class="heading">William Niño</h3>
+                    <span class="subheading">@william12</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                  <div class="media-body">
+                    <div class="quote">&ldquo;</div>
+                    <blockquote class="mb-5">
+                      “Realmente me ahorró tiempo y esfuerzo,
+                      un plan de acción detallado y simple,
+                      con principios que te cambiaran la vida.”
+                    </blockquote>
+                    <p>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star-half text-warning"></i>
+                      <i class="ion-ios-star-outline text-warning"></i>
+                    </p>
+                    <h3 class="heading">Martha Patricia</h3>
+                    <span class="subheading">@martha6211</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                  <div class="media-body">
+                    <div class="quote">&ldquo;</div>
+                    <blockquote class="mb-5">
+                      Me guiaron en todo el proceso,
+                      me sentí tranquila sabiendo que tenía un socio activo a mi lado,
+                      haciendo mi vida un poco
+                      más fácil.
+                    </blockquote>
+                    <p>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star text-warning"></i>
+                      <i class="ion-ios-star-half text-warning"></i>
+                      <i class="ion-ios-star-outline text-warning"></i>
+                    </p>
+                    <h3 class="heading">Maricel Xin</h3>
+                    <span class="subheading">@pumkinP62</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <footer
-      id="ftco-footer"
-      class="footer-ac navbar-static-top ftco-footer ftco-bg-dark ftco-section"
-    >
-      <div id="btncallme">
-        <div class="img-tel">
-          <a
-            href="https://api.whatsapp.com/send?phone=573195205204"
-            target="_blank"
-            ><img src="./images/logo-whatsap.png"
-          /></a>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Sobre Myplan</h2>
-              <p>Tus finanzas más simples y significativas.</p>
-              <ul
-                class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
-              >
-                <li class="ftco-animate">
-                  <a href="https://twitter.com/myplancash"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="https://www.facebook.com/mysimpleplan"
-                    ><span class="icon-facebook"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="https://www.instagram.com/sergio_estebitan/"
-                    ><span class="icon-instagram"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="https://www.linkedin.com/in/sergio-smiling/"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Practice Areas</h2>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Family
-                    Law</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Business
-                    Law</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Insurance
-                    Law</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Criminal
-                    Law</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Drug
-                    Offenses</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Fire
-                    Accident</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Employment
-                    Law</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="py-1 d-block"
-                    ><span class="ion-ios-arrow-forward mr-3"></span>Property
-                    Law</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div> -->
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Horas Laborales</h2>
-              <div class="opening-hours">
-                <h4>Dias Abierto:</h4>
-                <p class="pl-3">
-                  <span>Lunes a viernes: 9am a 8pm</span>
-                  <span>Sábado: de 9am a 5pm</span>
-                </p>
-                <h4>Vacaciones:</h4>
-                <p class="pl-3">
-                  <span>Todos los domingos</span>
-                  <span>Todos los dias festivos</span>
-                </p>
+            <div class="row">
+              <div class="col-md-6 mx-auto">
+                <div class="pb_slider_nav js-pb_slider_nav2">
+                  <div class="author">
+                    <img class="img-fluid rounded-circle" src="assets/images/person_1.png"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="author">
+                    <img class="img-fluid rounded-circle" src="assets/images/person_4.png"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="author">
+                    <img class="img-fluid rounded-circle" src="assets/images/person_2.png"
+                      alt="Generic placeholder image" />
+                  </div>
+                  <div class="author">
+                    <img class="img-fluid rounded-circle" src="assets/images/person_3.png"
+                      alt="Generic placeholder image" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Tienes alguna pregunta?</h2>
-              <div class="block-23 mb-3">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4097531624693!2d-73.11189608517655!3d7.078402718427186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f7568546f37%3A0x95d3c61a8f279398!2sCl.%20147%2C%20Floridablanca%2C%20Santander!5e0!3m2!1sen!2sco!4v1613678717577!5m2!1sen!2sco" width="345" height="300" style="border:0" loading="lazy" allowfullscreen aria-hidden="false" tabindex="0"></iframe> -->
-                <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap">
-                 -->
+          <!-- END sync_v1 -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
 
-                <iframe
-                  width="345"
-                  height="300"
-                  style="border:0"
-                  loading="lazy"
-                  allowfullscreen
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzi-7mKq3dohlwp1VTvHMJFsX1N-HDifA
-                    &q=cañaveral+Floridablanca,Santander+CO">
-                </iframe>
-                <ul>
-                  <li>
-                    <span class="icon icon-map-marker"></span
-                    ><span class="text"
-                      >147 Floridablanca St. Santander, Colombia</span
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://wa.me/573195205204?text=Hola%20,%20Me%20gustar%C3%ADa%20conocer%20un%20poco%20mas%20de%20Myplancash"
-                      ><span class="icon icon-phone"></span
-                      ><span class="text"> +57 319 5205 204</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://us10.list-manage.com/contact-form?u=629a8fa04edad8f1a62b6ff27&form_id=6dcd06a132f37e227b90e42323908674"
-                      ><span class="icon icon-envelope"></span
-                      ><span class="text"> myplancash@gmail.com</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="descargas-pdf/budget-template.pdf" target="_blank">
-                    <span class="icon icon-file-text-o"></span
-                      ><span class="text"> Descargar archivo desde aquí</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="images/boton-pago.png" target="_blank">
-                    <span class="icon icon-radio_button_checked"></span
-                      ><span class="text"> Buton de pago</span></a
-                    >
-                  </li>
-
-                </ul>
-              </div>
-            </div>
+  <section class="pb_section bg-light pb_slant-white" id="section-pricing">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-6 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+            <strong>Precios</strong>
+          </h5>
+          <h2>Elija su Plan</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h3>Basic</h3>
+            <span class="price"><sup>$</sup>19<span>month</span></span>
+            <p class="pb_font-15">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts
+            </p>
+            <p class="mb-0">
+              <a href="#" role="button" class="btn btn-secondary">Get started</a>
+            </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Myplancash Inc. Copyright &copy; 2021
-              All rights reserved |
-              <i class="icon-heart color-danger" aria-hidden="true"></i>
-
+        <div class="col-md">
+          <div class="pb_pricing_v1 p-5 border border-primary text-center bg-white">
+            <h3>Business</h3>
+            <span class="price"><sup>$</sup>39<span>month</span></span>
+            <p class="pb_font-15">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts
+            </p>
+            <p class="mb-0">
+              <a href="#" role="button" class="btn btn-primary btn-shadow-blue">Get started</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h3>Free</h3>
+            <span class="price"><sup>$</sup>99<span>month</span></span>
+            <p class="pb_font-15">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts
+            </p>
+            <p class="mb-0">
+              <a href="#" role="button" class="btn btn-secondary">Get started</a>
             </p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+  <!-- ENDs ection -->
 
-    <script
-    src="https://www.paypal.com/sdk/js?client-id=AWhHyMwIARBFNg4mrhbZ_120lGupEcObnWVywvQa_zGN4b88IX2LDTvE5pLFDdLO2cdOVBxNsJgMRo_4"></script>
-  </script>
-  <script>
-    paypal.Buttons({
-      createOrder: function (data, actions) {
-        // Set up the transaction
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: '19.19'
-            }
-          }]
-        });
-      },
-      onApprove: function (data, actions) {
-        // Capture the funds from the transaction
-        return actions.order.capture().then(function (details) {
-          // Show a success message to the buyer
-          alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          // Call your server to save the transaction
-          return fetch('/paypal-transaction-complete', {
-            method: 'post',
-            headers: {
-              'content-type': 'application/json'
-            },
-            body: JSON.stringify({
-              orderID: data.orderID
-            })
-          });
-        });
-      },
-      style: {
-        // layout: 'vertical',
-        color: 'gold',
-        shape: 'rect',
-        label: 'buynow',
-        // height: 50,
-        tagline: false
-      }
-      // layout: 'horizontal',
-      // color: 'gold',
-      // shape: 'rect',
-      // label: 'buynow, pay',
-      // tagline: false
-    }).render('#paypal-button-container');
-  </script>
-  <!-- Paypal End -->
+  <section class="pb_section pb_slant-white" id="section-faq">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-6 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+            <strong>FAQ</strong>
+          </h5>
+          <h2>Frequently Ask Questions</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div id="pb_faq" class="pb_accordion" data-children=".item">
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true"
+                aria-controls="pb_faq1" class="pb_font-22 py-4">What is Instant?</a>
+              <div id="pb_faq1" class="collapse show" role="tabpanel">
+                <div class="py-3">
+                  <p>
+                    Pityful a rethoric question ran over her cheek, then she
+                    continued her way.
+                  </p>
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false"
+                aria-controls="pb_faq2" class="pb_font-22 py-4">Is this available to my country?</a>
+              <div id="pb_faq2" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>
+                    A small river named Duden flows by their place and
+                    supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences
+                    fly into your mouth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq3" aria-expanded="false"
+                aria-controls="pb_faq3" class="pb_font-22 py-4">How do I use the features of Instant App?</a>
+              <div id="pb_faq3" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic life One day
+                    however a small line of blind text by the name of Lorem
+                    Ipsum decided to leave for the far World of Grammar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false"
+                aria-controls="pb_faq4" class="pb_font-22 py-4">How much do the Instant App cost?</a>
+              <div id="pb_faq4" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>
+                    The Big Oxmox advised her not to do so, because there were
+                    thousands of bad Commas, wild Question Marks and devious
+                    Semikoli, but the Little Blind Text didn’t listen. She
+                    packed her seven versalia, put her initial into the belt
+                    and made herself on the way.
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq5" aria-expanded="false"
+                aria-controls="pb_faq5" class="pb_font-22 py-4">I have technical problem, who do I email?</a>
+              <div id="pb_faq5" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>
+                    On her way she met a copy. The copy warned the Little
+                    Blind Text, that where it came from it would have been
+                    rewritten a thousand times and everything that was left
+                    from its origin would be the word "and" and the Little
+                    Blind Text should turn around and return to its own, safe
+                    country.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/stickyfill.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+  <section class="pb_xl_py_cover overflow-hidden pb_slant-light pb_gradient_v1 cover-bg-opacity-8"
+    style="background-image: url(assets/images/1900x1200_img_5.jpg)">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-5 justify-content-center">
+          <h2 class="heading mb-5 pb_font-40">
+            <!-- Join over 1M+ people who uses Instant App -->
+            Únase a más de 1 millón de personas que logran sus Objetivos.
+          </h2>
+          <div class="sub-heading">
+            <p class="mb-4">
+              Obtén tu plantilla gratuita de MinorityLoop® Para organizar tu dinero,
+              <!-- <a href="http://uicookies.com" target="_blank">uicookies.com</a>. For more templates visit the
+              <a href="http://uicookies.com" target="_blank">site</a>. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. -->
+            </p>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5" id="mc_embed_signup">
+          <form class="bg-white rounded pb_form_v1" action="https://github.us10.list-manage.com/subscribe/post?u=629a8fa04edad8f1a62b6ff27&amp;id=c33295d724" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <!-- Begin Mailchimp Signup Form -->
 
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+            <!-- <div id="mc_embed_signup">
+                          <form class="bg-white rounded pb_form_v1" action="https://github.us10.list-manage.com/subscribe/post?u=629a8fa04edad8f1a62b6ff27&amp;id=c33295d724" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <h2 class="mb-4 mt-0 text-center">Regístrate Gratis</h2>
+                            <div class="form-group">
+                              <div id="mc_embed_signup_scroll">
+                                <label class="c-billboard__kicker" for="mce-EMAIL"><span class="c-billboard__kicker__text">Correo:</span></label>
+                                <input class="form-control pb_height-50 reverse" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+                                <label class="c-billboard__kicker" for="mc-PHONE"><span class="c-billboard__kicker__text">Celular:</span></label>
+                                <input class="form-control pb_height-50 reverse" type="text" name="PHONE" value="" id="mc-PHONE" placeholder="Celular" required>
+                                <div class="form-group">
+                                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_629a8fa04edad8f1a62b6ff27_c33295d724" tabindex="-1" value=""></div>
+                                  <div class="clear"><input type="submit" class="btn btn-primary btn-lg rounded-capsule btn-shadow-blue mt-4" value="Enviar a Correo" name="subscribe" id="mc-embedded-subscribe"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div> -->
+            <!--End mc_embed_signup-->
+            <h2 class="mb-4 mt-0 text-center">Regístrate Gratis</h2>
+            <div class="form-group">
+              <div id="mc_embed_signup_scroll">
+                <!-- <input type="text" class="form-control py-3 reverse" placeholder="Full name" /> -->
+                <label class="c-billboard__kicker" for="mce-EMAIL"><span class="c-billboard__kicker__text">Email:</span></label>
+                <input class="form-control py-3 pb_height-50 reverse" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                  placeholder="Email address" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div id="mc_embed_signup_scroll">
+                <label class="c-billboard__kicker" for="mc-PHONE"><span class="c-billboard__kicker__text">Celular:</span></label>
+                <input class="form-control py-3 pb_height-50 reverse" type="text" name="PHONE" value="" id="mc-PHONE" placeholder="Phone Number"
+                  required>
+              </div>
+            </div>
+            <!-- <div class="form-group">
+              <div class="pb_select-wrap">
+                <select class="form-control pb_height-50 reverse">
+                  <option value="" selected>Type</option>
+                  <option value="">Basic</option>
+                  <option value="">Business</option>
+                  <option value="">Free</option>
+                </select>
+              </div>
+            </div> -->
+            <div class="form-group">
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_629a8fa04edad8f1a62b6ff27_c33295d724" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input type="submit" class="btn btn-primary btn-lg btn-shadow-blue btn-block pb_btn-pill" value="Toma Acción" name="subscribe" id="mc-embedded-subscribe">
+              </div>
+             <!--  <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill btn-shadow-blue"
+                value="Register" /> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <footer class="pb_footer bg-light" role="contentinfo">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="p-2"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="p-2"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="p-2"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="pb_font-14">
+            &copy; 2019. All Rights Reserved. <br />
+            <a href="https://uicookies.com/bootstrap-html-templates/">Bootstrap Templates</a>
+            by uiCookies
+          </p>
+          <p class="pb_font-14">
+            Demo Images:
+            <a href="https://unsplash.com/" target="_blank" rel="nofollow">Unsplash</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="pb_loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#1d82ff" />
+    </svg>
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
