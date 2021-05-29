@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FAEFDE" offset="100%"></stop>
+        </linearGradient>
+        <path d="M188.716621,400 C86.8933648,394.411385 5.34628686,312.705863 -1.15821241e-12,210.811689 L159.596817,210.811689 C175.679241,210.811689 188.716621,223.849919 188.716621,239.933391 L188.716621,400 Z M12.0931423,130.714667 C40.3213181,54.400224 113.738408,0 199.860523,0 C310.394504,0 400,89.6113335 400,200.152515 C400,286.280241 345.60332,359.702113 269.293847,387.932128 C269.295724,387.795747 269.296668,387.659139 269.296668,387.52231 L269.296668,159.833548 C269.296668,143.750077 256.259287,130.711847 240.176863,130.711847 L12.5029332,130.711847 C12.3661133,130.711847 12.2295138,130.71279 12.0931408,130.714672 Z" id="path-2"></path>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Combined-Shape-Copy-3" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+    </g>
+</svg>
