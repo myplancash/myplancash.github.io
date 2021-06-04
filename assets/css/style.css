@@ -2289,3 +2289,66 @@ a {
 .filtr-container .filtr-item:hover .item-title p {
   color: #2cdbb5;
 }
+
+/* -------------------------------------------------------------------
+ * ## go top
+ * ------------------------------------------------------------------- */
+.ss-go-top {
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0);
+  -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: fixed;
+  bottom: 7.2rem;
+  right: 4rem;
+}
+
+.ss-go-top a {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  background-color: var(--color-gray-2);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.ss-go-top a:hover,
+.ss-go-top a:focus {
+  background-color: black;
+}
+
+.ss-go-top a:hover svg path,
+.ss-go-top a:focus svg path {
+  fill: white;
+}
+
+.ss-go-top svg {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.ss-go-top svg path {
+  fill: black;
+}
+
+.ss-go-top.link-is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
