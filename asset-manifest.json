@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/static/js/main.65472a7b.js",
+    "static/js/787.3bafb2bd.chunk.js": "/static/js/787.3bafb2bd.chunk.js",
+    "static/media/e-commerce.png": "/static/media/e-commerce.5f8ad7bd7b99e92aef13.png",
+    "static/media/profile.png": "/static/media/profile.c6e74e2679bf7a81ddb4.png",
+    "static/media/house-marketplace.png": "/static/media/house-marketplace.5fc90a1ceaf2cd958699.png",
+    "static/media/boss-machine.png": "/static/media/boss-machine.4a74ce2448cf9749f3e0.png",
+    "static/media/react.png": "/static/media/react.63d79710c5225bc5da71.png",
+    "static/media/redux.png": "/static/media/redux.5176b823a0e979ab0022.png",
+    "static/media/firebase.png": "/static/media/firebase.0c05b387333999614bbf.png",
+    "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
+    "index.html": "/index.html",
+    "main.65472a7b.js.map": "/static/js/main.65472a7b.js.map",
+    "787.3bafb2bd.chunk.js.map": "/static/js/787.3bafb2bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.65472a7b.js"
+  ]
+}
