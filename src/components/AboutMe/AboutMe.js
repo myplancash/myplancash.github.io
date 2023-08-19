@@ -7,7 +7,8 @@ import {
   Heading,
   Subheading,
   Introduction,
-  Image,
+  ImageContainer, // Import the ImageContainer component
+  ProfileImage, // Import the P
   Icon,
   Quote,
   CTAButton
@@ -17,9 +18,9 @@ const AboutMe = () => {
   return (
     <Section id="about">
       <ContentWrapper>
-        <ImageWrapper>
-          <Image src={require('../../images/profile.png')} alt="Sergio Esteban Torres" />
-        </ImageWrapper>
+        <ImageContainer>
+          <ProfileImage src={require('../../images/profile.png')} alt="Profile" />
+        </ImageContainer>
         <TextWrapper>
           <Heading>Greetings, I'm Sergio Esteban</Heading>
           <Subheading>

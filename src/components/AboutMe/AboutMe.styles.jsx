@@ -30,11 +30,22 @@ export const ImageWrapper = styled.div`
   }
 `;
 
-export const Image = styled.img`
-  max-width: 100%;
-  height: auto;
+export const ImageContainer = styled.div`
+  position: relative;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+`;
+
+export const ProfileImage = styled.img`
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.9; /* Adjust opacity value as needed */
 `;
 
 export const TextWrapper = styled.div`
@@ -46,7 +57,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h2`
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #333;
   margin-bottom: 10px;
 `;
@@ -54,12 +65,12 @@ export const Heading = styled.h2`
 export const Subheading = styled.p`
   font-size: 1.2rem;
   color: #666;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 `;
 
 export const Introduction = styled.p`
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #444;
 `;
 
@@ -74,7 +85,7 @@ export const Quote = styled.blockquote`
 `;
 
 export const CTAButton = styled.a`
-  margin-bottom: 20px;
+  margin-top: 20px;
   display: inline-block;
   cursor: pointer;
   padding: 10px 20px;

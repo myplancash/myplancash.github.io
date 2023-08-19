@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding: 40px 0;
 `;
 
-export const Heading = styled.h1``;
+export const Heading = styled.h1`
+  font-size: 2rem;
+`;
 
 export const ProjectList = styled.ul`
   list-style: none;

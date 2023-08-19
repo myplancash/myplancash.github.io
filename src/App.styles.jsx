@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+
 export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 `;
 
-export const Navbar = styled.nav`
+/* export const Navbar = styled.nav`
   display: flex;
   justify-content: center;
   background-color: #333;
@@ -17,7 +18,7 @@ export const Navbar = styled.nav`
     flex-direction: column;
     align-items: center;
   }
-`;
+`; */
 
 export const NavItem = styled(Link)`
   color: white;
