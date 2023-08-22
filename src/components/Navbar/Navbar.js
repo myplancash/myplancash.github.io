@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  NavBarWrapper,
-  NavContainer,
-  Logo,
-  ResponsiveLogo,
-  NavMenu,
-  NavItem,
-  NavLink
-} from './Navbar.styles';
+import { NavBarWrapper, NavContainer, Logo, NavMenu, NavItem, NavLink } from './Navbar.styles';
 import LogoSVG from '../../assets/digital-biz-inverted.svg'; 
 
 const NavBar = () => {
@@ -15,7 +7,7 @@ const NavBar = () => {
     <NavBarWrapper>
       <NavContainer>
         <Logo to="/">
-          <ResponsiveLogo src={LogoSVG} alt="DigitalBiz Logo" />
+          <img src={LogoSVG} alt="DigitalBiz Logo" width="150px" height="50px" />
         </Logo>
         <NavMenu>
           <NavItem>

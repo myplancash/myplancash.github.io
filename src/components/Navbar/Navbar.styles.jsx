@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const NavBarWrapper = styled.nav`
   background-color: #3498db; /* Primary Color */
-  padding: 10px 0;
+  padding: 8px 0; /* Adjust the padding */
+  color: white;
 `;
 
 export const NavContainer = styled.div`
@@ -21,10 +22,10 @@ export const NavContainer = styled.div`
 `;
 
 export const Logo = styled(Link)`
-  color: white;
+  color: #070606;
   max-width: 150px;
   margin: 0.5em;
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Adjust the font size */
   text-decoration: none;
   cursor: pointer;
   padding-left: 1rem;
@@ -33,18 +34,17 @@ export const Logo = styled(Link)`
 export const ResponsiveLogo = styled.img`
   width: 100%;
   height: auto;
-  max-width: 300px; /* Set a maximum width for larger screens */
+  max-width: 250px; /* Adjust the max width */
 `;
 
 export const NavMenu = styled.ul`
   list-style: none;
   display: flex;
-  align-items: center;
-  padding-right: 1rem;
+  color: #070606;
 `;
 
 export const NavItem = styled.li`
-  margin-right: 20px;
+  margin-right: 16px; /* Adjust the margin */
 `;
 
 export const NavLink = styled(Link)`
@@ -53,6 +53,6 @@ export const NavLink = styled(Link)`
   transition: color 0.3s;
 
   &:hover {
-    color: #2ecc71; /* Accent Color */
+    color: #0f2c3f; /* Accent Color */
   }
 `;
