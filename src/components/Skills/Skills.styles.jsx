@@ -7,6 +7,7 @@ export const Img = styled.img`
   height: 100px; 
   object-fit: contain;
   margin-right: 10px;
+  
 
   @media (max-width: 768px) {
     width: 80px;
@@ -15,7 +16,7 @@ export const Img = styled.img`
 `
 
 export const Section = styled.section`
-  padding: 40px 0;
+  padding: 1rem;
 `;
 
 

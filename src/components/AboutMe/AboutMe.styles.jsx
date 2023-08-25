@@ -1,6 +1,7 @@
 // AboutMe.styles.js
 import styled from 'styled-components';
 import {Link} from 'react-router-dom'
+import theme from '../../styles/theme';
 
 export const Section = styled.section`
   padding: 40px 0;
@@ -58,9 +59,9 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h2`
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: ${theme.primary};
 `;
 
 export const Subheading = styled.p`
@@ -90,7 +91,7 @@ export const CTAButton = styled(Link)`
   display: inline-block;
   cursor: pointer;
   padding: 10px 20px;
-  background: linear-gradient(to right, #3498DB, #2ecc71); /* Gradient from Primary to Accent Color */
+  background-color: ${theme.secondary};
   color: #fff;
   font-size: 1.2rem;
   text-decoration: none;
@@ -98,6 +99,7 @@ export const CTAButton = styled(Link)`
   transition: background-color 0.3s;
 
   &:hover {
+    background-color: #c0392b;
     color: #fefefe; /* Primary Color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow on hover */
   }

@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container, NavItem, MainContent } from './App.styles'
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import NavBar from './components/Navbar/Navbar';
+import HeroBanner from './components/HeroBanner/HeroBanner';
+
 
 const App = () => {
   return (
@@ -25,6 +27,7 @@ const App = () => {
             Contact
           </NavItem>
         </NavBar>
+        <HeroBanner />
         <MainContent>
           <Routes>
             <Route path="/" element={<AboutMe />} />

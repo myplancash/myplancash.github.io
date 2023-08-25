@@ -53,6 +53,7 @@ export const NavLink = styled(Link)`
   transition: color 0.3s;
 
   &:hover {
-    color: #0f2c3f; /* Accent Color */
+    color: #c0392b;
+    text-decoration: underline;
   }
 `;

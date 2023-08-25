@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Section,
   ContentWrapper,
-  ImageWrapper,
   TextWrapper,
   Heading,
   Subheading,
