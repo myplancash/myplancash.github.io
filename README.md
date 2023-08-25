@@ -5,7 +5,7 @@ In a world where business meets technology, I am your bridge to success. Formerl
 
 #Color Palette:
 
-Primary Color: #3498db (Blue)
+Primary Color: #3498DB (Blue)
 Secondary Color: #e74c3c (Red)
 Accent Color: #2ecc71 (Green)
 Background Color: #f2f2f2 (Light Gray)

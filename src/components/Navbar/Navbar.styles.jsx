@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavBarWrapper = styled.nav`
-  background-color: #3498db; /* Primary Color */
-  padding: 8px 0; /* Adjust the padding */
+  background: linear-gradient(to right, #3498DB, #2ecc71); /* Gradient from Primary to Accent Color */
+  padding: 8px 0;
   color: white;
 `;
 

@@ -46,5 +46,5 @@ export const SkillItem = styled.li`
 
 export const Icon = styled.div`
   margin-right: 10px;
-  color: #3498db;
+  color: #3498DB;
 `;

@@ -58,7 +58,7 @@ export const ProjectDescription = styled.div`
 export const GitHubLink = styled.a`
   display: inline-block;
   margin-top: 10px;
-  color: #3498db;
+  color: #3498DB;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;

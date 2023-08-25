@@ -1,5 +1,6 @@
 // AboutMe.styles.js
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 export const Section = styled.section`
   padding: 40px 0;
@@ -84,12 +85,12 @@ export const Quote = styled.blockquote`
   margin: 20px 0;
 `;
 
-export const CTAButton = styled.a`
+export const CTAButton = styled(Link)`
   margin-top: 20px;
   display: inline-block;
   cursor: pointer;
   padding: 10px 20px;
-  background-color: #3498db;
+  background: linear-gradient(to right, #3498DB, #2ecc71); /* Gradient from Primary to Accent Color */
   color: #fff;
   font-size: 1.2rem;
   text-decoration: none;
@@ -97,6 +98,7 @@ export const CTAButton = styled.a`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #2980b9;
+    color: #fefefe; /* Primary Color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow on hover */
   }
 `;
