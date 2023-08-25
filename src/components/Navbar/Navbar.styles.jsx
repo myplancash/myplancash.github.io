@@ -41,19 +41,36 @@ export const NavMenu = styled.ul`
   list-style: none;
   display: flex;
   color: #070606;
+  padding: 1rem;
+  gap: 1rem;
 `;
 
 export const NavItem = styled.li`
   margin-right: 16px; /* Adjust the margin */
 `;
-
 export const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
-  transition: color 0.3s;
+  position: relative; /* Add this to the parent element */
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px; /* Adjust this value to control the distance of the line from the text */
+    left: 0;
+    background-color: #c0392b;
+    transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
+    opacity: 0; /* Initially hidden */
+  }
 
   &:hover {
     color: #c0392b;
-    text-decoration: underline;
+
+    &:before {
+      width: 100%; /* Show the line from left to right */
+      opacity: 1; /* Fade-in effect */
+    }
   }
 `;
