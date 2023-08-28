@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import theme from '../../styles/theme';
-import { Link } from 'react-router-dom';
 
 export const Section = styled.section` 
   padding: 1rem;
@@ -56,29 +55,29 @@ export const ProjectDescription = styled.div`
   }
 `;
 
-export const GitHubLink = styled(Link)`
+export const GitHubLink = styled.a`
   color: ${theme.primary};
   text-decoration: none;
-  position: relative; /* Add this to the parent element */
+  position: relative;
 
   &:before {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -2px; /* Adjust this value to control the distance of the line from the text */
+    bottom: -2px;
     left: 0;
     background-color: #c0392b;
-    transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
-    opacity: 0; /* Initially hidden */
+    transition: width 0.3s, opacity 0.3s;
+    opacity: 0;
   }
 
   &:hover {
     color: #c0392b;
 
     &:before {
-      width: 100%; /* Show the line from left to right */
-      opacity: 1; /* Fade-in effect */
+      width: 100%;
+      opacity: 1;
     }
   }
 `;

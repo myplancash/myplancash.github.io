@@ -7,7 +7,7 @@ const NavBar = () => {
     <NavBarWrapper>
       <NavContainer>
         <Logo to="/">
-          <img src={LogoSVG} alt="DigitalBiz Logo" width="150px" height="50px" />
+          <img src={LogoSVG} alt="DigitalBiz Logo" width="160px" height="60px" />
         </Logo>
         <NavMenu>
           <NavItem>
