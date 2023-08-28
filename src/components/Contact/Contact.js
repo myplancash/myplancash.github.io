@@ -1,5 +1,7 @@
 import React from 'react';
-import { Section, Heading, ContactInfo } from './Contact.styles'; // Import your styled-components styles
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Section, Heading, ContactInfo, SocialIcons, IconLink } from './Contact.styles'; // Import your styled-components styles
 
 const Contact = () => {
   return (
@@ -8,6 +10,14 @@ const Contact = () => {
       <ContactInfo>
         You can reach out to me at <a href="mailto:sergio.smiling@gmail.com">sergio.smiling@gmail.com</a>.
       </ContactInfo>
+      <SocialIcons>
+        <IconLink href="https://www.linkedin.com/in/sergioestebantorres/">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </IconLink>
+        <IconLink href="https://github.com/myplancash">
+          <FontAwesomeIcon icon={faGithub} />
+        </IconLink>
+      </SocialIcons>
     </Section>
   );
 }
