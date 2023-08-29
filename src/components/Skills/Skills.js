@@ -2,7 +2,7 @@ import React from 'react';
 import { Section, Heading, SkillList, SkillItem, Icon, Img } from './Skills.styles';
 import javascriptLogo from '../../images/javascript.png';
 import reactLogo from '../../images/react.png';
-import nodeLogo from '../../images/node.png';
+import nodeLogo from '../../images/nodejs.png';
 import reduxLogo from '../../images/redux.png';
 import typescriptLogo from '../../images/typescript.png';
 import firebaseLogo from '../../images/firebase.png';

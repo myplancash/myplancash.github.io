@@ -12,8 +12,19 @@ import {
   Quote,
   CTAButton
 } from './AboutMe.styles';
+import TechnologyLogos from '../TechnologyLogos/TechnologyLogos';
+
 
 const AboutMe = () => {
+
+   const technologyLogos = [
+    require('../../images/nodejs.png'),
+    require('../../images/react.png'),   
+    require('../../images/redux.png'),
+    require('../../images/typescript.png'),
+    require('../../images/javascript.png'), 
+  ];
+
   return (
     <Section id="about">
       <ContentWrapper>
@@ -28,6 +39,7 @@ const AboutMe = () => {
           <Introduction>
             Welcome! I'm Sergio Esteban, a dedicated full-stack software developer with a background in business administration. With a passion for crafting innovative digital solutions, I bring over 4 years of expertise in seamlessly merging the worlds of technology and business. I believe in creating elegant, user-centric applications that drive meaningful results and transform ideas into reality.
           </Introduction>
+          <TechnologyLogos logos={technologyLogos} />
           <Quote>
             "The best way to predict the future is to create it." - Abraham Lincoln
           </Quote>
