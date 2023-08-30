@@ -20,9 +20,6 @@ const App = () => {
           <NavItem to="/projects" activeClassName="active">
             Projects
           </NavItem>
-          <NavItem to="/skills" activeClassName="active">
-            Skills
-          </NavItem>
           <NavItem to="/contact" activeClassName="active">
             Contact
           </NavItem>
