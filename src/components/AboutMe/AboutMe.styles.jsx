@@ -4,8 +4,11 @@ import {Link} from 'react-router-dom'
 import theme from '../../styles/theme';
 
 export const Section = styled.section`
-  padding: 40px 0;
+  padding: 1rem;
   background-color: #f8f8f8;
+  /* scrollbar-gutter: stable both-edges; */
+  /* overflow-y: scroll; */
+  text-align: center;
 `;
 
 export const ContentWrapper = styled.div`
@@ -99,7 +102,7 @@ export const CTAButton = styled(Link)`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #c0392b;
+    background-color: #6A0DAD;
     color: #fefefe; /* Primary Color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow on hover */
   }

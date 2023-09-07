@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 import theme from '../../styles/theme';
 
+
+export const Section = styled.section`
+  padding: 1rem;
+  scrollbar-gutter: stable both-edges;
+  text-align: center;
+  background-color: ${theme.background};
+  /* overflow-y: scroll; */
+`;
+
+
 export const SocialIcons = styled.div`
   margin-top: 20px;
   display: flex;
@@ -14,14 +24,8 @@ export const IconLink = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    color: #c0392b; // Or the color you prefer on hover
+    color: #6A0DAD; // Or the color you prefer on hover
   }
-`;
-
-export const Section = styled.section`
-  padding: 50px 0;
-  text-align: center;
-  background-color: ${theme.background};
 `;
 
 export const Heading = styled.h2`

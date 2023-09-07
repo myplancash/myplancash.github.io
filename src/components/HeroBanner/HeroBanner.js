@@ -1,21 +1,21 @@
 import React from 'react'
-import { HeroBannerWrapper, ProfileImage, TextWrapper, ImageContainer,  HeroContent, HeroHeadline, CTAButton } from './HeroBanner.styles'
+import { HeroBannerWrapper, ProfileImage, TextWrapper, ImageContainer, HeroContent, HeroHeadline, CTAButton, SvgBackground } from './HeroBanner.styles';
+
+import svgBackground from '../../assets/hero.svg';
+
 
 const HeroBanner = () => {
  return (
     <HeroBannerWrapper>
       <HeroContent>
         <TextWrapper>
-          <HeroHeadline>Unleash Innovation with Digital Solutions</HeroHeadline>
-          <p>Crafting Code, Building Success</p>
+          <HeroHeadline>I merge tech and business for impactful solutions</HeroHeadline>
+          <p>Let's turn your ideas into strategic digital success.</p>
           <CTAButton href="https://calendly.com/sergio-esteban/reunion" target="_blank" rel="noopener noreferrer">
-              Get Digital Advantage
+            Let's Connect
           </CTAButton>
         </TextWrapper>
       </HeroContent>
-      <ImageContainer>
-        <ProfileImage src={require('../../images/hero.png')} alt="Hero background" />
-      </ImageContainer>
     </HeroBannerWrapper>
   );
 }

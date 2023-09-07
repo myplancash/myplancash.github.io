@@ -11,29 +11,23 @@ const breakpoints = {
 export const HeroBannerWrapper = styled.div`
   position: relative;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #3498DB, #2ecc71); 
+  background: linear-gradient(to right, #0A2463, #00CED1); 
   text-align: center;
-  overflow: hidden;
-  padding: 4rem 0; /* Adjust the padding value as needed */
-  gap: 0.5rem; /* Adjust the gap value between elements */
+  gap: 0.5rem;
 
-  @media (max-width: ${breakpoints.medium}) {
-    padding: 5rem 0;
-  }
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  text-align: center;
 `;
 
 export const HeroContent = styled.div`
-  position: relative;
-  display: flex;
-  gap: 1rem;
   z-index: 1;
+  max-width: 800px;
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 800px;
   margin: 0 auto;
   flex-flow: column nowrap;
   padding: 0 1rem;
@@ -45,8 +39,10 @@ export const TextWrapper = styled.div`
 
 export const HeroHeadline = styled.h1`
   font-size: 2rem; /* Adjust the font size as needed */
-  margin-bottom: 15px; /* Adjust the margin value as needed */
+  font-weight: bold;
+  margin-bottom: 10px;
 `;
+
 
 export const CTAButton = styled.a`
   background-color: ${theme.secondary}; 
@@ -59,21 +55,6 @@ export const CTAButton = styled.a`
   text-decoration: none;
 
   &:hover {
-    background-color: #c0392b;
+    background-color: #6A0DAD;
   }
-`;
-
-export const ImageContainer = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-`;
-
-export const ProfileImage = styled.img`
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  opacity: 0.5;
 `;

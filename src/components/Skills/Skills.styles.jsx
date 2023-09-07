@@ -1,51 +1,73 @@
 import styled from 'styled-components';
-
-/* Add these styles to your Skills.styles.css or equivalent */
-
-export const Img = styled.img`
-  width: 100px; 
-  height: 100px; 
-  object-fit: contain;
-  margin-right: 10px;
-  
-
-  @media (max-width: 768px) {
-    width: 80px;
-    height: 80px;
-  }
-`
+import { motion } from 'framer-motion';
+import theme from '../../styles/theme';
 
 export const Section = styled.section`
   padding: 1rem;
+  text-align: center;
+  background-color: ${theme.background};
+  /* scrollbar-gutter: stable both-edges; */
+  /* overflow-y: scroll; */
 `;
-
 
 export const Heading = styled.h2`
   font-size: 2rem;
-  color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: ${theme.primary};
 `;
-
 
 export const SkillList = styled.ul`
   list-style: none;
+  padding: 0;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  flex-flow: row nowrap;
-  margin: 0;
-  padding: 0;
+  gap: 1rem;
 `;
 
-export const SkillItem = styled.li`
+export const SkillItem = styled(motion.li)`
+
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 15px;
+  gap: .5rem;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 `;
 
 export const Icon = styled.div`
-  margin-right: 10px;
-  color: #3498DB;
+  width: 80px;
+  margin: 0 auto 10px;
 `;
+
+export const Img = styled.img`
+  width: 100%;
+  height: auto;
+`;
+
+export const SkillLabel = styled.p`
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+`;
+
+export const SkillCategory = styled.p`
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+`;
+
+export const SkillProficiency = styled.p`
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+`;
+
+// Add any additional styling as needed for your specific design

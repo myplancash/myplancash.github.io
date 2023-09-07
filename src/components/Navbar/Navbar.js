@@ -1,21 +1,21 @@
 import React from 'react';
-import { NavBarWrapper, NavContainer, Logo, NavMenu, NavItem, NavLink } from './Navbar.styles';
-import LogoSVG from '../../assets/digital-biz-inverted.svg'; 
+import { NavBarWrapper, NavContainer, Logo, NavMenu } from './Navbar.styles';
+import { NavItem, NAV_ITEMS } from '../NavItems/NavItems'; 
+import LogoSVG from '../../assets/logo.svg'; 
 
 const NavBar = () => {
   return (
     <NavBarWrapper>
       <NavContainer>
         <Logo to="/">
-          <img src={LogoSVG} alt="DigitalBiz Logo" width="160px" height="60px" />
+          <img src={LogoSVG} alt="DigitalBiz Logo" width="140px" height="40px" />
         </Logo>
         <NavMenu>
-          <NavItem>
-            <NavLink to="/projects">Projects</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/contact">Contact</NavLink>
-          </NavItem>
+          {NAV_ITEMS.map((item, index) => (
+            <NavItem key={index} to={item.to}>
+              {item.label}
+            </NavItem>
+          ))}
         </NavMenu>
       </NavContainer>
     </NavBarWrapper>

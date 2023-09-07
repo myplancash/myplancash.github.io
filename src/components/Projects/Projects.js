@@ -3,7 +3,6 @@ import { Section, Heading, ProjectList, ProjectItem, ProjectImage, ProjectDescri
 
 const Projects = () => {
   return (
-    
     <Section id="projects">
       <Heading>Projects</Heading>
       <ProjectList>
@@ -13,7 +12,7 @@ const Projects = () => {
             <p>People can come and register, they can list their homes for rent for sale with a special offer.</p>
             <GitHubLink href="https://github.com/myplancash/house-marketplace">Github Repo</GitHubLink>
           </ProjectDescription>
-          <ProjectImage src={require('../../images/house-marketplace.png')} alt="Marketplace Listing Houses" />
+          <ProjectImage src={require('../../assets/images/house-marketplace.png')} alt="Marketplace Listing Houses" />
         </ProjectItem>
         <ProjectItem>
           <ProjectDescription>
@@ -21,7 +20,7 @@ const Projects = () => {
             <p>An API to serve data to a unique management application for today's most accomplished (evil) entrepreneurs.</p>
             <GitHubLink href="https://github.com/myplancash/boss-machine">GitHub Repo</GitHubLink>
           </ProjectDescription>
-          <ProjectImage src={require('../../images/boss-machine.png')} alt="Initial view of Boss machine app" />
+          <ProjectImage src={require('../../assets/images/boss-machine.png')} alt="Initial view of Boss machine app" />
         </ProjectItem>
         <ProjectItem>
           <ProjectDescription>
@@ -29,7 +28,7 @@ const Projects = () => {
             <p>Discover a world of seamless shopping with our cutting-edge E-commerce app built using React.</p>
             <GitHubLink href="https://github.com/myplancash/startup-store">GitHub Repo</GitHubLink>
           </ProjectDescription>
-          <ProjectImage src={require('../../images/e-commerce.png')} alt="Initial view of E-commerce app" />
+          <ProjectImage src={require('../../assets/images/e-commerce.png')} alt="Initial view of E-commerce app" />
         </ProjectItem>
       </ProjectList>
     </Section>

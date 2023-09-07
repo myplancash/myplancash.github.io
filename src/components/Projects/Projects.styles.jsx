@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import theme from '../../styles/theme';
+import { Link } from 'react-router-dom';
 
 export const Section = styled.section` 
-  padding: 1rem;
+  
   text-align: center;
   background-color: ${theme.background};
+  /* scrollbar-gutter: stable both-edges; */
+  /* overflow-y: scroll; */
 `;
 
 export const Heading = styled.h2`
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: .5rem;
   color: ${theme.primary};
 `;
 
@@ -29,7 +32,7 @@ export const ProjectItem = styled.li`
     flex-direction: row; /* Display projects in a row on larger screens */
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: .5rem;
   }
 `;
 
@@ -38,8 +41,7 @@ export const ProjectImage = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 8px;
-  margin-right: 20px;
-  margin-bottom: 10px; /* Add some space between image and description */
+  margin: .5rem;
 
   @media (min-width: 768px) {
     margin-right: 0;
@@ -55,25 +57,25 @@ export const ProjectDescription = styled.div`
   }
 `;
 
-export const GitHubLink = styled.a`
-  color: ${theme.primary};
+export const GitHubLink = styled(Link)`
+  color:#DC143C;
   text-decoration: none;
-  position: relative;
+  position: relative; /* Add this to the parent element */
 
   &:before {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -2px;
+    bottom: -2px; /* Adjust this value to control the distance of the line from the text */
     left: 0;
-    background-color: #c0392b;
-    transition: width 0.3s, opacity 0.3s;
-    opacity: 0;
+    background-color: #6A0DAD;
+    transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
+    opacity: 0; /* Initially hidden */
   }
 
   &:hover {
-    color: #c0392b;
+    color: #6A0DAD;
 
     &:before {
       width: 100%;

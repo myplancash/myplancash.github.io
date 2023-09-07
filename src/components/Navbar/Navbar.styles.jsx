@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavBarWrapper = styled.nav`
-  background: linear-gradient(to right, #3498DB, #2ecc71);
+  background: linear-gradient(to right, #0A2463, #00CED1); 
   color: white;
 `;
 
@@ -12,6 +12,7 @@ export const NavContainer = styled.div`
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 1rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -25,6 +26,7 @@ export const Logo = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   padding-left: 1rem;
+  margin: 1rem;
 `;
 
 export const ResponsiveLogo = styled.img`
@@ -45,7 +47,7 @@ export const NavItem = styled.li`
   margin-right: 16px; /* Adjust the margin */
 `;
 export const NavLink = styled(Link)`
-  color: white;
+  color:#DC143C;
   text-decoration: none;
   position: relative; /* Add this to the parent element */
 
@@ -56,17 +58,17 @@ export const NavLink = styled(Link)`
     height: 2px;
     bottom: -2px; /* Adjust this value to control the distance of the line from the text */
     left: 0;
-    background-color: #c0392b;
+    background-color: #6A0DAD;
     transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
     opacity: 0; /* Initially hidden */
   }
 
   &:hover {
-    color: #c0392b;
+    color: #6A0DAD;
 
     &:before {
-      width: 100%; /* Show the line from left to right */
-      opacity: 1; /* Fade-in effect */
+      width: 100%;
+      opacity: 1;
     }
   }
 `;

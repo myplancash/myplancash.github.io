@@ -18,18 +18,18 @@ import TechnologyLogos from '../TechnologyLogos/TechnologyLogos';
 const AboutMe = () => {
 
    const technologyLogos = [
-    require('../../images/nodejs.png'),
-    require('../../images/react.png'),   
-    require('../../images/redux.png'),
-    require('../../images/typescript.png'),
-    require('../../images/javascript.png'), 
+    require('../../assets/images/nodejs.png'),
+    require('../../assets/images/react.png'),   
+    require('../../assets/images/redux.png'),
+    require('../../assets/images/typescript.png'),
+    require('../../assets/images/javascript.png'), 
   ];
 
   return (
     <Section id="about">
       <ContentWrapper>
         <ImageContainer>
-          <ProfileImage src={require('../../images/profile.png')} alt="Profile" />
+          <ProfileImage src={require('../../assets/images/profile.png')} alt="Profile" />
         </ImageContainer>
         <TextWrapper>
           <Heading>Greetings, I'm Sergio Esteban</Heading>
