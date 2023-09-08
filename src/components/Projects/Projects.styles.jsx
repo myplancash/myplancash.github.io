@@ -3,16 +3,16 @@ import theme from '../../styles/theme';
 import { Link } from 'react-router-dom';
 
 export const Section = styled.section` 
-  
+  padding: 2rem;
   text-align: center;
   background-color: ${theme.background};
-  /* scrollbar-gutter: stable both-edges; */
-  /* overflow-y: scroll; */
+  /* scrollbar-gutter: stable both-edges; 
+  overflow-y: scroll;*/
 `;
 
 export const Heading = styled.h2`
   font-size: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 20px;
   color: ${theme.primary};
 `;
 
@@ -32,7 +32,7 @@ export const ProjectItem = styled.li`
     flex-direction: row; /* Display projects in a row on larger screens */
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: .5rem;
+    margin-bottom: 20px;
   }
 `;
 
@@ -41,7 +41,8 @@ export const ProjectImage = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 8px;
-  margin: .5rem;
+  margin-right: 20px;
+  margin-bottom: 10px; /* Add some space between image and description */
 
   @media (min-width: 768px) {
     margin-right: 0;
@@ -60,6 +61,7 @@ export const ProjectDescription = styled.div`
 export const GitHubLink = styled(Link)`
   color:#DC143C;
   text-decoration: none;
+  transition: color 0.3s;
   position: relative; /* Add this to the parent element */
 
   &:before {
@@ -78,8 +80,8 @@ export const GitHubLink = styled(Link)`
     color: #6A0DAD;
 
     &:before {
-      width: 100%;
-      opacity: 1;
+      width: 100%; /* Show the line from left to right */
+      opacity: 1; /* Fade-in effect */
     }
   }
 `;

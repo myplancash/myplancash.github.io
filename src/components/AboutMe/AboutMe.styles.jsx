@@ -4,10 +4,8 @@ import {Link} from 'react-router-dom'
 import theme from '../../styles/theme';
 
 export const Section = styled.section`
-  padding: 1rem;
+  padding: 2rem;
   background-color: #f8f8f8;
-  /* scrollbar-gutter: stable both-edges; */
-  /* overflow-y: scroll; */
   text-align: center;
 `;
 
@@ -77,6 +75,35 @@ export const Introduction = styled.p`
   font-size: 1.1rem;
   line-height: 1.6;
   color: #444;
+`;
+
+
+export const Resume = styled(Link)`
+  color:#DC143C;
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative; /* Add this to the parent element */
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px; /* Adjust this value to control the distance of the line from the text */
+    left: 0;
+    background-color: #6A0DAD;
+    transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
+    opacity: 0; /* Initially hidden */
+  }
+
+  &:hover {
+    color: #6A0DAD;
+
+    &:before {
+      width: 100%; /* Show the line from left to right */
+      opacity: 1; /* Fade-in effect */
+    }
+  }
 `;
 
 export const Icon = styled.span`

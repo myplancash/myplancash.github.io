@@ -14,4 +14,5 @@ export const NAV_ITEMS = [
   { to: '/projects', label: 'Projects' },
   { to: '/skills', label: 'Skills' },
   { to: '/contact', label: 'Contact' },
+  { to: '/blog', label: 'Blog' },
 ];

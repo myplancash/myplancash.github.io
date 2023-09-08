@@ -49,6 +49,7 @@ export const NavItem = styled.li`
 export const NavLink = styled(Link)`
   color:#DC143C;
   text-decoration: none;
+  transition: color 0.3s;
   position: relative; /* Add this to the parent element */
 
   &:before {

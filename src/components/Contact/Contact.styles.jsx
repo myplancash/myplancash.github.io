@@ -3,11 +3,10 @@ import theme from '../../styles/theme';
 
 
 export const Section = styled.section`
-  padding: 1rem;
+  padding: 2rem;
   scrollbar-gutter: stable both-edges;
   text-align: center;
   background-color: ${theme.background};
-  /* overflow-y: scroll; */
 `;
 
 

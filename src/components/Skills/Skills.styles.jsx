@@ -3,11 +3,9 @@ import { motion } from 'framer-motion';
 import theme from '../../styles/theme';
 
 export const Section = styled.section`
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   background-color: ${theme.background};
-  /* scrollbar-gutter: stable both-edges; */
-  /* overflow-y: scroll; */
 `;
 
 export const Heading = styled.h2`

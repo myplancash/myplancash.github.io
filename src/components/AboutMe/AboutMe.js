@@ -10,7 +10,8 @@ import {
   ProfileImage, // Import the P
   Icon,
   Quote,
-  CTAButton
+  CTAButton,
+  Resume
 } from './AboutMe.styles';
 import TechnologyLogos from '../TechnologyLogos/TechnologyLogos';
 
@@ -38,6 +39,7 @@ const AboutMe = () => {
           </Subheading>
           <Introduction>
             Welcome! I'm Sergio Esteban, a dedicated full-stack software developer with a background in business administration. With a passion for crafting innovative digital solutions, I bring over 4 years of expertise in seamlessly merging the worlds of technology and business. I believe in creating elegant, user-centric applications that drive meaningful results and transform ideas into reality.
+            <br/>You can view my resume <Resume href="https://drive.google.com/file/d/1QPj7EKJYmcwFGAl4Q6yJBlviruaL3ros/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</Resume>.
           </Introduction>
           <TechnologyLogos logos={technologyLogos} />
           <Quote>

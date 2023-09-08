@@ -7,6 +7,9 @@ import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import NavBar from './components/Navbar/Navbar';
 import HeroBanner from './components/HeroBanner/HeroBanner';
+import Blog from './components/Blog/Blog';
+import blogData from './data/blogData';
+import BlogPostDetail from './components/BlogPostDetail/BlogPostDetail';
 
 const App = () => {
   return (
@@ -20,6 +23,14 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
+            {blogData.map((post) => (
+              <Route
+                key={post.id}
+                path={`/blog/${post.id}`}
+                element={<BlogPostDetail title={post.title} content={post.content} />}
+              />
+            ))}
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </MainContent>
       </Container>
