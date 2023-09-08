@@ -7,6 +7,7 @@ import {
   BlogTitle,
   BlogExcerpt,
   ReadMore,
+  BlogExcerptContainer
 } from './Blog.styles';
 import BlogData from '../../data/blogData';
 
@@ -30,17 +31,18 @@ const Blog = () => {
           <BlogPost key={post.id}>
             <BlogImage src={require(`../../assets/images/${post.image}`)} alt={post.title} />
             <BlogTitle>{post.title}</BlogTitle>
-            {expandedPost === post.id ? (
+            <BlogExcerptContainer>
+              <BlogExcerpt>{post.excerpt}</BlogExcerpt>
+              <ReadMore to={`/blog/${post.id}`} onClick={() => togglePost(post.id)}>
+                {expandedPost === post.id ? 'Read Less' : 'Read More'}
+              </ReadMore>
+            </BlogExcerptContainer>
+            {expandedPost === post.id && (
               <div>
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
                 <button onClick={() => togglePost(post.id)}>Read Less</button>
               </div>
-            ) : (
-              <BlogExcerpt>{post.excerpt}</BlogExcerpt>
             )}
-            <ReadMore to={`/blog/${post.id}`} onClick={() => togglePost(post.id)}>
-              {expandedPost === post.id ? 'Read Less' : 'Read More'}
-            </ReadMore>
           </BlogPost>
         ))}
       </BlogContainer>

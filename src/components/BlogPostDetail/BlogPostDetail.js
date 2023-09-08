@@ -1,12 +1,16 @@
 import React from 'react';
+import {Container, Title, Author, Content} from './BlogPostDetail.styles';
 
 const BlogPostDetail = ({ title, content }) => {
   console.log(title, content)
   return (
-    <div>
-      <h2>{title}</h2>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-    </div>
+    <Container>
+      <Title>{title}</Title>
+      <Author>Written by John Doe on September 8, 2023</Author>
+      <Content>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+      </Content>
+    </Container>
   );
 };
 

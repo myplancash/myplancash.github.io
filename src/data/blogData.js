@@ -22,6 +22,18 @@ const blogData = [
       excerpt:
         'Data structures are all about choosing the right tool for the job.',
     },
+
+    {
+      id: 3,
+      title: 'JavaScript Unit Testing',
+      image: 'blog-image-3.png',
+      content: `
+      <p>Software professionals use automated testing. During and after production, they can run an automated test suite to give themselves confidence that their products are free of errors.</p>
+      <p>In Progress...</p>
+      `,
+      excerpt:
+        'Software testing is the process of assessing the completeness and quality of computer software.',
+    },
   // Add more blog posts as needed
 ];
 
