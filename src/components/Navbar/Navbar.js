@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavBarWrapper, NavContainer, Logo, NavMenu } from './Navbar.styles';
 import { NavItem, NAV_ITEMS } from '../NavItems/NavItems'; 
-import LogoSVG from '../../assets/logo.svg'; 
+import LogoSVG from '../../assets/logo.svg';
 
 const NavBar = () => {
   return (
@@ -12,7 +12,7 @@ const NavBar = () => {
         </Logo>
         <NavMenu>
           {NAV_ITEMS.map((item, index) => (
-            <NavItem key={index} to={item.to}>
+            <NavItem key={index} to={item.to} anchor={item.anchor}>
               {item.label}
             </NavItem>
           ))}

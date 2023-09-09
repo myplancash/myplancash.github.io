@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 export const NavBarWrapper = styled.nav`
   background: linear-gradient(to right, #0A2463, #00CED1); 
   color: white;
 `;
 
-export const NavContainer = styled.div`
+export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +21,7 @@ export const NavContainer = styled.div`
   }
 `;
 
-export const Logo = styled(Link)`
+export const Logo = styled(RouterLink)`
   color: #070606;
   max-width: 150px;
   text-decoration: none;
@@ -32,11 +33,12 @@ export const Logo = styled(Link)`
 export const ResponsiveLogo = styled.img`
   width: 100%;
   height: auto;
-  max-width: 250px; /* Adjust the max width */
+  max-width: 250px;
 `;
 
 export const NavMenu = styled.ul`
   list-style: none;
+  list-style-type: none;
   display: flex;
   color: #070606;
   gap: 1rem;
@@ -44,24 +46,25 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  margin-right: 16px; /* Adjust the margin */
+  margin-right: 16px;
 `;
-export const NavLink = styled(Link)`
-  color:#DC143C;
+
+export const NavLink = styled(ScrollLink)`
+  color: #DC143C;
   text-decoration: none;
   transition: color 0.3s;
-  position: relative; /* Add this to the parent element */
+  position: relative;
 
   &:before {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -2px; /* Adjust this value to control the distance of the line from the text */
+    bottom: -2px;
     left: 0;
     background-color: #6A0DAD;
-    transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
-    opacity: 0; /* Initially hidden */
+    transition: width 0.3s, opacity 0.3s;
+    opacity: 0;
   }
 
   &:hover {
