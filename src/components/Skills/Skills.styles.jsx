@@ -21,13 +21,13 @@ export const SkillList = styled.ul`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   gap: 1rem;
 `;
 
 export const SkillItem = styled(motion.li)`
-
   display: flex;
+  flex: 0 0 calc(33.33% - 1rem);
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -38,6 +38,10 @@ export const SkillItem = styled(motion.li)`
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+  }
 `;
 
 export const Icon = styled.div`

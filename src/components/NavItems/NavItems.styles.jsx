@@ -14,7 +14,7 @@ export const NavLink = styled(ScrollLink)`
     bottom: -2px;
     left: 0;
     background-color: #6A0DAD;
-    transition: width 0.3s, opacity 0.3s;
+    /* transition: width 0.3s, opacity 0.3s; */
     opacity: 0;
   }
 

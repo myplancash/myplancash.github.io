@@ -12,7 +12,13 @@ const NavBar = () => {
         </Logo>
         <NavMenu>
           {NAV_ITEMS.map((item, index) => (
-            <NavItem key={index} to={item.to} anchor={item.anchor}>
+            <NavItem 
+              key={index} 
+              to={item.to} 
+              anchor={item.anchor}
+              smooth={true}
+              duration={500} 
+            >
               {item.label}
             </NavItem>
           ))}
