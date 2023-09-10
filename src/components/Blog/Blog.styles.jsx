@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Section = styled.section`
   padding: 2rem;
-  background-color: #f8f8f8;
+  background-color: #fff;
   text-align: center;
   height: 100%;
 `;

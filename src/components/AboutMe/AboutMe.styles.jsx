@@ -1,11 +1,10 @@
-// AboutMe.styles.js
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'
 import theme from '../../styles/theme';
 
 export const Section = styled.section`
   padding: 2rem;
-  background-color: #f8f8f8;
+  background-color: #fff;
   text-align: center;
 `;
 
@@ -112,6 +111,7 @@ export const Icon = styled.span`
 
 export const Quote = styled.blockquote`
   font-size: 1.2rem;
+  font-style: italic;
   color: #666;
   margin: 20px 0;
 `;

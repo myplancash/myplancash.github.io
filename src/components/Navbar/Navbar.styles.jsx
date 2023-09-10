@@ -37,7 +37,6 @@ export const ResponsiveLogo = styled.img`
 `;
 
 export const NavMenu = styled.ul`
-  list-style: none;
   list-style-type: none;
   display: flex;
   color: #070606;
