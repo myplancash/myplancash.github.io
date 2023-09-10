@@ -1,6 +1,6 @@
 // AboutMe.styles.js
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import theme from '../../styles/theme';
 
 export const Section = styled.section`
@@ -71,14 +71,14 @@ export const Subheading = styled.p`
   margin-bottom: 15px;
 `;
 
-export const Introduction = styled.p`
+export const Introduction = styled.section`
   font-size: 1.1rem;
   line-height: 1.6;
   color: #444;
 `;
 
 
-export const Resume = styled(Link)`
+export const Resume = styled.a`
   color:#DC143C;
   text-decoration: none;
   transition: color 0.3s;

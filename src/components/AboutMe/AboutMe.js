@@ -38,8 +38,10 @@ const AboutMe = () => {
             <Icon>🚀</Icon> Bridging Technology and Business Strategy
           </Subheading>
           <Introduction>
-            Welcome! I'm Sergio Esteban, a dedicated full-stack software developer with a background in business administration. With a passion for crafting innovative digital solutions, I bring over 4 years of expertise in seamlessly merging the worlds of technology and business. I believe in creating elegant, user-centric applications that drive meaningful results and transform ideas into reality.
-            <br/>You can view my resume <Resume href="https://drive.google.com/file/d/1EPTcDsPDbN9iDGPiUNAC4CNTfkZzAouE/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</Resume>.
+            <p>
+              Hello! I'm Sergio Esteban, a full-stack software developer with a background in business administration. With over 4 years of experience, I specialize in creating user-centric digital solutions that turn ideas into reality.
+              <br/>Check out my resume <Resume href="https://drive.google.com/file/d/1EPTcDsPDbN9iDGPiUNAC4CNTfkZzAouE/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</Resume>.
+            </p>
           </Introduction>
           <TechnologyLogos logos={technologyLogos} />
           <Quote>

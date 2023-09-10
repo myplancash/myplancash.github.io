@@ -20,7 +20,7 @@ export const SkillList = styled.ul`
   padding: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   gap: 1rem;
 `;
@@ -32,6 +32,7 @@ export const SkillItem = styled(motion.li)`
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  min-width: 3.5em;
   text-align: center;
   background-color: #fff;
   border: 1px solid #e0e0e0;

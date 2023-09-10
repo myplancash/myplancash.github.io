@@ -37,16 +37,16 @@ const Skills = () => {
       logo: require('../../assets/images/firebase.png'),
     },
     {
-      name: 'Jest',
-      category: 'Testing',
-      proficiency: 'Advanced',
-      logo: require('../../assets/images/jest.png'),
-    },
-    {
       name: 'PostgreSQL',
       category: 'Back-end Development',
       proficiency: 'Advanced',
       logo: require('../../assets/images/postgresql.png'),
+    },
+    {
+      name: 'Jest',
+      category: 'Front-end Testing',
+      proficiency: 'Advanced',
+      logo: require('../../assets/images/jest.png'),
     },
     // Add more skills as needed
   ];
