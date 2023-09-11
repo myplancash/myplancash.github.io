@@ -92,13 +92,13 @@ export const ReadMore = styled(Link)`
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #6A0DAD;
+    background-color: #A90C2E;
     transition: width 0.3s, opacity 0.3s;
     opacity: 0;
   }
 
   &:hover {
-    color: #6A0DAD;
+    color: #A90C2E;
 
     &:before {
       width: 100%;

@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 export const NavBarWrapper = styled.nav`
-  background: linear-gradient(to right, #0A2463, #00CED1); 
+  background: linear-gradient(to right, #DC143C, #FFDC49);
   color: white;
 `;
 
@@ -61,13 +61,13 @@ export const NavLink = styled(ScrollLink)`
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #6A0DAD;
+    background-color: #A90C2E;
     transition: width 0.3s, opacity 0.3s;
     opacity: 0;
   }
 
   &:hover {
-    color: #6A0DAD;
+    color: #A90C2E;
 
     &:before {
       width: 100%;

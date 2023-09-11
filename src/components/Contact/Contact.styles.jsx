@@ -23,7 +23,7 @@ export const IconLink = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    color: #6A0DAD; // Or the color you prefer on hover
+    color: #A90C2E; // Or the color you prefer on hover
   }
 `;
 

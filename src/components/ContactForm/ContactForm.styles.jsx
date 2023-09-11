@@ -44,6 +44,6 @@ export const SubmitButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #6A0DAD;
+    background-color: #A90C2E;
   }
 `;

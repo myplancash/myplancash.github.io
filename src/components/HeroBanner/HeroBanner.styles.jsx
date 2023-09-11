@@ -13,11 +13,11 @@ export const HeroBannerWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #0A2463, #00CED1); 
+  background: linear-gradient(to right, #DC143C, #FFDC49); 
   text-align: center;
   gap: 0.5rem;
 
-  background-color: #f8f8f8;
+  background-color: #fff;
   padding: 60px 0;
   text-align: center;
 `;
@@ -38,11 +38,12 @@ export const TextWrapper = styled.div`
 `;
 
 export const HeroHeadline = styled.h1`
-  font-size: 2rem; /* Adjust the font size as needed */
+  font-size: 2rem; 
   font-weight: bold;
   margin-bottom: .3em;
   letter-spacing: 2px;
-`;
+  color: #fff;
+`
 
 
 export const CTAButton = styled.a`
@@ -56,6 +57,6 @@ export const CTAButton = styled.a`
   text-decoration: none;
 
   &:hover {
-    background-color: #6A0DAD;
+    background-color: #A90C2E;
   }
 `;

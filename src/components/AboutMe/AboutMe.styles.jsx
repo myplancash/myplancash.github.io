@@ -90,13 +90,13 @@ export const Resume = styled.a`
     height: 2px;
     bottom: -2px; /* Adjust this value to control the distance of the line from the text */
     left: 0;
-    background-color: #6A0DAD;
+    background-color: #A90C2E;
     transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
     opacity: 0; /* Initially hidden */
   }
 
   &:hover {
-    color: #6A0DAD;
+    color: #A90C2E;
 
     &:before {
       width: 100%; /* Show the line from left to right */
@@ -129,7 +129,7 @@ export const CTAButton = styled(Link)`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #6A0DAD;
+    background-color: #A90C2E;
     color: #fefefe; /* Primary Color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow on hover */
   }
