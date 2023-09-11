@@ -40,7 +40,8 @@ export const TextWrapper = styled.div`
 export const HeroHeadline = styled.h1`
   font-size: 2rem; /* Adjust the font size as needed */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: .3em;
+  letter-spacing: 2px;
 `;
 
 

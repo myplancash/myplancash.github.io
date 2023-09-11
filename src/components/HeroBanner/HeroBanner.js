@@ -9,7 +9,7 @@ const HeroBanner = () => {
     <HeroBannerWrapper>
       <HeroContent>
         <TextWrapper>
-          <HeroHeadline>I merge tech and business for impactful solutions</HeroHeadline>
+          <HeroHeadline>I merge tech and business<br/> for impactful solutions</HeroHeadline>
           <p>Let's turn your ideas into strategic digital success.</p>
           <CTAButton href="https://calendly.com/sergio-esteban/reunion" target="_blank" rel="noopener noreferrer">
             Let's Connect
