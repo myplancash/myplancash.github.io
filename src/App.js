@@ -5,7 +5,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
-import NavBar from './components/Navbar/Navbar';
+
 import HeroBanner from './components/HeroBanner/HeroBanner';
 import Blog from './components/Blog/Blog';
 import blogData from './data/blogData';
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <Router>
       <Container>
-        <NavBar />
+        
         <HeroBanner />
         <MainContent>
           <Routes>

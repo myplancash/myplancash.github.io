@@ -18,7 +18,7 @@ export const SocialIcons = styled.div`
 
 export const IconLink = styled.a`
   color: #333; // Or use a color that matches your design
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0 10px;
   transition: color 0.3s;
 
@@ -36,4 +36,5 @@ export const Heading = styled.h2`
 export const ContactInfo = styled.p`
   font-size: 1.2rem;
   margin-bottom: 20px;
+  padding:1rem;
 `;

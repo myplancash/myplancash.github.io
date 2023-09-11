@@ -1,23 +1,64 @@
-import React from 'react'
-import { HeroBannerWrapper, ProfileImage, TextWrapper, ImageContainer, HeroContent, HeroHeadline, CTAButton, SvgBackground } from './HeroBanner.styles';
+import React from 'react';
+import {
+  HeroBannerWrapper,
+  TextWrapper,
+  HeroContent,
+  HeroHeadline,
+  CTAButton,
+  SocialIcons,
+  NavBarWrapper,
+  NavBarContainer,
+  Logo,
+} from './HeroBanner.styles';
 
-import svgBackground from '../../assets/hero.svg';
-
+import backgroundImage from '../../assets/images/hero.png';
+import { NAV_ITEMS, NavItem } from '../NavItems/NavItems';
+import LogoSVG from '../../assets/logo.svg';
 
 const HeroBanner = () => {
- return (
-    <HeroBannerWrapper>
+  const backgroundStyle = {
+    backgroundImage: `
+      url(${backgroundImage}),
+      linear-gradient(rgba(220, 20, 60, 1), rgba(255, 220, 73, 1))`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+  };
+
+  return (
+    <HeroBannerWrapper style={backgroundStyle}>
+      <NavBarWrapper>
+        <Logo to="/">
+          <img src={LogoSVG} alt="DigitalBiz Logo" width="140px" height="40px" />
+        </Logo>
+        <NavBarContainer>
+          {NAV_ITEMS.map((item, index) => (
+            <NavItem key={index} to={item.to}>
+              {item.label}
+            </NavItem>
+          ))}
+        </NavBarContainer>
+      </NavBarWrapper>
       <HeroContent>
         <TextWrapper>
-          <HeroHeadline>I merge tech and business<br/> for impactful solutions</HeroHeadline>
+          <HeroHeadline>
+            I merge tech and business<br /> for impactful solutions
+          </HeroHeadline>
           <p>Let's turn your ideas into strategic digital success.</p>
-          <CTAButton href="https://calendly.com/sergio-esteban/reunion" target="_blank" rel="noopener noreferrer">
+          <CTAButton
+            href="https://calendly.com/sergio-esteban/reunion"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Let's Connect
           </CTAButton>
         </TextWrapper>
+        <SocialIcons>
+          {/* Add social media icons and links here */}
+        </SocialIcons>
       </HeroContent>
     </HeroBannerWrapper>
   );
 }
 
-export default HeroBanner
+export default HeroBanner;
