@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.4ade840f.js",
+    "main.js": "/static/js/main.a699e95e.js",
     "static/js/787.3bafb2bd.chunk.js": "/static/js/787.3bafb2bd.chunk.js",
     "static/media/e-commerce.png": "/static/media/e-commerce.5f8ad7bd7b99e92aef13.png",
-    "static/media/profile.png": "/static/media/profile.c6e74e2679bf7a81ddb4.png",
     "static/media/house-marketplace.png": "/static/media/house-marketplace.5fc90a1ceaf2cd958699.png",
     "static/media/blog-image-1.png": "/static/media/blog-image-1.c642777d009b675c6550.png",
+    "static/media/profile.jpg": "/static/media/profile.f99c1e315187d58fc702.jpg",
     "static/media/nodejs.png": "/static/media/nodejs.d980d9636ace07ad3dde.png",
     "static/media/postgresql.png": "/static/media/postgresql.de8402876243b195da43.png",
     "static/media/boss-machine.png": "/static/media/boss-machine.4a74ce2448cf9749f3e0.png",
@@ -19,10 +19,10 @@
     "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
     "static/media/logo.svg": "/static/media/logo.9779a7aded108fc21bdc1472fe70bcd3.svg",
     "index.html": "/index.html",
-    "main.4ade840f.js.map": "/static/js/main.4ade840f.js.map",
+    "main.a699e95e.js.map": "/static/js/main.a699e95e.js.map",
     "787.3bafb2bd.chunk.js.map": "/static/js/787.3bafb2bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4ade840f.js"
+    "static/js/main.a699e95e.js"
   ]
 }
