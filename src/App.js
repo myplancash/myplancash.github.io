@@ -15,7 +15,6 @@ const App = () => {
   return (
     <Router>
       <Container>
-        
         <HeroBanner />
         <MainContent>
           <Routes>

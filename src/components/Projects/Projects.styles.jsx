@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import theme from '../../styles/theme';
-import { Link } from 'react-router-dom';
 
 export const Section = styled.section` 
   padding: 2rem;
@@ -8,6 +7,8 @@ export const Section = styled.section`
   background-color: ${theme.background};
   /* scrollbar-gutter: stable both-edges; 
   overflow-y: scroll;*/
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; 
 `;
 
 export const Heading = styled.h2`
@@ -15,42 +16,52 @@ export const Heading = styled.h2`
   margin-bottom: 20px;
   color: ${theme.primary};
 `;
-
 export const ProjectList = styled.div`
-/*   list-style: none;
+  /* list-style: none;
   margin: 0;
   padding: 0; */
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 60% 40%; /* Define the columns */
-  grid-template-rows: auto auto auto; /* Define the rows */
+  gap: 10px;
 
-  gap: 10px; /* Adjust the gap between items */
+  @media (min-width: 768px) {
+    /* For screens wider than 768px, maintain your current grid layout */
+    gap: 10px;
 
-  .item1 {
-    grid-column: 1 / span 3;
+    .item1 {
+      grid-column: 1 / span 3;
+    }
+
+    .item2 {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+    }
+
+    .item3 {
+      grid-column: 3;
+      grid-row: 2 / span 2;
+    }
+
+    .item4,
+    .item5 {
+      grid-column: span 1;
+      grid-row: 3;
+    }
   }
 
-  .item2 {
-    grid-column: 1 / span 2;
-    grid-row: 2;
-  }
+  @media (max-width: 767px) {
+    /* For screens 767px and below, adapt the grid layout */
+    grid-template-columns: 1fr; /* Display one column for each item */
+    gap: 20px;
 
-  .item3 {
-    grid-column: 3;
-    grid-row: 2 / span 2;
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5 {
+      grid-column: span 1; /* Span the full width of the container */
+    }
   }
-
-  .item4 {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .item5 {
-    grid-column: 2;
-    grid-row: 3;
-  }
-   
-  
 `;
 
 export const ProjectItem = styled.div`
@@ -58,10 +69,15 @@ export const ProjectItem = styled.div`
   flex-direction: column; 
   align-items: center;
   text-align: center; */
+  border-radius: 4px;
 
   background-color: #f2f2f2; /* Set a background color for items */
   padding: 20px; /* Adjust padding as needed */
   border: 1px solid #ddd;
+
+  /* background-image: url('../../assets/images/project1-thumb.png'); 
+  background-size: cover;
+  background-position: center; */
 
   @media (min-width: 768px) {
     flex-direction: row; /* Display projects in a row on larger screens */
@@ -72,11 +88,9 @@ export const ProjectItem = styled.div`
 `;
 
 export const ProjectImage = styled.img`
-  object-fit: contain;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  object-fit: cover; /* Adjust object-fit property based on your design needs */
   border-radius: 8px;
-  margin-right: 20px;
   margin-bottom: 10px; /* Add some space between image and description */
 
   @media (min-width: 768px) {
@@ -125,7 +139,7 @@ export const ProjectDescription = styled.div`
   }
 `;
 
-export const GitHubLink = styled(Link)`
+export const GitHubLink = styled.a`
   color:#DC143C;
   text-decoration: none;
   transition: color 0.3s;
