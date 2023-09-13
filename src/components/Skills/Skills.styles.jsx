@@ -15,30 +15,27 @@ export const Heading = styled.h2`
   color: ${theme.primary};
 `;
 
-export const SkillList = styled.ul`
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 1rem;
+export const SkillList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 export const SkillItem = styled(motion.li)`
   display: flex;
-  flex: 0 0 calc(33.33% - 1rem);
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-  min-width: 3.5em;
-  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
   background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   @media (max-width: 768px) {
     flex: 0 0 100%;

@@ -1,4 +1,3 @@
-// BlogPost.js
 import React from 'react';
 
 const BlogPost = ({ title, image, content }) => {

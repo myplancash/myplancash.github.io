@@ -1,8 +1,7 @@
 import React from 'react';
-import {Container, Title, Author, Content} from './BlogPostDetail.styles';
+import { Container, Title, Author, Content } from './BlogPostDetail.styles';
 
 const BlogPostDetail = ({ title, content }) => {
-  console.log(title, content)
   return (
     <Container>
       <Title>{title}</Title>
