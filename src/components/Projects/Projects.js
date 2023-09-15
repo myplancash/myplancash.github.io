@@ -61,8 +61,8 @@ const Projects = () => {
           <ProjectItem key={index} className={project.class} /* style={{ backgroundImage: `url(${project.image})` }} */>
             <ProjectDescription>
               <h3>{project.title}</h3>
-              <p>{project.description}<span><br />Check out the repo <a href={project.repoLink}>here</a></span></p>
-              <GitHubLink href={project.liveDemoLink}>Live Demo</GitHubLink>
+              <p>{project.description}<span><br />Check out the repo <a href={project.repoLink} target="_blank" rel="noopener noreferrer">here</a></span></p>
+              <GitHubLink href={project.liveDemoLink} target="_blank" rel="noopener noreferrer" >Live Demo</GitHubLink>
             </ProjectDescription>
             <ProjectImage src={project.image} alt={project.title} />
           </ProjectItem>

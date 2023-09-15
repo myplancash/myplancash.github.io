@@ -4,10 +4,10 @@ import theme from '../../styles/theme';
 export const Section = styled.section` 
   padding: 2rem;
   text-align: center;
-   background: linear-gradient(to bottom, #4CAF50, #A90C2E);
+  background: linear-gradient(to bottom,#FCF6F5, #990011);
   /* scrollbar-gutter: stable both-edges; 
   overflow-y: scroll;*/
-  max-width: 1200px; /* Adjust the maximum width as needed */
+  max-width: 1200px;
   margin: 0 auto; 
 `;
 
@@ -70,6 +70,8 @@ export const ProjectItem = styled.div`
   padding: 20px;
   border: 1px solid #ddd;
   transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+
 
   &:hover {
     background-color: #f1f1f1;
@@ -89,10 +91,24 @@ export const ProjectItem = styled.div`
 `;
 
 export const ProjectImage = styled.img`
+
   width: 100%;
   object-fit: cover; /* Adjust object-fit property based on your design needs */
   border-radius: 8px;
-  margin-bottom: 10px; /* Add some space between image and description */
+  margin-bottom: 10px;
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  animation: slideIn 0.3s ease-in-out;
+  
 
   @media (min-width: 768px) {
     margin-right: 0;
@@ -141,10 +157,18 @@ export const ProjectDescription = styled.div`
 `;
 
 export const GitHubLink = styled.a`
-  color:#DC143C;
   text-decoration: none;
-  transition: color 0.3s;
-  position: relative; 
+
+  background-color: #A90C2E;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;;
+
+  &:hover {
+    background-color: #DC143C;
+    transform: scale(1.05);
+  }
 
   &:before {
     content: '';
@@ -159,7 +183,7 @@ export const GitHubLink = styled.a`
   }
 
   &:hover {
-    color: #A90C2E;
+    color: #fff;
 
     &:before {
       width: 100%; /* Show the line from left to right */
