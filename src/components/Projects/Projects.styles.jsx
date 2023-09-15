@@ -4,7 +4,7 @@ import theme from '../../styles/theme';
 export const Section = styled.section` 
   padding: 2rem;
   text-align: center;
-  background-color: ${theme.background};
+   background: linear-gradient(to bottom, #4CAF50, #A90C2E);
   /* scrollbar-gutter: stable both-edges; 
   overflow-y: scroll;*/
   max-width: 1200px; /* Adjust the maximum width as needed */
@@ -65,15 +65,16 @@ export const ProjectList = styled.div`
 `;
 
 export const ProjectItem = styled.div`
-  /* display: flex;
-  flex-direction: column; 
-  align-items: center;
-  text-align: center; */
   border-radius: 4px;
-
-  background-color: #f2f2f2; /* Set a background color for items */
-  padding: 20px; /* Adjust padding as needed */
+  background-color: #f2f2f2;
+  padding: 20px;
   border: 1px solid #ddd;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+  }
 
   /* background-image: url('../../assets/images/project1-thumb.png'); 
   background-size: cover;
@@ -143,18 +144,18 @@ export const GitHubLink = styled.a`
   color:#DC143C;
   text-decoration: none;
   transition: color 0.3s;
-  position: relative; /* Add this to the parent element */
+  position: relative; 
 
   &:before {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -2px; /* Adjust this value to control the distance of the line from the text */
+    bottom: -2px; 
     left: 0;
     background-color: #A90C2E;
-    transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
-    opacity: 0; /* Initially hidden */
+    transition: width 0.3s, opacity 0.3s;
+    opacity: 0; 
   }
 
   &:hover {
