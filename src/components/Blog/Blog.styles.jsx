@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #fff;
   text-align: center;
 `;
 
@@ -45,7 +45,7 @@ export const BlogTitle = styled.h3`
 
 export const BlogExcerptContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   gap: 1rem;
 `;
 
@@ -65,4 +65,11 @@ export const ReadMore = styled.button`
   &:hover {
     background-color: #A90C2E;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0.6rem 0.9rem; /* You can adjust the padding as needed */
+    font-size: 2rem; /* You can adjust the font size as needed */
+  }
+
 `;

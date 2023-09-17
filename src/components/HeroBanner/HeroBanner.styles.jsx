@@ -8,7 +8,6 @@ const breakpoints = {
   large: '992px',
   xlarge: '1200px',
 };
-
 export const HeroBannerWrapper = styled.div`
   position: relative;
   display: flex;
@@ -19,7 +18,7 @@ export const HeroBannerWrapper = styled.div`
   background-color: #fff;
   padding: 60px 0;
   text-align: center;
-  background-image: url(${props => props.backgroundImage});
+  background-image: url(${(props) => props.backgroundImage});
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -38,12 +37,13 @@ export const NavBarWrapper = styled.section`
   right: 0;
   z-index: 2;
   display: flex;
+  flex-flow: row wrap; /* Default to row layout */
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow content to wrap to the next line if needed */
 
-  @media (min-width: ${breakpoints.medium}) {
-    padding: 1rem 2rem; /* Adjust padding for larger screens */
+  @media (max-width: ${breakpoints.medium}) {
+    flex-flow: column; /* Switch to column layout on small screens */
+    align-items: center;
   }
 `;
 
@@ -53,8 +53,10 @@ export const NavBarContainer = styled.nav`
   gap: 1rem;
   margin-left: auto; /* Push the navigation links to the right */
 
-  @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
+  @media (max-width: ${breakpoints.medium}) {
+    /* Add styles for small screens here */
+    flex-flow: row; /* Switch to column layout on small screens */
+    align-items: center;
   }
 `;
 
@@ -64,11 +66,17 @@ export const Logo = styled(RouterLink)`
   text-decoration: none;
   cursor: pointer;
   padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem; /* Add margin-right for spacing */
 
-  @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
+  @media (max-width: ${breakpoints.medium}) {
+    margin-right: 0; /* Remove margin-right on small screens */
+    margin-bottom: 1rem; /* Add margin-bottom for spacing between logo and links */
   }
 `;
+
 
 export const HeroContent = styled.div`
   z-index: 1;
@@ -81,9 +89,9 @@ export const HeroContent = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  margin: 0 auto;
   flex-flow: column nowrap;
   padding: 0 1rem;
+  margin: 1rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,20 +101,24 @@ export const TextWrapper = styled.div`
     color: #070606;
   }
 
-  @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
+  @media (max-width: 768px) {
+    p {
+      width: 100%;
+      font-size: 2.5rem;
+    }
   }
 `;
 
 export const HeroHeadline = styled.h1`
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 0.3em;
-  letter-spacing: 1px;
+  padding: 0.4rem 0.6rem;
   color: #070606;
 
-  @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0.6rem 0.9rem;
   }
 `;
 
@@ -124,8 +136,10 @@ export const CTAButton = styled.a`
     background-color: #a90c2e;
   }
 
-  @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
+  @media (max-width: 768px) {
+    width: 80%;
+    padding: 0.6rem 0.9rem;
+    font-size: 2rem;
   }
 `;
 

@@ -83,7 +83,7 @@ export const ProjectItem = styled.div`
   background-position: center; */
 
   @media (min-width: 768px) {
-    flex-direction: row; /* Display projects in a row on larger screens */
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 20px;

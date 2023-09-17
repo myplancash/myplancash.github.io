@@ -51,10 +51,15 @@ export const ProfileImage = styled.img`
 `;
 
 export const TextWrapper = styled.section`
-  text-align: center;
+  flex-flow: column nowrap;
+  padding: 0 1rem;
+  margin: 1rem auto;
+  display: flex;
+  gap: .5rem;
+  text-align: left; /* Align text to the left */
 
-  @media (min-width: 768px) {
-    text-align: left;
+  @media (max-width: 768px) {
+    align-items: center; /* Center items on small screens */
   }
 `;
 
@@ -81,7 +86,7 @@ export const Resume = styled.a`
   color:#DC143C;
   text-decoration: none;
   transition: color 0.3s;
-  position: relative; /* Add this to the parent element */
+  position: relative;
 
   &:before {
     content: '';
@@ -114,23 +119,36 @@ export const Quote = styled.blockquote`
   font-style: italic;
   color: #666;
   margin: 20px 0;
+
 `;
 
 export const CTAButton = styled(Link)`
-  margin-top: 20px;
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px 20px;
   background-color: ${theme.secondary};
-  color: #fff;
-  font-size: 1.2rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  display: inline-block;
+  text-align: center;
+  max-width: 60%; /* Set a maximum width for the button */
 
   &:hover {
     background-color: #A90C2E;
     color: #fefefe; /* Primary Color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow on hover */
+  }
+
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0.6rem 0.9rem;
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 992px) {
+    max-width: 30%; /* Adjust the maximum width for wider screens */
   }
 `;
