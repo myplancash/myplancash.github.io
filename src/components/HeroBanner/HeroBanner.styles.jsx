@@ -30,7 +30,7 @@ export const HeroBannerWrapper = styled.div`
   }
 `;
 
-export const NavBarWrapper = styled.div`
+export const NavBarWrapper = styled.section`
   padding: 1rem;
   position: absolute;
   top: 0;
@@ -47,7 +47,7 @@ export const NavBarWrapper = styled.div`
   }
 `;
 
-export const NavBarContainer = styled.div`
+export const NavBarContainer = styled.nav`
   display: flex;
   align-items: center;
   gap: 1rem;

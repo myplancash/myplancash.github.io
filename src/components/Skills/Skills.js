@@ -48,6 +48,12 @@ const Skills = () => {
       proficiency: 'Advanced',
       logo: require('../../assets/images/jest.png'),
     },
+    {
+      name: 'typescript',
+      category: 'Front-end Development',
+      proficiency: 'Advanced',
+      logo: require('../../assets/images/typescript.png'),
+    },
     // Add more skills as needed
   ];
 

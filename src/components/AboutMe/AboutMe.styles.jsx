@@ -23,7 +23,7 @@ export const ContentWrapper = styled.div`
   }
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled.section`
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
@@ -32,7 +32,7 @@ export const ImageWrapper = styled.div`
   }
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.section`
   position: relative;
   /* background-color: rgba(255, 255, 255, 0.7); */
   border-radius: 10px;
@@ -50,7 +50,7 @@ export const ProfileImage = styled.img`
   opacity: 0.9; /* Adjust opacity value as needed */
 `;
 
-export const TextWrapper = styled.div`
+export const TextWrapper = styled.section`
   text-align: center;
 
   @media (min-width: 768px) {
@@ -58,13 +58,13 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.h1`
   font-size: 2rem;
   margin-bottom: 20px;
   color: ${theme.primary};
 `;
 
-export const Subheading = styled.p`
+export const Subheading = styled.h2`
   font-size: 1.2rem;
   color: #666;
   margin-bottom: 15px;

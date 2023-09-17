@@ -17,8 +17,8 @@ export const Heading = styled.h2`
 
 export const SkillList = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 `;

@@ -11,19 +11,11 @@ import {
   Logo,
 } from './HeroBanner.styles';
 
-import backgroundImage from '../../assets/images/hero.png';
 import { NAV_ITEMS, NavItem } from '../NavItems/NavItems';
 import LogoSVG from '../../assets/logo.svg';
+import {backgroundStyle} from '../../utils/styles/backgroundStyle'
 
 const HeroBanner = () => {
-  const backgroundStyle = {
-    backgroundImage: `
-      url(${backgroundImage}),
-      linear-gradient(rgba(220, 20, 60, 1), rgba(255, 220, 73, 1))`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
-  };
 
   return (
     <HeroBannerWrapper style={backgroundStyle}>

@@ -51,7 +51,7 @@ const AboutMe = () => {
     <Section id="about">
       <ContentWrapper>
         <ImageContainer>
-          <ProfileImage src={require('../../assets/images/profile.jpg')} alt="Profile" />
+          <ProfileImage src={require('../../assets/images/profile.jpg')} alt="Profile image of Sergio Torres" />
         </ImageContainer>
         <TextWrapper>
           <Heading>Greetings, I'm Sergio Esteban</Heading>

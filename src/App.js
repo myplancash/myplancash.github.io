@@ -10,6 +10,7 @@ import HeroBanner from './components/HeroBanner/HeroBanner';
 import Blog from './components/Blog/Blog';
 import blogData from './data/blogData';
 import BlogPostDetail from './components/BlogPostDetail/BlogPostDetail';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
           </Routes>
         </MainContent>
+        <Footer />
       </Container>
     </Router>
   );
