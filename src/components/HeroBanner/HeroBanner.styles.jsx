@@ -104,7 +104,7 @@ export const TextWrapper = styled.div`
   @media (max-width: 768px) {
     p {
       width: 100%;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -117,7 +117,7 @@ export const HeroHeadline = styled.h1`
 
   @media (max-width: 768px) {
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0.6rem 0.9rem;
   }
 `;
