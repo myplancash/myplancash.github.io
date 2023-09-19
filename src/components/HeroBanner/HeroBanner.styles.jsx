@@ -8,42 +8,34 @@ const breakpoints = {
   large: '992px',
   xlarge: '1200px',
 };
+
 export const HeroBannerWrapper = styled.div`
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Change to column layout for responsiveness */
   align-items: center;
   text-align: center;
-  gap: 0.5rem;
   background-color: #fff;
   padding: 60px 0;
-  text-align: center;
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 400px; /* Adjust the minimum height as needed */
+  min-height: 400px;
 
   @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
+    min-height: 600px; /* Adjust minimum height for medium screens */
   }
 `;
 
 export const NavBarWrapper = styled.section`
   padding: 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
   display: flex;
-  flex-flow: row wrap; /* Default to row layout */
   justify-content: space-between;
   align-items: center;
 
   @media (max-width: ${breakpoints.medium}) {
-    flex-flow: column; /* Switch to column layout on small screens */
-    align-items: center;
+    flex-direction: column;
   }
 `;
 
@@ -51,11 +43,10 @@ export const NavBarContainer = styled.nav`
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left: auto; /* Push the navigation links to the right */
+  margin-left: auto;
 
   @media (max-width: ${breakpoints.medium}) {
-    /* Add styles for small screens here */
-    flex-flow: row; /* Switch to column layout on small screens */
+    flex-direction: row; /* Change to column layout on small screens */
     align-items: center;
   }
 `;
@@ -65,60 +56,43 @@ export const Logo = styled(RouterLink)`
   max-width: 150px;
   text-decoration: none;
   cursor: pointer;
-  padding-left: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem; /* Add margin-right for spacing */
+  margin-right: 0;
 
   @media (max-width: ${breakpoints.medium}) {
-    margin-right: 0; /* Remove margin-right on small screens */
-    margin-bottom: 1rem; /* Add margin-bottom for spacing between logo and links */
+    margin-bottom: 1rem; /* Add margin-bottom for spacing on small screens */
   }
 `;
-
 
 export const HeroContent = styled.div`
   z-index: 1;
   max-width: 800px;
-  color: #fff; /* Adjust text color to contrast with the background */
-
-  @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
-  }
+  color: #fff;
 `;
 
 export const TextWrapper = styled.div`
-  flex-flow: column nowrap;
   padding: 0 1rem;
   margin: 1rem auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
 
   p {
     color: #070606;
   }
-
-  @media (max-width: 768px) {
-    p {
-      width: 100%;
-      font-size: 1.5rem;
-    }
-  }
 `;
 
 export const HeroHeadline = styled.h1`
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   padding: 0.4rem 0.6rem;
-  color: #070606;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    font-size: 2rem;
+  @media (max-width: ${breakpoints.medium}) {
     padding: 0.6rem 0.9rem;
+    font-size: 2rem;
   }
 `;
 
@@ -133,13 +107,13 @@ export const CTAButton = styled.a`
   text-decoration: none;
 
   &:hover {
-    background-color: #a90c2e;
+    background-color: #14B2D4;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${breakpoints.medium}) {
     width: 80%;
     padding: 0.6rem 0.9rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -155,9 +129,5 @@ export const SocialIcons = styled.div`
     &:hover {
       color: ${theme.secondary};
     }
-  }
-
-  @media (min-width: ${breakpoints.medium}) {
-    /* Add styles for medium screens and larger here */
   }
 `;

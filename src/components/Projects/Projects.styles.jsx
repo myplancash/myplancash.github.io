@@ -4,7 +4,7 @@ import theme from '../../styles/theme';
 export const Section = styled.section` 
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(to bottom,#FCF6F5, #990011);
+  background: linear-gradient(to bottom,#EE9CA7, #FFDDE1);
   /* scrollbar-gutter: stable both-edges; 
   overflow-y: scroll;*/
   max-width: 1200px;
@@ -134,13 +134,13 @@ export const ProjectDescription = styled.div`
         height: 2px;
         bottom: -2px; /* Adjust this value to control the distance of the line from the text */
         left: 0;
-        background-color: #A90C2E;
+        background-color: #D4145A;
         transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
         opacity: 0; /* Initially hidden */
       }
 
       &:hover {
-        color: #A90C2E;
+        color: #D4145A;
 
         &:before {
           width: 100%; /* Show the line from left to right */
@@ -159,14 +159,14 @@ export const ProjectDescription = styled.div`
 export const GitHubLink = styled.a`
   text-decoration: none;
 
-  background-color: #A90C2E;
+  background-color: #D4145A;
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
   transition: background-color 0.3s, transform 0.3s, color 0.3s;;
 
   &:hover {
-    background-color: #DC143C;
+    background-color: #14B2D4;
     transform: scale(1.05);
   }
 
@@ -177,7 +177,7 @@ export const GitHubLink = styled.a`
     height: 2px;
     bottom: -2px; 
     left: 0;
-    background-color: #A90C2E;
+    background-color: #14B2D4;
     transition: width 0.3s, opacity 0.3s;
     opacity: 0; 
   }

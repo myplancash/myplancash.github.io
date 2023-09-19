@@ -54,7 +54,7 @@ export const BlogExcerpt = styled.p`
 `;
 
 export const ReadMore = styled.button`
-  background-color: #DC143C;
+  background-color: #D4145A;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -63,7 +63,7 @@ export const ReadMore = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #A90C2E;
+    background-color: #14B2D4;
   }
 
   @media (max-width: 768px) {

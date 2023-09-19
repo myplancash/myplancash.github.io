@@ -13,10 +13,9 @@ import {
 
 import { NAV_ITEMS, NavItem } from '../NavItems/NavItems';
 import LogoSVG from '../../assets/logo.svg';
-import {backgroundStyle} from '../../utils/styles/backgroundStyle'
+import { backgroundStyle } from '../../utils/styles/backgroundStyle';
 
 const HeroBanner = () => {
-
   return (
     <HeroBannerWrapper style={backgroundStyle}>
       <NavBarWrapper>

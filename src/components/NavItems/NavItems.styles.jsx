@@ -22,13 +22,13 @@ export const NavLink = styled(Link)`
     height: 2px;
     bottom: -2px; /* Adjust this value to control the distance of the line from the text */
     left: 0;
-    background-color: #0A2463;
+    background-color: #14B2D4;
     transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
     opacity: 0; /* Initially hidden */
   }
 
   &:hover {
-    color: #0A2463;
+    color: #14B2D4;
 
     &:before {
       width: 100%; /* Show the line from left to right */

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
-  background: linear-gradient(90deg,#ffdc49,#dc143c);
+  background: linear-gradient(90deg, #D4145A, #FBB03B);
   color: #070606;
   padding: 20px 0;
 `;
@@ -29,6 +29,6 @@ export const IconLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #0A2463; /* Change to your preferred hover color */
+    color: #D4145A; /* Change to your preferred hover color */
   }
 `;
