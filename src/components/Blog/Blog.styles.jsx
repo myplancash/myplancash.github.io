@@ -34,6 +34,11 @@ export const BlogImage = styled.img`
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const BlogTitle = styled.h3`
