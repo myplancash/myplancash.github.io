@@ -14,6 +14,7 @@ import {
   Resume
 } from './AboutMe.styles';
 import TechnologyLogos from '../TechnologyLogos/TechnologyLogos';
+import CaseStudyList from '../CaseStudyList/CaseStudyList';
 
 
 const AboutMe = () => {
@@ -64,6 +65,7 @@ const AboutMe = () => {
               <br/>Check out my resume <Resume href="https://drive.google.com/file/d/1EPTcDsPDbN9iDGPiUNAC4CNTfkZzAouE/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</Resume>.
             </p>
           </Introduction>
+          <CaseStudyList />
           <TechnologyLogos logos={technologyLogos} />
           <Quote>
             "{randomQuote}"
