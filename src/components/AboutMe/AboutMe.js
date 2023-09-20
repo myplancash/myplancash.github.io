@@ -11,7 +11,8 @@ import {
   Icon,
   Quote,
   CTAButton,
-  Resume
+  Resume,
+  PersonalBrandStatement
 } from './AboutMe.styles';
 import TechnologyLogos from '../TechnologyLogos/TechnologyLogos';
 import CaseStudyList from '../CaseStudyList/CaseStudyList';
@@ -60,10 +61,10 @@ const AboutMe = () => {
             <Icon>🚀</Icon> Bridging Technology and Business Strategy
           </Subheading>
           <Introduction>
-            <p>
-              Hello! I'm Sergio Esteban, a full-stack software developer with a background in business administration. With over 4 years of experience, I specialize in creating user-centric digital solutions that turn ideas into reality.
-              <br/>Check out my resume <Resume href="https://drive.google.com/file/d/1EPTcDsPDbN9iDGPiUNAC4CNTfkZzAouE/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</Resume>.
-            </p>
+            <PersonalBrandStatement>
+              "Hello! I'm Sergio Esteban, a dynamic full-stack software developer with a unique blend of technical expertise and a strong foundation in business administration. With over 4 years of hands-on experience, I have honed my skills in crafting user-centric digital solutions that not only bring ideas to life but also align seamlessly with strategic business objectives.<br/>
+              <p>Check out my resume <Resume href="https://drive.google.com/file/d/1EPTcDsPDbN9iDGPiUNAC4CNTfkZzAouE/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</Resume> to explore my diverse portfolio of successful projects and see how I can help you transform your digital vision into a strategic reality.</p> 
+            </PersonalBrandStatement>
           </Introduction>
           <CaseStudyList />
           <TechnologyLogos logos={technologyLogos} />

@@ -5,9 +5,9 @@ import {
   BlogPost,
   BlogImage,
   BlogTitle,
+  BlogExcerptContainer,
   BlogExcerpt,
   ReadMore,
-  BlogExcerptContainer,
 } from './Blog.styles';
 import BlogData from '../../data/blogData';
 import { Link } from 'react-router-dom';
@@ -16,11 +16,7 @@ const Blog = () => {
   const [expandedPost, setExpandedPost] = useState(null);
 
   const togglePost = (postId) => {
-    if (expandedPost === postId) {
-      setExpandedPost(null);
-    } else {
-      setExpandedPost(postId);
-    }
+    setExpandedPost((prevState) => (prevState === postId ? null : postId));
   };
 
   return (
@@ -36,8 +32,7 @@ const Blog = () => {
               <Link to={`/blog/${post.id}`}>
                 <ReadMore
                   onClick={() => togglePost(post.id)}
-                  aria-expanded={expandedPost === post.id}
-                  aria-controls={`blog-post-${post.id}`}
+                  expanded={expandedPost === post.id}
                 >
                   {expandedPost === post.id ? 'Read Less' : 'Read More'}
                 </ReadMore>

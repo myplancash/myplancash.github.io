@@ -75,7 +75,7 @@ export const TextWrapper = styled.section`
 export const Heading = styled.h1`
   font-size: 2rem;
   margin-bottom: 20px;
-  color: ${theme.primary};
+  color: #070606;
 `;
 
 export const Subheading = styled.h2`
@@ -151,3 +151,7 @@ export const CTAButton = styled(Link)`
     font-size: 1.5rem;
   }
 `;
+
+export const PersonalBrandStatement = styled.p`
+  margin-bottom: 20px;
+`

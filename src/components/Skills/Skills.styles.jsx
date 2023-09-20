@@ -10,9 +10,9 @@ export const Section = styled.section`
 
 export const Heading = styled.h2`
   font-size: 2rem;
+  color: #070606;
   margin-bottom: 20px;
   text-align: center;
-  color: ${theme.primary};
 `;
 
 export const SkillList = styled.div`

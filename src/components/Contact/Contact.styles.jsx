@@ -29,8 +29,8 @@ export const IconLink = styled.a`
 
 export const Heading = styled.h2`
   font-size: 2rem;
+  color: #070606;
   margin-bottom: 20px;
-  color: ${theme.primary};
 `;
 
 export const ContactInfo = styled.p`
