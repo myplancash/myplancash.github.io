@@ -4,7 +4,7 @@ import theme from '../../styles/theme';
 export const Section = styled.section` 
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(to bottom,#EE9CA7, #FFDDE1);
+  /* background: linear-gradient(to bottom,#EE9CA7, #FFDDE1); */
   /* scrollbar-gutter: stable both-edges; 
   overflow-y: scroll;*/
   max-width: 1200px;
