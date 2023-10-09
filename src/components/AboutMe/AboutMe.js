@@ -3,16 +3,10 @@ import {
   Section,
   ContentWrapper,
   TextWrapper,
-  Heading,
-  Subheading,
   Introduction,
-  ImageContainer, // Import the ImageContainer component
-  ProfileImage, // Import the P
+  ImageContainer,
   Icon,
   Quote,
-  CTAButton,
-  Resume,
-  PersonalBrandStatement
 } from './AboutMe.styles';
 import TechnologyLogos from '../TechnologyLogos/TechnologyLogos';
 import CaseStudyList from '../CaseStudyList/CaseStudyList';
@@ -49,33 +43,98 @@ const AboutMe = () => {
     setRandomQuote(quotes[randomIndex])
   }, [quotes])
 
+
+ const profileImageStyle = {
+    borderRadius: '50%',
+    objectFit: 'cover',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+    opacity: '0.9',
+  };
+
+  const headingStyle = {
+    fontSize: '2rem',
+    marginBottom: '20px',
+    color: '#070606',
+  };
+
+  const subheadingStyle = {
+    fontSize: '1.2rem',
+    color: '#666',
+    marginBottom: '15px',
+  };
+
+  const personalBrandStatementStyle = {
+    fontSize: '1.1rem',
+    lineHeight: '1.6',
+    color: '#444',
+  };
+
+  const ctaButtonStyle = {
+    backgroundColor: '#14B2D4',
+    color: 'white',
+    padding: '0.5rem 1rem',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '1rem',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    transition: 'background-color 0.3s',
+    position: 'relative',
+  };
+
   return (
     <Section id="about">
       <ContentWrapper>
         <ImageContainer>
-          <ProfileImage src={require('../../assets/images/profile.jpg')} alt="Profile image of Sergio Torres" />
+          <picture>
+            <source
+              srcSet={require('../../assets/images/profile-2x.png')}
+              media="(min-resolution: 2dppx)"
+            />
+            <img
+              src={require('../../assets/images/profile.png')}
+              alt="Sergio Torres"
+              style={profileImageStyle}
+              loading="lazy"
+              width="150"
+              height="150"
+            />  
+          </picture>
         </ImageContainer>
         <TextWrapper>
-          <Heading>Greetings, I'm Sergio Esteban</Heading>
-          <Subheading>
+          <h1 style={headingStyle}>Greetings, I'm Sergio Esteban</h1>
+          <h2 style={subheadingStyle}>
             <Icon>🚀</Icon> Bridging Technology and Business Strategy
-          </Subheading>
+          </h2>
           <Introduction>
-            <PersonalBrandStatement>
+            <p style={personalBrandStatementStyle}>
               "Hello! I'm Sergio Esteban, a dynamic full-stack software developer with a unique blend of technical expertise and a strong foundation in business administration. With over 4 years of hands-on experience, I have honed my skills in crafting user-centric digital solutions that not only bring ideas to life but also align seamlessly with strategic business objectives.<br/>
-              <p>Check out my resume <Resume href="https://drive.google.com/file/d/1EPTcDsPDbN9iDGPiUNAC4CNTfkZzAouE/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</Resume> to explore my diverse portfolio of successful projects and see how I can help you transform your digital vision into a strategic reality.</p> 
-            </PersonalBrandStatement>
+              <p>
+                Check out my resume{' '}
+                <a
+                  href="https://drive.google.com/file/d/1EPTcDsPDbN9iDGPiUNAC4CNTfkZzAouE/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={ctaButtonStyle}
+                >
+                  here
+                </a>{' '}
+                to explore my diverse portfolio of successful projects and see how I can help you transform your digital vision into a strategic reality.
+              </p>
+            </p>
           </Introduction>
           <CaseStudyList />
           <TechnologyLogos logos={technologyLogos} />
-          <Quote>
+          <Quote style={{ fontSize: '1.2rem', fontStyle: 'italic', color: '#666', margin: '20px 0' }}>
             "{randomQuote}"
           </Quote>
-          <CTAButton href="mailto:sergio.smiling@gmail.com">Let's Collaborate</CTAButton>
+          <a href="mailto:sergio.smiling@gmail.com" style={ctaButtonStyle}>
+            Let's Collaborate
+          </a>
         </TextWrapper>
       </ContentWrapper>
     </Section>
   );
-}
+};
 
 export default AboutMe;
