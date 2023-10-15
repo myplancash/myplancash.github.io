@@ -46,6 +46,7 @@ export const ImageContainer = styled.section`
   padding: 20px;
   text-align: center;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  
 `;
 
 export const ProfileImage = styled.img`
@@ -74,13 +75,11 @@ export const TextWrapper = styled.section`
 
 
 export const Subheading = styled.h2`
-  font-size: 1.2rem;
   color: #666;
   margin-bottom: 15px;
 `;
 
 export const Introduction = styled.section`
-  font-size: 1.1rem;
   line-height: 1.6;
   color: #444;
 `;
@@ -119,7 +118,6 @@ export const Icon = styled.span`
 `;
 
 export const Quote = styled.blockquote`
-  font-size: 1.2rem;
   font-style: italic;
   color: #666;
   margin: 20px 0;
@@ -132,7 +130,6 @@ export const CTAButton = styled(Link)`
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
 

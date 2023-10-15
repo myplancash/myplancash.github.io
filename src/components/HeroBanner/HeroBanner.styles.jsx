@@ -102,7 +102,6 @@ export const CTAButton = styled.a`
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
 

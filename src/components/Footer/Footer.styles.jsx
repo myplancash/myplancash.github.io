@@ -16,7 +16,6 @@ export const FooterContent = styled.div`
 `;
 
 export const FooterText = styled.p`
-  font-size: 14px;
 `;
 
 export const SocialIcons = styled.div`

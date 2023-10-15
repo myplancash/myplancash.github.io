@@ -16,5 +16,4 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   color: #666;
-  font-size: 16px;
 `;

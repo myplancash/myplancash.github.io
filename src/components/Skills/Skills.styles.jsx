@@ -6,6 +6,7 @@ export const Section = styled.section`
   padding: 2rem;
   text-align: center;
   background-color: ${theme.background};
+  
 `;
 
 export const Heading = styled.h2`
@@ -53,21 +54,19 @@ export const Img = styled.img`
 `;
 
 export const SkillLabel = styled.p`
-  font-size: 16px;
   color: #333;
   font-weight: bold;
 `;
 
 export const SkillCategory = styled.p`
-  font-size: 14px;
   color: #666;
   margin-top: 5px;
 `;
 
 export const SkillProficiency = styled.p`
-  font-size: 14px;
   color: #666;
   margin-top: 5px;
+  font-style: italic;
 `;
 
 // Add any additional styling as needed for your specific design

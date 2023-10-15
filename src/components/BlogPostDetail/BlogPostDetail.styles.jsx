@@ -14,12 +14,10 @@ export const Title = styled.h1`
 `;
 
 export const Author = styled.p`
-  font-size: 14px;
   color: #555555;
 `;
 
 export const Content = styled.div`
-  font-size: 16px;
   line-height: 1.5;
   margin-top: 20px;
 `;
