@@ -35,13 +35,13 @@ const HeroBanner = () => {
           <HeroHeadline>
             I merge tech and business<br /> for impactful solutions
           </HeroHeadline>
-          <p>Let's turn your ideas into strategic digital success.</p>
+          <p>Let&apos;s turn your ideas into strategic digital success.</p>
           <CTAButton
             href="https://calendly.com/sergio-esteban/reunion"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Let's Connect
+            Let&apos;s Connect
           </CTAButton>
         </TextWrapper>
         <SocialIcons>

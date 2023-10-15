@@ -1,9 +1,16 @@
 import React from 'react';
-import { NavLink } from './NavItems.styles'
+import PropTypes from 'prop-types'; // Import PropTypes
+import { NavLink } from './NavItems.styles';
 
 export const NavItem = ({ to, children }) => (
   <NavLink to={to}>{children}</NavLink>
 );
+
+// Define prop type validation for your component
+NavItem.propTypes = {
+  to: PropTypes.string.isRequired, // Ensure 'to' is a required string prop
+  children: PropTypes.node.isRequired, // Ensure 'children' is a required node prop
+};
 
 // Define your navigation items here
 export const NAV_ITEMS = [

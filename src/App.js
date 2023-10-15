@@ -6,12 +6,18 @@ import blogData from './data/blogData';
 
 const LazyComponent = (importFunc) => {
   const Component = lazy(importFunc);
-  return (props) => (
+  const LazyWrapper = (props) => (
     <Suspense fallback={<div>Loading...</div>}>
       <Component {...props} />
     </Suspense>
-  )
+  );
+
+  // Add a displayName property
+  LazyWrapper.displayName = `LazyComponent(${Component.displayName || Component.name})`;
+
+  return LazyWrapper;
 }
+
 
 const AboutMe = LazyComponent(() => import('./components/AboutMe/AboutMe'));
 const Projects = LazyComponent(() => import('./components/Projects/Projects'));
@@ -24,6 +30,9 @@ const Footer = LazyComponent(() => import('./components/Footer/Footer'));
 
 
 const App = () => {
+   // Add a displayName property to the App component
+  App.displayName = 'App';
+  
   return (
     <Router>
       <Container>

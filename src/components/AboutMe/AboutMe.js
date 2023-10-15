@@ -64,13 +64,13 @@ const AboutMe = () => {
           </picture>
         </ImageContainer>
         <TextWrapper>
-          <h1>Greetings, I'm Sergio Esteban</h1>
+          <h1>Greetings, I&apos;m Sergio Esteban</h1>
           <h2>
             <Icon>🚀</Icon> Bridging Technology and Business Strategy
           </h2>
           <Introduction>
             <p>
-              Hello! I'm Sergio Esteban, a dynamic full-stack software developer with a unique blend of technical expertise and a strong foundation in business administration. With over 4 years of hands-on experience, I have honed my skills in crafting user-centric digital solutions that not only bring ideas to life but also align seamlessly with strategic business objectives.<br/>
+              Hello! I&apos;m Sergio Esteban, a dynamic full-stack software developer with a unique blend of technical expertise and a strong foundation in business administration. With over 4 years of hands-on experience, I have honed my skills in crafting user-centric digital solutions that not only bring ideas to life but also align seamlessly with strategic business objectives.<br/>
               <p>
                 Check out my resume{' '}
                 <a
@@ -89,7 +89,7 @@ const AboutMe = () => {
           <Quote>
           </Quote>
           <CTAButton href="mailto:sergio.smiling@gmail.com" >
-            Let's Collaborate
+            Let&apos;s Collaborate
           </CTAButton>
         </TextWrapper>
       </ContentWrapper>
