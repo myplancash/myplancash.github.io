@@ -20,7 +20,7 @@ const HeroBanner = () => {
     <HeroBannerWrapper style={backgroundStyle}>
       <NavBarWrapper>
         <Logo to="/">
-          <img src={LogoSVG} alt="DigitalBiz Logo" width="140px" height="40px" />
+          <img src={LogoSVG} alt="DigitalBiz Logo" width="140px" height="40px" loading="lazy" />
         </Logo>
         <NavBarContainer>
           {NAV_ITEMS.map((item, index) => (

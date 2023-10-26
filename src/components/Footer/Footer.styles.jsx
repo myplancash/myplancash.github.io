@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
   background: linear-gradient(90deg, #D4145A, #FBB03B);
-  color: #070606;
+  color: #fff;
   padding: 20px 0;
 `;
 

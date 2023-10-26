@@ -15,7 +15,6 @@ export const Heading = styled.h2`
   font-size: 2rem;
   color: #070606;
   margin-bottom: 20px;
-  color: ${theme.primary};
 `;
 export const ProjectList = styled.div`
   /* list-style: none;
@@ -67,15 +66,14 @@ export const ProjectList = styled.div`
 
 export const ProjectItem = styled.div`
   border-radius: 4px;
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #070606;
   transition: background-color 0.3s, transform 0.3s;
   position: relative;
 
 
   &:hover {
-    background-color: #f1f1f1;
     transform: scale(1.05);
   }
 
