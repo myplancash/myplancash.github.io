@@ -50,7 +50,8 @@ const App = () => {
                 element={<BlogPostDetail title={post.title} content={post.content} />}
               />
             ))}
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog" element={<Blog blogData={blogData} />} />
+            {/* <Route path="/sample-blog" element={<SampleBlogPost />} /> */}
           </Routes>
         </MainContent>
         <Footer />

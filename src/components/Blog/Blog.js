@@ -9,10 +9,11 @@ import {
   BlogExcerpt,
   ReadMore,
 } from './Blog.styles';
-import BlogData from '../../data/blogData';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const Blog = () => {
+
+const Blog = ({ blogData }) => {
   const [expandedPost, setExpandedPost] = useState(null);
 
   const togglePost = (postId) => {
@@ -23,7 +24,7 @@ const Blog = () => {
     <Section id="blog">
       <h2>Blog</h2>
       <BlogContainer>
-        {BlogData.map((post) => (
+        {blogData.map((post) => (
           <BlogPost key={post.id}>
             <BlogImage src={require(`../../assets/images/${post.image}`)} alt={post.title} />
             <BlogTitle>{post.title}</BlogTitle>
@@ -50,5 +51,18 @@ const Blog = () => {
     </Section>
   );
 };
+
+Blog.propTypes = {
+  blogData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      excerpt: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
 
 export default Blog;

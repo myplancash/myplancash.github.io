@@ -8,7 +8,7 @@ const BlogPostDetail = ({ title, content }) => {
       <Title>{title}</Title>
       <Author>Written by John Doe on September 8, 2023</Author>
       <Content>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <div dangerouslySetInnerHTML={{ __html: content }} />        
       </Content>
     </Container>
   );
@@ -19,5 +19,6 @@ BlogPostDetail.propTypes = {
   title: PropTypes.string.isRequired, // Ensure 'title' is a required string prop
   content: PropTypes.string.isRequired, // Ensure 'content' is a required string prop
 };
+
 
 export default BlogPostDetail;
