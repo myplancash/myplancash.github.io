@@ -46,8 +46,11 @@ export const NavBarContainer = styled.nav`
   gap: 1rem;
 
   @media (max-width: ${breakpoints.medium}) {
-    flex-direction: row; /* Change to column layout on small screens */
-    align-items: center;
+    flex-direction: column;
+  }
+
+  @media (min-width: ${breakpoints.medium}) {
+    /* Add styles for medium screens and larger here */
   }
 `;
 
