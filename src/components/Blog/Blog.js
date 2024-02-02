@@ -1,67 +1,63 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
+import { Link } from 'react-router-dom'; // Import useNavigate
+import axios from 'axios';
 import {
-  Section,
-  BlogContainer,
   BlogPost,
+  BlogContainer,
   BlogImage,
   BlogTitle,
-  BlogExcerptContainer,
-  BlogExcerpt,
   ReadMore,
 } from './Blog.styles';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 
-const Blog = ({ blogData }) => {
+const apiUrl = 'http://localhost:1337/blog-posts'; // Update the API endpoint
+const apiToken = 'c652d444edc856db2a5b1251afdc959cca86109bf5602940e7ef9bc359ad26817718b7db127a325e980331254c3a4ee83ebbbe7c16d960dd4a3a6333b448c85a9b98f7e1fed4fdcb798304f7b02d22231f108293ac3ce99480020f4e9600bc6b52b7578e1defae630f28cdcc2e3455d4f38f72426d0c8ecef189f50cf8229165';
+
+const Blog = () => {
+  const [blogData, setBlogData] = useState([]);
   const [expandedPost, setExpandedPost] = useState(null);
+
+  useEffect(() => {
+    axios.get(apiUrl, {
+      headers: {
+        Authorization: `Bearer ${apiToken}`,
+      },
+    })
+      .then((response) => {
+        setBlogData(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+  
 
   const togglePost = (postId) => {
     setExpandedPost((prevState) => (prevState === postId ? null : postId));
   };
 
   return (
-    <Section id="blog">
+    <BlogContainer>
       <h2>Blog</h2>
-      <BlogContainer>
-        {blogData.map((post) => (
-          <BlogPost key={post.id}>
-            <BlogImage src={require(`../../assets/images/${post.image}`)} alt={post.title} />
+      {blogData.map((post) => (
+        <BlogPost key={post.id}>
+          <Link to={`/blog/${post.id}`}>
             <BlogTitle>{post.title}</BlogTitle>
-            <BlogExcerptContainer>
-              <BlogExcerpt>{post.excerpt}</BlogExcerpt>
-              <Link to={`/blog/${post.id}`}>
-                <ReadMore
-                  onClick={() => togglePost(post.id)}
-                  expanded={expandedPost === post.id}
-                >
-                  {expandedPost === post.id ? 'Read Less' : 'Read More'}
-                </ReadMore>
-              </Link>
-            </BlogExcerptContainer>
-            {expandedPost === post.id && (
-              <div id={`blog-post-${post.id}`}>
-                <div dangerouslySetInnerHTML={{ __html: post.content }} />
-                <button onClick={() => togglePost(post.id)}>Read Less</button>
-              </div>
-            )}
-          </BlogPost>
-        ))}
-      </BlogContainer>
-    </Section>
+            <BlogImage src={require(`../../assets/images/${post.image}`)} alt={post.title} />
+          </Link>
+          <ReadMore onClick={() => togglePost(post.id)} expanded={expandedPost === post.id}>
+            {expandedPost === post.id ? 'Read Less' : 'Read More'}
+          </ReadMore>
+          {expandedPost === post.id && (
+            <div id={`blog-post-${post.id}`}>
+              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+              <button onClick={() => togglePost(post.id)}>Read Less</button>
+            </div>
+          )}
+        </BlogPost>
+      ))}
+    </BlogContainer>
   );
-};
-
-Blog.propTypes = {
-  blogData: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired,
-      excerpt: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 

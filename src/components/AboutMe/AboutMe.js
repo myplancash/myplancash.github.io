@@ -3,7 +3,6 @@ import {
   Article,
   Header,
   Main,
-  Section,
   ContentWrapper, // Add ContentWrapper component
   TextWrapper,
   Introduction,
@@ -11,11 +10,9 @@ import {
   ProfileImage,
   Icon, // Add Icon component
   Quote,
-  CTAButton,
   PersonalBrandStatement,
 } from './AboutMe.styles';
 import TechnologyLogos from '../TechnologyLogos/TechnologyLogos';
-import CaseStudyList from '../CaseStudyList/CaseStudyList';
 
 const AboutMe = () => {
   const [randomQuote, setRandomQuote] = useState('');
@@ -41,10 +38,7 @@ const AboutMe = () => {
   return (
     <Article id="about">
       <Header>
-        <h1>Greetings, I&apos;m Sergio Esteban</h1>
-        <h2>
-          <Icon>🚀</Icon> Bridging Technology and Business Strategy
-        </h2>
+        <h1>Greetings, I&apos;m Sergio Esteban</h1> 
       </Header>
       <Main>
         <ContentWrapper>
@@ -60,7 +54,8 @@ const AboutMe = () => {
           <TextWrapper>
             <Introduction>
               <p>
-                Hello! I&aposm Sergio Esteban, a dynamic full-stack software
+                Hello! <Icon>👋🏻</Icon> <br/>
+                I&apos;m Sergio Esteban, a dynamic full-stack software
                 developer with a unique blend of technical expertise and a
                 strong foundation in business administration. With over 4 years
                 of hands-on experience, I have honed my skills in crafting

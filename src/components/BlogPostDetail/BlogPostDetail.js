@@ -1,24 +1,32 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
-import { Container, Title, Author, Content } from './BlogPostDetail.styles';
+import { Container, Title, Author } from './BlogPostDetail.styles';
 
-const BlogPostDetail = ({ title, content }) => {
+const BlogPostDetail = ({ postId }) => {
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    fetch(`http://localhost:1337/api/blog-posts/${postId}`)
+    .then((response) => response.json())
+    .then((data) => setPost(data))
+    .catch((error) => console.error(error))
+  }, [postId])
+
+  if (!post) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <Container>
-      <Title>{title}</Title>
-      <Author>Written by John Doe on September 8, 2023</Author>
-      <Content>
-        <div dangerouslySetInnerHTML={{ __html: content }} />        
-      </Content>
+      <Title>{post.title}</Title>
+      <Author>Written by Sergio Esteban Torres on {post.date}, 2023</Author>
     </Container>
   );
 };
 
-// Define prop type validation for the title and content props
-BlogPostDetail.propTypes = {
-  title: PropTypes.string.isRequired, // Ensure 'title' is a required string prop
-  content: PropTypes.string.isRequired, // Ensure 'content' is a required string prop
-};
 
+BlogPostDetail.propTypes = {
+  postId: PropTypes.string.isRequired,
+};
 
 export default BlogPostDetail;

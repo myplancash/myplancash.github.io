@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Section, Heading, ContactInfo, SocialIcons, IconLink} from './Contact.styles'; // Import your styled-components styles
 import ContactForm from '../ContactForm/ContactForm';
 

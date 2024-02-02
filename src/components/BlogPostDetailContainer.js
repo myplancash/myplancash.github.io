@@ -1,4 +1,3 @@
-// BlogPostDetailContainer.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import BlogPostDetail from './BlogPostDetail'; // Import your BlogPostDetail component

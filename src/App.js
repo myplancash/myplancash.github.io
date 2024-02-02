@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container, MainContent } from './App.styles'
-import blogData from './data/blogData';
 
 
 const LazyComponent = (importFunc) => {
@@ -17,7 +16,6 @@ const LazyComponent = (importFunc) => {
 
   return LazyWrapper;
 }
-
 
 const AboutMe = LazyComponent(() => import('./components/AboutMe/AboutMe'));
 const Projects = LazyComponent(() => import('./components/Projects/Projects'));
@@ -43,15 +41,15 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
-            {blogData.map((post) => (
+            {/* {blogData.map((post) => (
               <Route
                 key={post.id}
                 path={`/blog/${post.id}`}
                 element={<BlogPostDetail title={post.title} content={post.content} />}
               />
-            ))}
-            <Route path="/blog" element={<Blog blogData={blogData} />} />
-            {/* <Route path="/sample-blog" element={<SampleBlogPost />} /> */}
+            ))} */}
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:postId" element={<BlogPostDetail />} />
           </Routes>
         </MainContent>
         <Footer />

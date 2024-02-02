@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../../styles/theme';
+
 
 export const Section = styled.section` 
   padding: 2rem;
@@ -28,11 +28,11 @@ export const ProjectList = styled.div`
     /* For screens wider than 768px, maintain your current grid layout */
     gap: 10px;
 
-    .item1 {
+    .item2 {
       grid-column: 1 / span 3;
     }
 
-    .item2 {
+    .item1 {
       grid-column: 1 / span 2;
       grid-row: 2;
     }
@@ -42,9 +42,18 @@ export const ProjectList = styled.div`
       grid-row: 2 / span 2;
     }
 
-    .item4,
+    .item4 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
     .item5 {
-      grid-column: span 1;
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .item6 {
+      grid-column: 3;
       grid-row: 3;
     }
   }
@@ -54,11 +63,12 @@ export const ProjectList = styled.div`
     grid-template-columns: 1fr; /* Display one column for each item */
     gap: 20px;
 
-    .item1,
     .item2,
+    .item1,
     .item3,
     .item4,
-    .item5 {
+    .item5,
+    .item6 {
       grid-column: span 1; /* Span the full width of the container */
     }
   }

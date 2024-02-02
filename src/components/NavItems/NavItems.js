@@ -6,7 +6,7 @@ export const NavItem = ({ to, children }) => (
   <NavLink to={to}>{children}</NavLink>
 );
 
-// Define prop type validation for your component
+// Define prop type validation for your compo
 NavItem.propTypes = {
   to: PropTypes.string.isRequired, // Ensure 'to' is a required string prop
   children: PropTypes.node.isRequired, // Ensure 'children' is a required node prop

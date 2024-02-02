@@ -6,6 +6,15 @@ export const Section = styled.section`
   text-align: center;
 `;
 
+export const BlogPostContainer = styled.div`
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  /* Add more styles as needed */
+`;
+
 export const BlogContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
