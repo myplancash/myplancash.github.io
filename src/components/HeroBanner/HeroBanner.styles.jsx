@@ -112,7 +112,8 @@ export const CTAButton = styled.a`
   text-decoration: none;
 
   &:hover {
-    background-color: #14B2D4;
+    background-color: #003366;
+    
   }
 
   @media (max-width: ${breakpoints.medium}) {

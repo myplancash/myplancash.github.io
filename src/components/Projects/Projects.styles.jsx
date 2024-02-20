@@ -131,7 +131,7 @@ export const ProjectImage = styled.img`
 export const ProjectDescription = styled.div`
   span {
     a {
-      color:#DC143C;
+      color:#003366;
       text-decoration: none;
       transition: color 0.3s;
       position: relative; /* Add this to the parent element */
@@ -143,13 +143,13 @@ export const ProjectDescription = styled.div`
         height: 2px;
         bottom: -2px; /* Adjust this value to control the distance of the line from the text */
         left: 0;
-        background-color: #D4145A;
+        background-color: #003366;
         transition: width 0.3s, opacity 0.3s; /* Add opacity transition */
         opacity: 0; /* Initially hidden */
       }
 
       &:hover {
-        color: #D4145A;
+        color: #003366;
 
         &:before {
           width: 100%; /* Show the line from left to right */
@@ -168,14 +168,14 @@ export const ProjectDescription = styled.div`
 export const GitHubLink = styled.a`
   text-decoration: none;
 
-  background-color: #D4145A;
+  background-color: #003366;
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
   transition: background-color 0.3s, transform 0.3s, color 0.3s;;
 
   &:hover {
-    background-color: #14B2D4;
+    background-color: #007979;
     transform: scale(1.05);
   }
 
@@ -186,7 +186,7 @@ export const GitHubLink = styled.a`
     height: 2px;
     bottom: -2px; 
     left: 0;
-    background-color: #14B2D4;
+    background-color: #007979;
     transition: width 0.3s, opacity 0.3s;
     opacity: 0; 
   }

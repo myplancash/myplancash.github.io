@@ -99,7 +99,7 @@ export const CTAButton = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    background-color: #14B2D4;
+    background-color: #FFF;
   }
 
   ${breakpoint('medium')} {
